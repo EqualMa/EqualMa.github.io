@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Install the followings: phpTODO enable needed extensionsin php.ini ,  change  ;extension=mysqli  to:  extension=mysqli  to enable the mysqli extension. phpStorm &amp;amp; its configurationsInstallTODO Wor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="develop for wordpress">
+<meta property="og:url" content="https://equalma.github.io/wordpress/develop/index.html">
+<meta property="og:site_name" content="Equal&#39;s">
+<meta property="og:description" content="Install the followings: phpTODO enable needed extensionsin php.ini ,  change  ;extension=mysqli  to:  extension=mysqli  to enable the mysqli extension. phpStorm &amp;amp; its configurationsInstallTODO Wor">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-19T14:36:32.802Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="develop for wordpress">
+<meta name="twitter:description" content="Install the followings: phpTODO enable needed extensionsin php.ini ,  change  ;extension=mysqli  to:  extension=mysqli  to enable the mysqli extension. phpStorm &amp;amp; its configurationsInstallTODO Wor">
+
+
+
+
+
+
+  <link rel="canonical" href="https://equalma.github.io/wordpress/develop/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>develop for wordpress | Equal's</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Equal's</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Coding Blog</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/wordpress/develop/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Equal Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Equal's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">develop for wordpress
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-22 19:02:14" itemprop="dateCreated datePublished" datetime="2017-12-22T19:02:14+08:00">2017-12-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 22:36:32" itemprop="dateModified" datetime="2018-06-19T22:36:32+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Install the followings:</p>
+<h2 id="php"><a href="#php" class="headerlink" title="php"></a>php</h2><p>TODO</p>
+<h3 id="enable-needed-extensions"><a href="#enable-needed-extensions" class="headerlink" title="enable needed extensions"></a>enable needed extensions</h3><p>in <code>php.ini</code> , </p>
+<p>change</p>
+<blockquote>
+<p>;extension=mysqli</p>
+</blockquote>
+<p>to:</p>
+<blockquote>
+<p>extension=mysqli</p>
+</blockquote>
+<p>to enable the <code>mysqli</code> extension.</p>
+<h2 id="phpStorm-amp-its-configurations"><a href="#phpStorm-amp-its-configurations" class="headerlink" title="phpStorm &amp; its configurations"></a>phpStorm &amp; its configurations</h2><h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><p>TODO</p>
+<h2 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h2><h3 id="Download-WordPress"><a href="#Download-WordPress" class="headerlink" title="Download WordPress"></a>Download WordPress</h3><p>Create a project in phpStorm.</p>
+<p>Download the <code>WordPress.zip</code> archive at <a href="https://wordpress.org/download/" target="_blank" rel="noopener">https://wordpress.org/download/</a>. </p>
+<p>Extract the archive under <code>the project root</code> or <code>other locations</code> as you want.</p>
+<p>For more options, see: <a href="https://www.jetbrains.com/help/phpstorm/preparing-to-use-wordpress.html#d208817e96" target="_blank" rel="noopener">preparing-to-use-wordpress</a>.</p>
+<h3 id="WP-CLI-package"><a href="#WP-CLI-package" class="headerlink" title="WP-CLI package"></a>WP-CLI package</h3><ol>
+<li><p>Install Composer dependency manager</p>
+<p><a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx" target="_blank" rel="noopener">Linux/OSX</a></p>
+<p><a href="https://getcomposer.org/doc/00-intro.md#installation-windows" target="_blank" rel="noopener">Windows</a></p>
+</li>
+<li><p>in phpstorm, choose <code>Tools | Composer | Init Composer</code></p>
+<p>Then complete the <code>composer.json</code> which opens automatically.</p>
+</li>
+<li><p>right click <code>composer.json</code> and choose <code>Composer | Manage Dependencies</code> , then search for <code>wp-cli/wp-cli</code> and click it , then click <code>install</code> .</p>
+</li>
+<li><p>Download the <code>wp-cli.phar</code> at <a href="http://wp-cli.org/" target="_blank" rel="noopener">WordPress CLI</a>. </p>
+</li>
+<li><p>Configuring wp-cli as a PhpStorm command line tool</p>
+<p>1)    Open the <code>Settings / Preferences</code> Dialog by pressing <code>Ctrl+Alt+S</code></p>
+<p>2)    <code>Tools &gt; Command Line Tool Support</code></p>
+<p>​    Then click the <code>＋</code> button. </p>
+<p>​    Choose <code>WP-CLI</code> in the Choose Tool drop down list.</p>
+<p>​    Click <code>OK</code> until finish.</p>
+</li>
+</ol>
+<h3 id="Activating-the-WordPress-installation-in-the-project"><a href="#Activating-the-WordPress-installation-in-the-project" class="headerlink" title="Activating the WordPress installation in the project"></a>Activating the WordPress installation in the project</h3><p><code>Settings &gt; Preferences Dialog &gt; Languages and Frameworks &gt; PHP &gt; Frameworks</code></p>
+<p>In the <code>WordPress Installation Path</code> text box, specify the folder where WordPress is installed. This folder should contain the  <code>wp-admin</code> and <code>wp-includes</code> subdirectories.</p>
+<p>Click <code>Apply</code> .</p>
+<blockquote>
+<p>If your wordpress folder is not under your project folder, you should:</p>
+<p><code>Settings &gt; Preferences Dialog &gt; Languages and Frameworks &gt; PHP</code></p>
+<p>Add the path to the WordPress installation folder to the Include Paths list: click the <code>＋</code> button and specify the path to the installation folder in the dialog box that opens.</p>
+</blockquote>
+<h3 id="Enable-WordPress-Support-Plugin"><a href="#Enable-WordPress-Support-Plugin" class="headerlink" title="Enable WordPress Support Plugin"></a>Enable WordPress Support Plugin</h3><p>It is enabled automatically.</p>
+<blockquote>
+<p>if not :</p>
+<p><code>Settings &gt; Plugins</code></p>
+<p>Click <code>Browse repositories</code></p>
+<p>Search for <code>WordPress Support</code> and Install.</p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/unix/unixlesson/ppt/概念辨析：阻塞与同步、非阻塞与异步/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/wordpress/develop/theme/Basics/01 Template Files/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Equal Ma</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">86</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#php"><span class="nav-number">1.</span> <span class="nav-text">php</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#enable-needed-extensions"><span class="nav-number">1.1.</span> <span class="nav-text">enable needed extensions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#phpStorm-amp-its-configurations"><span class="nav-number">2.</span> <span class="nav-text">phpStorm &amp; its configurations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install"><span class="nav-number">2.1.</span> <span class="nav-text">Install</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WordPress"><span class="nav-number">3.</span> <span class="nav-text">WordPress</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Download-WordPress"><span class="nav-number">3.1.</span> <span class="nav-text">Download WordPress</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WP-CLI-package"><span class="nav-number">3.2.</span> <span class="nav-text">WP-CLI package</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activating-the-WordPress-installation-in-the-project"><span class="nav-number">3.3.</span> <span class="nav-text">Activating the WordPress installation in the project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Enable-WordPress-Support-Plugin"><span class="nav-number">3.4.</span> <span class="nav-text">Enable WordPress Support Plugin</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Equal Ma</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

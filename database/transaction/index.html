@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Concepts | 概念事务事务是指作为单个逻辑工作单元执行的一组相关操作。　　 这些操作要求全部完成或者全部不完成。 使用事务的原因：保证数据的安全有效。 事务的四个特点（ACID） 原子性（Atomic）：事务中所有数据的修改，要么全部执行，要么全部不执行。 一致性（Consistence）：事务完成时，要使所有所有的数据都保持一致的状态，换言之：通过事务进行的所有数据修改，必须在所有相关的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="database &gt; Transaction | 事务">
+<meta property="og:url" content="https://equalma.github.io/database/transaction/index.html">
+<meta property="og:site_name" content="Equal&#39;s">
+<meta property="og:description" content="Concepts | 概念事务事务是指作为单个逻辑工作单元执行的一组相关操作。　　 这些操作要求全部完成或者全部不完成。 使用事务的原因：保证数据的安全有效。 事务的四个特点（ACID） 原子性（Atomic）：事务中所有数据的修改，要么全部执行，要么全部不执行。 一致性（Consistence）：事务完成时，要使所有所有的数据都保持一致的状态，换言之：通过事务进行的所有数据修改，必须在所有相关的">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-19T14:04:11.951Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="database &gt; Transaction | 事务">
+<meta name="twitter:description" content="Concepts | 概念事务事务是指作为单个逻辑工作单元执行的一组相关操作。　　 这些操作要求全部完成或者全部不完成。 使用事务的原因：保证数据的安全有效。 事务的四个特点（ACID） 原子性（Atomic）：事务中所有数据的修改，要么全部执行，要么全部不执行。 一致性（Consistence）：事务完成时，要使所有所有的数据都保持一致的状态，换言之：通过事务进行的所有数据修改，必须在所有相关的">
+
+
+
+
+
+
+  <link rel="canonical" href="https://equalma.github.io/database/transaction/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>database > Transaction | 事务 | Equal's</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Equal's</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Coding Blog</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/database/transaction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Equal Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Equal's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">database > Transaction | 事务
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-05-10 19:31:42" itemprop="dateCreated datePublished" datetime="2017-05-10T19:31:42+08:00">2017-05-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 22:04:11" itemprop="dateModified" datetime="2018-06-19T22:04:11+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Concepts-概念"><a href="#Concepts-概念" class="headerlink" title="Concepts | 概念"></a>Concepts | 概念</h2><h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>事务是指作为单个逻辑工作单元执行的一组相关操作。　　</p>
+<p>这些操作要求全部完成或者全部不完成。</p>
+<h3 id="使用事务的原因："><a href="#使用事务的原因：" class="headerlink" title="使用事务的原因："></a>使用事务的原因：</h3><p>保证数据的安全有效。</p>
+<h3 id="事务的四个特点（ACID）"><a href="#事务的四个特点（ACID）" class="headerlink" title="事务的四个特点（ACID）"></a>事务的四个特点（ACID）</h3><ol>
+<li>原子性（Atomic）：事务中所有数据的修改，要么全部执行，要么全部不执行。</li>
+<li>一致性（Consistence）：事务完成时，要使所有所有的数据都保持一致的状态，换言之：通过事务进行的所有数据修改，必须在所有相关的表中得到反映。</li>
+<li>隔离性（Isolation）：事务应该在另一个事务对数据的修改前或者修改后进行访问。</li>
+<li>持久性（Durability）：保证事务对数据库的修改是持久有效的，即使发生系统故障，也不应该丢失。</li>
+</ol>
+<h3 id="事务组成"><a href="#事务组成" class="headerlink" title="事务组成"></a>事务组成</h3><p>一条或者多条DML，[一条DDL]和一条DCL。</p>
+<h3 id="事务的分类"><a href="#事务的分类" class="headerlink" title="事务的分类"></a>事务的分类</h3><ol>
+<li><h4 id="显式事务"><a href="#显式事务" class="headerlink" title="显式事务"></a>显式事务</h4><ol>
+<li>要去显式的调用DCL。</li>
+<li>只有用到COMMIT以后才会真正写入数据库，也持久化了。</li>
+</ol>
+</li>
+<li><h4 id="隐式事务"><a href="#隐式事务" class="headerlink" title="隐式事务"></a>隐式事务</h4><ol>
+<li>如果人工要使用隐式事务，SET AUTOCOMMIT ON (只针对一个连接)</li>
+<li>以下情况为自动提交：<ol>
+<li>正常执行完成的DDL语句：create、alter、drop</li>
+<li>正常执行完场的DCL语句GRANT、REVOKE</li>
+<li>正常退出的SQLPlus或者SQL Developer等客户端</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h3><p>RollBack只能对未提交的数据撤销，已经Commit的数据是无法撤销的，因为commit之后已经持久化到数据库中。</p>
+<h3 id="隔离级别"><a href="#隔离级别" class="headerlink" title="隔离级别"></a>隔离级别</h3><h4 id="事务处理中可能遇到的问题"><a href="#事务处理中可能遇到的问题" class="headerlink" title="事务处理中可能遇到的问题"></a>事务处理中可能遇到的问题</h4><ul>
+<li>脏读（Dirty Read）：事务T1更新了一行数据，还没有提交所做的修改，T2读取更新后的数据，T1回滚，T2读取的数据无效，这种数据称为脏读数据。</li>
+<li>不可重复读（UNrepeatable Read）：事务T1读取一行数据，T2修改了T1刚刚读取的记录，T1再次查询，发现与第一次读取的记录不相同，称为不可重复读。</li>
+<li>幻读（Phantom Read）：事务T1读取一条带WHERE条件的语句，返回结果集，T2插入一条新纪录，恰好也是T1的WHERE条件，T1再次查询，结果集中又看到T2的记录，新纪录就叫做幻读。</li>
+</ul>
+<h4 id="隔离级别-1"><a href="#隔离级别-1" class="headerlink" title="隔离级别"></a>隔离级别</h4><table>
+<thead>
+<tr>
+<th>隔离级别名</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NO_TRANSACTION</td>
+<td>不支持事务</td>
+</tr>
+<tr>
+<td>READ_UNCOMMITED</td>
+<td>允许脏读、不可重复读、幻读</td>
+</tr>
+<tr>
+<td>READ_COMMITED</td>
+<td>允许不可重复读、幻读，不允许脏读</td>
+</tr>
+<tr>
+<td>REPEATABLE</td>
+<td>允许幻读，不允许脏读、不可重复读</td>
+</tr>
+<tr>
+<td>SERIALIZABLE</td>
+<td>脏读、不可重复读、幻读都不允许</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Oracle支持SQL92标准的READ_COMMITED、SERIALIZABLE，自身特有的READ_ONLY</p>
+</blockquote>
+<h3 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h3><ul>
+<li><p>排它锁：（X锁，eXclusive LockS）</p>
+<p>当有DML语句执行的时候，设计的行都会加上排它锁，其他事物不能进行读取修改。</p>
+</li>
+<li><p>共享锁：（S锁，Shared Locks）</p>
+<p>加了共享锁的数据，可以被其他事物读取，但不能修改。如select语句。</p>
+</li>
+<li><p>为了保证性能：乐观锁，悲观锁</p>
+<p>悲观锁：每次都是假设数据肯定会冲突，数据开始读取时就把数据给锁住。</p>
+<p>乐观锁：每次都是假设一般情况下不会发生数据冲突，只有数据更新提交的时候，才会对数据的冲突与否进行检测，如果发生冲突，返回错误信息让用户处理。</p>
+</li>
+</ul>
+<h2 id="Oracle中的事务"><a href="#Oracle中的事务" class="headerlink" title="Oracle中的事务"></a>Oracle中的事务</h2><p>见<a href="http://www.cnblogs.com/god-S/p/4709044.html" target="_blank" rel="noopener">Oracle官方文档</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/unix/gnome help/gnome files/" rel="prev" title="tips for gnome Files">
+                tips for gnome Files <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Equal Ma</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">86</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Concepts-概念"><span class="nav-number">1.</span> <span class="nav-text">Concepts | 概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事务"><span class="nav-number">1.1.</span> <span class="nav-text">事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用事务的原因："><span class="nav-number">1.2.</span> <span class="nav-text">使用事务的原因：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的四个特点（ACID）"><span class="nav-number">1.3.</span> <span class="nav-text">事务的四个特点（ACID）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务组成"><span class="nav-number">1.4.</span> <span class="nav-text">事务组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的分类"><span class="nav-number">1.5.</span> <span class="nav-text">事务的分类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#显式事务"><span class="nav-number">1.5.1.</span> <span class="nav-text">显式事务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#隐式事务"><span class="nav-number">1.5.2.</span> <span class="nav-text">隐式事务</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回滚"><span class="nav-number">1.6.</span> <span class="nav-text">回滚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隔离级别"><span class="nav-number">1.7.</span> <span class="nav-text">隔离级别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#事务处理中可能遇到的问题"><span class="nav-number">1.7.1.</span> <span class="nav-text">事务处理中可能遇到的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#隔离级别-1"><span class="nav-number">1.7.2.</span> <span class="nav-text">隔离级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#锁"><span class="nav-number">1.8.</span> <span class="nav-text">锁</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Oracle中的事务"><span class="nav-number">2.</span> <span class="nav-text">Oracle中的事务</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Equal Ma</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
