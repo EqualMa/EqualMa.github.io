@@ -14,8 +14,8 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
-<head>
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><link rel=manifest href=/manifest.json>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
@@ -58,19 +58,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -84,8 +84,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '6.3.0',
+    scheme: 'Gemini',
+    version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="js中的this指向改变this指向js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：  call apply bind  这三种函数的使用方法为： //TODO  12 箭头函数（Lambda函数）的this关于js中的箭头函数，例如：(arg0, arg1)=&amp;gt;{ return arg0 + arg1; }，可详见mozilla官方文档 &amp;gt; Ja">
+  <meta name="description" content="js中的this指向理解this指向理解function中的this指向对象中的functionexample 1: 123456789101112var parent = &amp;#123;    value:&apos;parent.value&apos;,    getValue()&amp;#123;        return this.value; // &apos;parent.value&apos;    &amp;#125;,    chi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="understand &#39;this&#39; in JS">
 <meta property="og:url" content="https://equalma.github.io/js/this-in-js/index.html">
 <meta property="og:site_name" content="Equal&#39;s">
-<meta property="og:description" content="js中的this指向改变this指向js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：  call apply bind  这三种函数的使用方法为： //TODO  12 箭头函数（Lambda函数）的this关于js中的箭头函数，例如：(arg0, arg1)=&amp;gt;{ return arg0 + arg1; }，可详见mozilla官方文档 &amp;gt; Ja">
+<meta property="og:description" content="js中的this指向理解this指向理解function中的this指向对象中的functionexample 1: 123456789101112var parent = &amp;#123;    value:&apos;parent.value&apos;,    getValue()&amp;#123;        return this.value; // &apos;parent.value&apos;    &amp;#125;,    chi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-19T15:31:21.875Z">
+<meta property="og:updated_time" content="2018-06-25T08:14:41.249Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="understand &#39;this&#39; in JS">
-<meta name="twitter:description" content="js中的this指向改变this指向js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：  call apply bind  这三种函数的使用方法为： //TODO  12 箭头函数（Lambda函数）的this关于js中的箭头函数，例如：(arg0, arg1)=&amp;gt;{ return arg0 + arg1; }，可详见mozilla官方文档 &amp;gt; Ja">
+<meta name="twitter:description" content="js中的this指向理解this指向理解function中的this指向对象中的functionexample 1: 123456789101112var parent = &amp;#123;    value:&apos;parent.value&apos;,    getValue()&amp;#123;        return this.value; // &apos;parent.value&apos;    &amp;#125;,    chi">
 
 
 
@@ -242,9 +242,6 @@
   
 
   
-    
-
-  
 
   
 </nav>
@@ -264,6 +261,9 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
           
           <div id="content" class="content">
             
@@ -343,7 +343,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
+                <time title="修改时间：2018-06-25 16:14:41" itemprop="dateModified" datetime="2018-06-25T16:14:41+08:00">2018-06-25</time>
               
             
           </span>
@@ -394,7 +394,38 @@
       
 
       
-        <h1 id="js中的this指向"><a href="#js中的this指向" class="headerlink" title="js中的this指向"></a>js中的this指向</h1><h2 id="改变this指向"><a href="#改变this指向" class="headerlink" title="改变this指向"></a>改变this指向</h2><p>js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：</p>
+        <h1 id="js中的this指向"><a href="#js中的this指向" class="headerlink" title="js中的this指向"></a>js中的this指向</h1><h2 id="理解this指向"><a href="#理解this指向" class="headerlink" title="理解this指向"></a>理解this指向</h2><h3 id="理解function中的this指向"><a href="#理解function中的this指向" class="headerlink" title="理解function中的this指向"></a>理解function中的this指向</h3><h4 id="对象中的function"><a href="#对象中的function" class="headerlink" title="对象中的function"></a>对象中的function</h4><p>example 1:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        getValue()&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'child.value'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>example 2.1:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> child = &#123;</span><br><span class="line">    value:<span class="string">'child.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    functionOfParent: parent.getValue <span class="comment">// 'child.value'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.child = child;</span><br><span class="line"></span><br><span class="line">parent.getValue()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.child.getValue()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.functionOfParent()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br></pre></td></tr></table></figure>
+<p>example 2.2:</p>
+<p>use a common function in different objects</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">commonGetValue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// this is binded when this function is called</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue: commonGetValue, <span class="comment">// 'parent.value'</span></span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        getValue: commonGetValue <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.getValue()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.child.getValue()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line"></span><br><span class="line">commonGetValue();</span><br><span class="line"><span class="comment">// return undefined, or some value if 'this.value' is assigned before, or throw an Exception because 'this' may be null</span></span><br></pre></td></tr></table></figure>
+<p><strong><code>对example 2.1 2.2的解释</code></strong> function中的this只是一个代词，只有在调用时，才知道this绑定的是谁</p>
+<h3 id="理解箭头函数（Lambda函数）的this"><a href="#理解箭头函数（Lambda函数）的this" class="headerlink" title="理解箭头函数（Lambda函数）的this"></a>理解箭头函数（Lambda函数）的this</h3><p>关于js中的箭头函数，例如：<code>(arg0, arg1)=&gt;{ return arg0 + arg1; }</code>，可详见<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a>。</p>
+<p>特别需要指出，文档中说明：</p>
+<blockquote>
+<p><strong>箭头函数表达式</strong>不绑定自己的this，arguments，super或 new.target。这些函数表达式最适合用于非方法函数，并且它们不能用作构造函数。</p>
+</blockquote>
+<h4 id="不绑定this"><a href="#不绑定this" class="headerlink" title="不绑定this"></a>不绑定this</h4><p>箭头函数不会创建自己的<code>this</code>；它使用封闭执行上下文的<code>this</code>值。因此，在下面的代码中，传递给<code>setInterval</code>的函数内的<code>this</code>与封闭函数中的<code>this</code>值相同：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.age = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.age++; <span class="comment">// |this| 正确地指向person 对象</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
+<p>由于 <code>this</code> 已经在词法层面完成了绑定，通过 <code>call()</code> 或 <code>apply()</code> 方法调用一个箭头函数时，只是传入了参数而已，不能绑定this，对 <code>this</code> 并没有什么影响：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var adder = &#123;</span><br><span class="line">  base : 1,</span><br><span class="line">    </span><br><span class="line">  add : function(a) &#123;</span><br><span class="line">    var f = v =&gt; v + this.base;</span><br><span class="line">    return f(a);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  addThruCall: function(a) &#123;</span><br><span class="line">    var f = v =&gt; v + this.base;</span><br><span class="line">    var b = &#123;</span><br><span class="line">      base : 2</span><br><span class="line">    &#125;;</span><br><span class="line">            </span><br><span class="line">    return f.call(b, a);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">console.log(adder.add(1));         // 输出 2</span><br><span class="line">console.log(adder.addThruCall(1)); // 仍然输出 2（而不是3 ——译者注）</span><br></pre></td></tr></table></figure>
+<h4 id="不绑定arguments"><a href="#不绑定arguments" class="headerlink" title="不绑定arguments"></a>不绑定arguments</h4><p>箭头函数不绑定<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments" target="_blank" rel="noopener">Arguments 对象</a>。因此，在本示例中，参数只是在封闭范围内引用相同的名称：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var arguments = 42;</span><br><span class="line">var arr = () =&gt; arguments;</span><br><span class="line"></span><br><span class="line">arr(); // 42</span><br><span class="line"></span><br><span class="line">function foo() &#123;</span><br><span class="line">  var f = (i) =&gt; arguments[0]+i; </span><br><span class="line">  // foo函数的间接参数绑定</span><br><span class="line">  return f(2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(1); // 3</span><br></pre></td></tr></table></figure>
+<p>在大多数情况下，使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Rest_parameters" target="_blank" rel="noopener">剩余参数</a>是使用<code>arguments</code>对象的好选择。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123; </span><br><span class="line">  var f = (...args) =&gt; args[0]; </span><br><span class="line">  return f(2); </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(1); </span><br><span class="line">// 2</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以上’不绑定this’和’不绑定arguments’两节整理自<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a></p>
+</blockquote>
+<p>example 1:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue: <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">this</span>.value,</span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        getValue: <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">this</span>.value</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.getValue();</span><br><span class="line">parent.child.getValue();</span><br><span class="line"><span class="comment">// both return undefined (unless global 'this.value' is assigned before)</span></span><br></pre></td></tr></table></figure>
+<p>example 2.1:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    getValueThruArrow()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function">(<span class="params">(</span>)=&gt;</span><span class="keyword">this</span>.value)(); <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> child = &#123;</span><br><span class="line">    value:<span class="string">'child.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    functionOfParent: parent.getValue, <span class="comment">// 'child.value'</span></span><br><span class="line">    functionThruArrowOfParent: parent.getValueThruArrow <span class="comment">// 'parent'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.child = child;</span><br><span class="line"></span><br><span class="line">parent.getValue()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.getValueThruArrow()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.child.getValue()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.functionOfParent()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.functionThruArrowOfParent()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br></pre></td></tr></table></figure>
+<p>example 2.2:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> commonArrowToGetValue = <span class="function"><span class="params">()</span>=&gt;</span><span class="keyword">this</span>.value;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">commonGetValueThruArrow</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function">(<span class="params">(</span>)=&gt;</span><span class="keyword">this</span>.value)(); <span class="comment">// this is binded when this function is called</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    arrowToGetValue: commonArrowToGetValue,</span><br><span class="line">    getValueThruArrow: commonGetValueThruArrow, <span class="comment">// 'parent.value'</span></span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        arrowToGetValue: commonArrowToGetValue,</span><br><span class="line">        getValueThruArrow: commonGetValueThruArrow <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.getValueThruArrow()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.arrowToGetValue()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line">parent.child.getValueThruArrow()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.arrowToGetValue()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line">commonGetValueThruArrow()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line">commonGetValueThruArrow()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 'undefined' above means: return undefined, or some value if 'this.value' is assigned before, or throw an Exception because 'this' may be null</span></span><br></pre></td></tr></table></figure>
+<p><strong><code>对example 2.1 2.2的解释</code></strong> 可以这样理解：箭头函数一旦创建，其中this指向便被确定。(…)=&gt;{…} 语法相对于创建了一个箭头函数，每次调用就会创建一个新的箭头函数，并在这时预先“绑定”其中的this。因此如果一个箭头函数放在一个function中，则每次调用这个function，则都会创建一个箭头函数，绑定这个function的this。</p>
+<h2 id="改变this指向"><a href="#改变this指向" class="headerlink" title="改变this指向"></a>改变this指向</h2><p>js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：</p>
 <ul>
 <li>call</li>
 <li>apply</li>
@@ -403,19 +434,6 @@
 <p>这三种函数的使用方法为：</p>
 <p>//TODO </p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="箭头函数（Lambda函数）的this"><a href="#箭头函数（Lambda函数）的this" class="headerlink" title="箭头函数（Lambda函数）的this"></a>箭头函数（Lambda函数）的this</h3><p>关于js中的箭头函数，例如：<code>(arg0, arg1)=&gt;{ return arg0 + arg1; }</code>，可详见<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a>。</p>
-<p>特别需要指出，文档中说明：</p>
-<blockquote>
-<p><strong>箭头函数表达式</strong>不绑定自己的this，arguments，super或 new.target。这些函数表达式最适合用于非方法函数，并且它们不能用作构造函数。</p>
-</blockquote>
-<h4 id="不绑定this"><a href="#不绑定this" class="headerlink" title="不绑定this"></a>不绑定this</h4><p>箭头函数不会创建自己的<code>this</code>；它使用封闭执行上下文的<code>this</code>值。因此，在下面的代码中，传递给<code>setInterval</code>的函数内的<code>this</code>与封闭函数中的<code>this</code>值相同：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.age = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.age++; <span class="comment">// |this| 正确地指向person 对象</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
-<p>由于 <code>this</code> 已经在词法层面完成了绑定，通过 <code>call()</code> 或 <code>apply()</code> 方法调用一个函数时，只是传入了参数而已，对 <code>this</code> 并没有什么影响：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var adder = &#123;</span><br><span class="line">  base : 1,</span><br><span class="line">    </span><br><span class="line">  add : function(a) &#123;</span><br><span class="line">    var f = v =&gt; v + this.base;</span><br><span class="line">    return f(a);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  addThruCall: function(a) &#123;</span><br><span class="line">    var f = v =&gt; v + this.base;</span><br><span class="line">    var b = &#123;</span><br><span class="line">      base : 2</span><br><span class="line">    &#125;;</span><br><span class="line">            </span><br><span class="line">    return f.call(b, a);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">console.log(adder.add(1));         // 输出 2</span><br><span class="line">console.log(adder.addThruCall(1)); // 仍然输出 2（而不是3 ——译者注）</span><br></pre></td></tr></table></figure>
-<h4 id="不绑定arguments"><a href="#不绑定arguments" class="headerlink" title="不绑定arguments"></a>不绑定arguments</h4><p>箭头函数不绑定<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments" target="_blank" rel="noopener">Arguments 对象</a>。因此，在本示例中，参数只是在封闭范围内引用相同的名称：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var arguments = 42;</span><br><span class="line">var arr = () =&gt; arguments;</span><br><span class="line"></span><br><span class="line">arr(); // 42</span><br><span class="line"></span><br><span class="line">function foo() &#123;</span><br><span class="line">  var f = (i) =&gt; arguments[0]+i; </span><br><span class="line">  // foo函数的间接参数绑定</span><br><span class="line">  return f(2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(1); // 3</span><br></pre></td></tr></table></figure>
-<p>在大多数情况下，使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Rest_parameters" target="_blank" rel="noopener">剩余参数</a>是使用<code>arguments</code>对象的好选择。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123; </span><br><span class="line">  var f = (...args) =&gt; args[0]; </span><br><span class="line">  return f(2); </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(1); </span><br><span class="line">// 2</span><br></pre></td></tr></table></figure>
 <h3 id="使用bind正确地创建函数别名"><a href="#使用bind正确地创建函数别名" class="headerlink" title="使用bind正确地创建函数别名"></a>使用bind正确地创建函数别名</h3><h4 id="需要特定this值的函数的别名"><a href="#需要特定this值的函数的别名" class="headerlink" title="需要特定this值的函数的别名"></a>需要特定this值的函数的别名</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> id = <span class="built_in">document</span>.getElementById;</span><br><span class="line">id(<span class="string">'someid'</span>).innerText=<span class="string">"text"</span>;</span><br></pre></td></tr></table></figure>
 <p>以上代码会throw an error:<code>Uncaught TypeError: Illegal invocation</code>.</p>
 <p>因为document.getElementById调用时要求this是document. 以下是解决方法。</p>
@@ -485,10 +503,6 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
@@ -543,7 +557,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">60</span>
+                    <span class="site-state-item-count">64</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -646,7 +660,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js中的this指向"><span class="nav-number">1.</span> <span class="nav-text">js中的this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#改变this指向"><span class="nav-number">1.1.</span> <span class="nav-text">改变this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头函数（Lambda函数）的this"><span class="nav-number">1.1.1.</span> <span class="nav-text">箭头函数（Lambda函数）的this</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不绑定this"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">不绑定this</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不绑定arguments"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">不绑定arguments</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用bind正确地创建函数别名"><span class="nav-number">1.1.2.</span> <span class="nav-text">使用bind正确地创建函数别名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#需要特定this值的函数的别名"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">需要特定this值的函数的别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为需要特定this值的函数创建快捷调用"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">为需要特定this值的函数创建快捷调用</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#js中的this指向"><span class="nav-number">1.</span> <span class="nav-text">js中的this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解this指向"><span class="nav-number">1.1.</span> <span class="nav-text">理解this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解function中的this指向"><span class="nav-number">1.1.1.</span> <span class="nav-text">理解function中的this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对象中的function"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">对象中的function</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#理解箭头函数（Lambda函数）的this"><span class="nav-number">1.1.2.</span> <span class="nav-text">理解箭头函数（Lambda函数）的this</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不绑定this"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">不绑定this</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不绑定arguments"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">不绑定arguments</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变this指向"><span class="nav-number">1.2.</span> <span class="nav-text">改变this指向</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用bind正确地创建函数别名"><span class="nav-number">1.2.1.</span> <span class="nav-text">使用bind正确地创建函数别名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#需要特定this值的函数的别名"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">需要特定this值的函数的别名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为需要特定this值的函数创建快捷调用"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">为需要特定this值的函数创建快捷调用</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -688,7 +702,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.0</div>
 
 
 
@@ -714,7 +728,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -769,41 +786,36 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
 
 
 
   
+  
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
 
 
 
   
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
 
 
 
@@ -845,5 +857,10 @@
 
   
 
-</body>
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534419394105')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
 </html>

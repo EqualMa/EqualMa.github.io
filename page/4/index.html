@@ -14,8 +14,8 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
-<head>
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><link rel=manifest href=/manifest.json>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
@@ -58,19 +58,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
 
 
 
@@ -84,8 +84,8 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '6.3.0',
+    scheme: 'Gemini',
+    version: '6.4.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
@@ -239,9 +239,6 @@
   
 
   
-    
-
-  
 
   
 </nav>
@@ -262,9 +259,762 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/c/profiling/tools/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Equal Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Equal's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/c/profiling/tools/" itemprop="url">
+                  C profiling tools
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-31 20:59:56" itemprop="dateCreated datePublished" datetime="2017-12-31T20:59:56+08:00">2017-12-31</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/c/profiling/" itemprop="url" rel="index"><span itemprop="name">profiling</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="https://stackoverflow.com/questions/1777556/alternatives-to-gprof/1779343#1779343" target="_blank" rel="noopener">https://stackoverflow.com/questions/1777556/alternatives-to-gprof/1779343#1779343</a></p>
+<p><a href="https://stackoverflow.com/questions/406760/whats-your-most-controversial-programming-opinion/1562802#1562802" target="_blank" rel="noopener">https://stackoverflow.com/questions/406760/whats-your-most-controversial-programming-opinion/1562802#1562802</a></p>
+<p><a href="https://stackoverflow.com/questions/375913/how-can-i-profile-c-code-running-in-linux/378024#378024" target="_blank" rel="noopener">https://stackoverflow.com/questions/375913/how-can-i-profile-c-code-running-in-linux/378024#378024</a></p>
+<p><a href="https://stackoverflow.com/questions/926266/performance-optimization-strategies-of-last-resort/927773#927773" target="_blank" rel="noopener">https://stackoverflow.com/questions/926266/performance-optimization-strategies-of-last-resort/927773#927773</a></p>
+<p><a href="http://blog.csdn.net/stanjiang2010/article/details/5655143" target="_blank" rel="noopener">http://blog.csdn.net/stanjiang2010/article/details/5655143</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/c/MinGW-W64/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Equal Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Equal's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/c/MinGW-W64/" itemprop="url">
+                  C > compile C on Win64 using MinGW-W64
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-31 19:39:23" itemprop="dateCreated datePublished" datetime="2017-12-31T19:39:23+08:00">2017-12-31</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="MinGW-W64"><a href="#MinGW-W64" class="headerlink" title="MinGW-W64"></a>MinGW-W64</h1><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p><a href="http://mingw-w64.org/doku.php/download/mingw-builds" target="_blank" rel="noopener">Download Link</a></p>
+<p>Architecture : x86_64</p>
+<p>Exception : sjlj</p>
+<p><a href="http://rsreland.net/archives/1760" target="_blank" rel="noopener">http://rsreland.net/archives/1760</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/vue/1 Introduction/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Equal Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Equal's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/js/vue/1 Introduction/" itemprop="url">
+                  1 introduction of Vue.js
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-26 18:47:36" itemprop="dateCreated datePublished" datetime="2017-12-26T18:47:36+08:00">2017-12-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/vue/" itemprop="url" rel="index"><span itemprop="name">vue</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="绑定数据的方法"><a href="#绑定数据的方法" class="headerlink" title="绑定数据的方法"></a>绑定数据的方法</h3><h4 id="文本插值"><a href="#文本插值" class="headerlink" title="文本插值"></a>文本插值</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">  &#123;&#123; message &#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: <span class="string">'Hello Vue!'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>如果有<code>v-once</code>指令，则绑定不会更新</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">v-once</span>&gt;</span>这个将不会改变: &#123;&#123; msg &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>双大括号会将数据解释为普通文本，而非 HTML 代码。为了输出真正的 HTML，你需要使用 <code>v-html</code> 指令：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Using mustaches: &#123;&#123; rawHtml &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Using v-html directive: <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-html</span>=<span class="string">"rawHtml"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="v-bind-domproperty-”property”"><a href="#v-bind-domproperty-”property”" class="headerlink" title="v-bind:domproperty=”property”"></a>v-bind:domproperty=”property”</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-2"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:title</span>=<span class="string">"message"</span>&gt;</span></span><br><span class="line">    鼠标悬停几秒钟查看此处动态绑定的提示信息！</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app2 = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app-2'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: <span class="string">'页面加载于 '</span> + <span class="keyword">new</span> <span class="built_in">Date</span>().toLocaleString()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="v-bind-缩写"><a href="#v-bind-缩写" class="headerlink" title="v-bind 缩写"></a>v-bind 缩写</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 完整语法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-bind:href</span>=<span class="string">"url"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 缩写 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">:href</span>=<span class="string">"url"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="v-bind-class"><a href="#v-bind-class" class="headerlink" title="v-bind:class"></a>v-bind:class</h5><h6 id="对象语法"><a href="#对象语法" class="headerlink" title="对象语法"></a>对象语法</h6><blockquote>
+<p> see <a href="https://cn.vuejs.org/v2/guide/class-and-style.html#%E5%AF%B9%E8%B1%A1%E8%AF%AD%E6%B3%95" target="_blank" rel="noopener">here</a></p>
+</blockquote>
+<h6 id="数组语法"><a href="#数组语法" class="headerlink" title="数组语法"></a>数组语法</h6><blockquote>
+<p> see <a href="https://cn.vuejs.org/v2/guide/class-and-style.html#%E6%95%B0%E7%BB%84%E8%AF%AD%E6%B3%95" target="_blank" rel="noopener">here</a></p>
+</blockquote>
+<h4 id="v-if-”property”"><a href="#v-if-”property”" class="headerlink" title="v-if=”property”"></a>v-if=”property”</h4><h4 id="v-for-”element-in-array”"><a href="#v-for-”element-in-array”" class="headerlink" title="v-for=”element in array”"></a>v-for=”element in array”</h4><h4 id="v-on-click-”functionName”"><a href="#v-on-click-”functionName”" class="headerlink" title="v-on:click=”functionName”"></a>v-on:click=”functionName”</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-5"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"reverseMessage"</span>&gt;</span>逆转消息<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app5 = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app-5'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: <span class="string">'Hello Vue.js!'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    reverseMessage: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.message = <span class="keyword">this</span>.message.split(<span class="string">''</span>).reverse().join(<span class="string">''</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="v-on-缩写"><a href="#v-on-缩写" class="headerlink" title="v-on 缩写"></a>v-on 缩写</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 完整语法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">v-on:click</span>=<span class="string">"doSomething"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 缩写 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> @<span class="attr">click</span>=<span class="string">"doSomething"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="v-model-”property”"><a href="#v-model-”property”" class="headerlink" title="v-model=”property”"></a>v-model=”property”</h4><p>能轻松实现表单输入和应用状态之间的双向绑定。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app-6"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">"message"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#app-6'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: <span class="string">'Hello Vue!'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Original message: "&#123;&#123; message &#125;&#125;"<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Computed reversed message: "&#123;&#123; reversedMessage &#125;&#125;"<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#example'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: <span class="string">'Hello'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  computed: &#123;</span><br><span class="line">    <span class="comment">// 计算属性的 getter</span></span><br><span class="line">    reversedMessage: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">// `this` 指向 vm 实例</span></span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.message.split(<span class="string">''</span>).reverse().join(<span class="string">''</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>计算属性默认只有 getter ，不过在需要时你也可以提供一个 setter ：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ...</span></span><br><span class="line">computed: &#123;</span><br><span class="line">  fullName: &#123;</span><br><span class="line">    <span class="comment">// getter</span></span><br><span class="line">    get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.firstName + <span class="string">' '</span> + <span class="keyword">this</span>.lastName</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// setter</span></span><br><span class="line">    set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> names = newValue.split(<span class="string">' '</span>)</span><br><span class="line">      <span class="keyword">this</span>.firstName = names[<span class="number">0</span>]</span><br><span class="line">      <span class="keyword">this</span>.lastName = names[names.length - <span class="number">1</span>]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ...</span></span><br></pre></td></tr></table></figure>
+<h3 id="侦听器"><a href="#侦听器" class="headerlink" title="侦听器"></a>侦听器</h3><p><code>watch</code></p>
+<p> Vue 通过 <code>watch</code> 选项提供了一个更通用的方法，来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时，这个方式是最有用的。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"watch-example"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    Ask a yes/no question:</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">"question"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; answer &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 因为 AJAX 库和通用工具的生态已经相当丰富，Vue 核心代码没有重复 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 提供这些功能以保持精简。这也可以让你自由选择自己更熟悉的工具。 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript"><span class="keyword">var</span> watchExampleVM = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">  el: <span class="string">'#watch-example'</span>,</span></span><br><span class="line"><span class="undefined">  data: &#123;</span></span><br><span class="line"><span class="javascript">    question: <span class="string">''</span>,</span></span><br><span class="line"><span class="javascript">    answer: <span class="string">'I cannot give you an answer until you ask a question!'</span></span></span><br><span class="line"><span class="undefined">  &#125;,</span></span><br><span class="line"><span class="undefined">  watch: &#123;</span></span><br><span class="line"><span class="javascript">    <span class="comment">// 如果 `question` 发生改变，这个函数就会运行</span></span></span><br><span class="line"><span class="javascript">    question: <span class="function"><span class="keyword">function</span> (<span class="params">newQuestion</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">this</span>.answer = <span class="string">'Waiting for you to stop typing...'</span></span></span><br><span class="line"><span class="javascript">      <span class="keyword">this</span>.getAnswer()</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  &#125;,</span></span><br><span class="line"><span class="undefined">  methods: &#123;</span></span><br><span class="line"><span class="javascript">    <span class="comment">// `_.debounce` 是一个通过 Lodash 限制操作频率的函数。</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// 在这个例子中，我们希望限制访问 yesno.wtf/api 的频率</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// AJAX 请求直到用户输入完毕才会发出。想要了解更多关于</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// `_.debounce` 函数 (及其近亲 `_.throttle`) 的知识，</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">// 请参考：https://lodash.com/docs#debounce</span></span></span><br><span class="line"><span class="undefined">    getAnswer: _.debounce(</span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (<span class="keyword">this</span>.question.indexOf(<span class="string">'?'</span>) === <span class="number">-1</span>) &#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">this</span>.answer = <span class="string">'Questions usually contain a question mark. ;-)'</span></span></span><br><span class="line"><span class="javascript">          <span class="keyword">return</span></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">this</span>.answer = <span class="string">'Thinking...'</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> vm = <span class="keyword">this</span></span></span><br><span class="line"><span class="javascript">        axios.get(<span class="string">'https://yesno.wtf/api'</span>)</span></span><br><span class="line"><span class="javascript">          .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span></span><br><span class="line"><span class="undefined">            vm.answer = _.capitalize(response.data.answer)</span></span><br><span class="line"><span class="undefined">          &#125;)</span></span><br><span class="line"><span class="javascript">          .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            vm.answer = <span class="string">'Error! Could not reach the API. '</span> + error</span></span><br><span class="line"><span class="undefined">          &#125;)</span></span><br><span class="line"><span class="undefined">      &#125;,</span></span><br><span class="line"><span class="javascript">      <span class="comment">// 这是我们为判定用户停止输入等待的毫秒数</span></span></span><br><span class="line"><span class="undefined">      500</span></span><br><span class="line"><span class="undefined">    )</span></span><br><span class="line"><span class="undefined">  &#125;</span></span><br><span class="line"><span class="undefined">&#125;)</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在这个示例中，使用 <code>watch</code> 选项允许我们执行异步操作 (访问一个 API)，限制我们执行该操作的频率，并在我们得到最终结果前，设置中间状态。这些都是计算属性无法做到的。</p>
+<p>除了 <code>watch</code> 选项之外，您还可以使用命令式的 <a href="https://cn.vuejs.org/v2/api/#vm-watch" target="_blank" rel="noopener">vm.$watch API</a>。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/unicode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Equal Ma">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Equal's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/js/unicode/" itemprop="url">
+                  unicode in JS
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-26 15:02:02" itemprop="dateCreated datePublished" datetime="2017-12-26T15:02:02+08:00">2017-12-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Unicode-Terms"><a href="#Unicode-Terms" class="headerlink" title="Unicode Terms"></a>Unicode Terms</h2><p><img src="https://dmitripavlutin.com/content/images/2016/09/Unicode-terms.png" alt="Unicode basic terms"></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://dmitripavlutin.com/what-every-javascript-developer-should-know-about-unicode" target="_blank" rel="noopener">What every JavaScript developer should know about Unicode</a></p>
+<h2 id="Common-Unicode-Examples"><a href="#Common-Unicode-Examples" class="headerlink" title="Common Unicode Examples"></a>Common Unicode Examples</h2><p>run JavaScript in <a href="repl.it">repl.it</a></p>
+<p><img src="https://dmitripavlutin.com/content/images/2016/10/Unicode.png" alt="Unicode escape sequences JavaScript"></p>
+<ol>
+<li>Regular</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Green</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>surrogate pairs</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\u&#123;1F607&#125;</span><br><span class="line">\uD83D\uDE07</span><br><span class="line">😇</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\u&#123;1D6C0&#125;</span><br><span class="line">&apos;\ud835\udec0&apos;</span><br><span class="line">𝛀</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> niceEmoticon = <span class="string">'\u&#123;1F607&#125;'</span>;  </span><br><span class="line"><span class="built_in">console</span>.log(niceEmoticon);   <span class="comment">// =&gt; '😇'  </span></span><br><span class="line"><span class="keyword">var</span> spNiceEmoticon = <span class="string">'\uD83D\uDE07'</span>  </span><br><span class="line"><span class="built_in">console</span>.log(spNiceEmoticon); <span class="comment">// =&gt; '😇'  </span></span><br><span class="line"><span class="built_in">console</span>.log(niceEmoticon === spNiceEmoticon); <span class="comment">// =&gt; true</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>combining marks</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cafe\u0327\u0301</span><br><span class="line">cafe\u0301</span><br><span class="line">café</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> drink = <span class="string">'cafe\u0301'</span>;  </span><br><span class="line"><span class="built_in">console</span>.log(drink);                    <span class="comment">// =&gt; 'café'  </span></span><br><span class="line"><span class="built_in">console</span>.log(drink.length);             <span class="comment">// =&gt; 5  </span></span><br><span class="line"><span class="built_in">console</span>.log(drink.normalize())         <span class="comment">// =&gt; 'café'  </span></span><br><span class="line"><span class="built_in">console</span>.log(drink.normalize().length); <span class="comment">// =&gt; 4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> drink = <span class="string">'cafe\u0327\u0301'</span>;  </span><br><span class="line"><span class="built_in">console</span>.log(drink);                    <span class="comment">// =&gt; 'cafȩ́'  </span></span><br><span class="line"><span class="built_in">console</span>.log(drink.length);             <span class="comment">// =&gt; 6  </span></span><br><span class="line"><span class="built_in">console</span>.log(drink.normalize());        <span class="comment">// =&gt; 'cafȩ́'  </span></span><br><span class="line"><span class="built_in">console</span>.log(drink.normalize().length); <span class="comment">// =&gt; 5</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1946,1002 +2696,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/wordpress/develop/theme/Basics/05 Template Tags/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/wordpress/develop/theme/Basics/05 Template Tags/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-24 17:51:50" itemprop="dateCreated datePublished" datetime="2017-12-24T17:51:50+08:00">2017-12-24</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/" itemprop="url" rel="index"><span itemprop="name">wordpress</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/" itemprop="url" rel="index"><span itemprop="name">develop</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/theme/" itemprop="url" rel="index"><span itemprop="name">theme</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Template-Tags"><a href="#Template-Tags" class="headerlink" title="Template Tags"></a>Template Tags</h1><h2 id="What-is-template-tag"><a href="#What-is-template-tag" class="headerlink" title="What is template tag"></a>What is template tag</h2><p>A template tag is simply a piece of code that tells WordPress to get something from the database. It is broken up into three components:</p>
-<ul>
-<li>A PHP code tag</li>
-<li>A WordPress function</li>
-<li>Optional parameters<br>You can use a template tag to call another theme file or some information from the database.</li>
-</ul>
-<h2 id="What-can-template-tag-do"><a href="#What-can-template-tag-do" class="headerlink" title="What can template tag do"></a>What can template tag do</h2><p>You can use a template tag to call another theme file or some information from the database.</p>
-<p>For example:</p>
-<p><code>get_header()</code> tells WordPress to get the <code>header.php</code> file and include it in the current theme file. Similarly, <code>get_footer()</code> tells WordPress to get the footer.php file.</p>
-<p><code>the_title()</code> tells WordPress to get the title of the page or post from the database and include it.</p>
-<p><code>bloginfo( &#39;name&#39; )</code> tells WordPress to get the blog title out of the database and include it in the template file.</p>
-<h2 id="How-to-use-template-tag"><a href="#How-to-use-template-tag" class="headerlink" title="How to use template tag"></a>How to use template tag</h2><p>In any template file you can use a template tag by calling the function in php.</p>
-<p>For example, if you want to print <code>header.php</code> in your php file, you just need to call <code>get_header()</code></p>
-<p>You can see all the available functions at <a href="https://developer.wordpress.org/reference/" target="_blank" rel="noopener">WordPress Code Reference</a></p>
-<h3 id="Using-Template-Tags-Within-the-Loop"><a href="#Using-Template-Tags-Within-the-Loop" class="headerlink" title="Using Template Tags Within the Loop"></a>Using Template Tags Within the Loop</h3><p>Many template tags work within the <a href="https://developer.wordpress.org/themes/basics/the-loop/" target="_blank" rel="noopener">WordPress Loop</a>. This means that they are included in the template files as part of the php “loop” that generates the pages users see based upon the instructions inside of the loop.</p>
-<p>The WordPress loop begins with:</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ( have_posts() ) : </span><br><span class="line">    <span class="keyword">while</span> ( have_posts() ) : </span><br><span class="line">        the_post();</span><br></pre></td></tr></table></figure>
-<p>Template tags that work within the loop must be in the middle area, before the ending section of the loop below:</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">endwhile</span>; </span><br><span class="line"><span class="keyword">else</span> :</span><br><span class="line">    _e( <span class="string">'Sorry, no posts matched your criteria.'</span>, <span class="string">'devhub'</span> );</span><br><span class="line"><span class="keyword">endif</span>;</span><br></pre></td></tr></table></figure>
-<p>Some of template tags that need to be inside of the loop, such as <a href="https://developer.wordpress.org/reference/functions/the_content/" target="_blank" rel="noopener">the_content()</a>, <a href="https://developer.wordpress.org/reference/functions/the_excerpt/" target="_blank" rel="noopener">the_excerpt()</a>, <a href="https://developer.wordpress.org/reference/functions/next_post/" target="_blank" rel="noopener">next_post()</a>, <a href="https://developer.wordpress.org/reference/functions/previous_post/" target="_blank" rel="noopener">previous_post()</a>.</p>
-<p>Some template tags doesn’t have to be within the loop, then you can put it in any file you’d like, for instance in the sidebar, header, or footer template files.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/wordpress/develop/theme/Basics/04 Template Hierarchy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/wordpress/develop/theme/Basics/04 Template Hierarchy/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-24 16:13:50" itemprop="dateCreated datePublished" datetime="2017-12-24T16:13:50+08:00">2017-12-24</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/" itemprop="url" rel="index"><span itemprop="name">wordpress</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/" itemprop="url" rel="index"><span itemprop="name">develop</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/theme/" itemprop="url" rel="index"><span itemprop="name">theme</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Template-Hierarchy"><a href="#Template-Hierarchy" class="headerlink" title="Template Hierarchy"></a>Template Hierarchy</h1><p>This article explains <strong>how WordPress determines which template file(s) to use on individual pages</strong>. </p>
-<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>WordPress uses the <code>query string in url</code> to decide which template or set of templates should be used to display the page. WordPress follows this procedure:: </p>
-<ol>
-<li>Matches every query string to a query type to decide which page is being requested (for example, a search page, a category page, etc);</li>
-<li>Selects the template in the order determined by the template hierarchy;</li>
-<li>Looks for template files with specific names in the current theme’s directory and uses the <strong>first matching template file</strong> as specified by the hierarchy.</li>
-</ol>
-<p>If WordPress cannot find a template file with a matching name, it will skip to the next file in the hierarchy. If WordPress cannot find any matching template file, the theme’s <code>index.php</code> file will be used.</p>
-<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>If your blog is at <code>http://example.com/blog/</code> and a visitor clicks on a link to a category page such as <code>http://example.com/blog/category/your-cat/</code>, WordPress looks for a template file in the current theme’s directory that matches the category’s ID to generate the correct page.<br>More specifically, WordPress follows this procedure:</p>
-<ol>
-<li>Looks for a template file in the current theme’s directory that matches the category’s slug. If the category slug is “unicorns,” then WordPress looks for a template file named <code>category-unicorns.php</code>.</li>
-<li>If category-unicorns.php is missing and the category’s ID is 4, WordPress looks for a template file named <code>category-4.php</code>.</li>
-<li>If category-4.php is missing, WordPress will look for a generic category template file, <code>category.php</code>.</li>
-<li>If category.php does not exist, WordPress will look for a generic archive template, <code>archive.php</code>.</li>
-<li>If archive.php is also missing, WordPress will fall back to the main theme template file, <code>index.php</code>.</li>
-</ol>
-<h2 id="Full-hierarchy"><a href="#Full-hierarchy" class="headerlink" title="Full hierarchy"></a>Full hierarchy</h2><p><img src="https://developer.wordpress.org/files/2014/10/wp-hierarchy.png" alt="img"></p>
-<p>You can also <a href="http://wphierarchy.com/" target="_blank" rel="noopener">interact with this diagram</a>.</p>
-<h2 id="For-some-specific-query-types"><a href="#For-some-specific-query-types" class="headerlink" title="For some specific query types."></a>For some specific query types.</h2><h3 id="Home-Page-display"><a href="#Home-Page-display" class="headerlink" title="Home Page display"></a>Home Page display</h3><ol>
-<li>home.php</li>
-<li>index.php</li>
-</ol>
-<blockquote>
-<p>If <code>front-page.php</code> exists, it will override the <code>home.php</code> template.</p>
-</blockquote>
-<h3 id="Front-Page-display"><a href="#Front-Page-display" class="headerlink" title="Front Page display"></a>Front Page display</h3><ol>
-<li><code>front-page.php</code></li>
-<li><code>home.php</code> – If WordPress cannot find <code>front-page.php</code>and “<strong>your latest posts</strong>” is set in the <strong>front page displays</strong> section, it will look for <code>home.php</code>. Additionally, WordPress will look for this file when the <strong>posts page</strong> is set in the <strong>front page displays</strong> section.</li>
-<li><code>page.php</code> – When “<strong>front page</strong>” is set in the <strong>front page displays</strong> section.</li>
-<li><code>index.php</code> – When “<strong>your latest posts</strong>” is set in the <strong>front page displays</strong> section but <code>home.php</code> does not exist <em>or</em> when <strong>front page</strong> is set but <code>page.php</code> does not exist.</li>
-</ol>
-<h3 id="Single-Post"><a href="#Single-Post" class="headerlink" title="Single Post"></a>Single Post</h3><ol>
-<li><code>single-{post-type}-{slug}.php</code> – (Since 4.4) First, WordPress looks for a template for the specific post. For example, if <a href="https://developer.wordpress.org/themes/basics/post-types/" target="_blank" rel="noopener">post type</a> is <code>product</code> and the post slug is <code>dmc-12</code>, WordPress would look for <code>single-product-dmc-12.php</code>.</li>
-<li><code>single-{post-type}.php</code> – If the post type is <code>product</code>, WordPress would look for <code>single-product.php</code>.</li>
-<li><code>single.php</code></li>
-<li><code>singular.php</code></li>
-<li><code>index.php</code> – Finally, as mentioned above, WordPress ultimately falls back to <code>index.php</code>.</li>
-</ol>
-<h3 id="Single-Page"><a href="#Single-Page" class="headerlink" title="Single Page"></a>Single Page</h3><ol>
-<li><code>custom template file</code> – The <a href="https://developer.wordpress.org/themes/template-files-section/page-template-files/" target="_blank" rel="noopener">page template</a> assigned to the page. See <a href="https://developer.wordpress.org/reference/functions/get_page_templates/" target="_blank" rel="noopener">get_page_templates()</a>.</li>
-<li><code>page-{slug}.php</code> – If the page slug is <code>recent-news</code>, WordPress will look to use <code>page-recent-news.php</code>.</li>
-<li><code>page-{id}.php</code> – If the page ID is 6, WordPress will look to use <code>page-6.php</code>.</li>
-<li><code>page.php</code></li>
-<li><code>singular.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Category"><a href="#Category" class="headerlink" title="Category"></a>Category</h3><ol>
-<li><code>category-{slug}.php</code></li>
-<li><code>category-{id}.php</code></li>
-<li><code>category.php</code></li>
-<li><code>archive.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h3><ol>
-<li><code>tag-{slug}.php</code></li>
-<li><code>tag-{id}.php</code></li>
-<li><code>tag.php</code></li>
-<li><code>archive.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Custom-Taxonomies"><a href="#Custom-Taxonomies" class="headerlink" title="Custom Taxonomies"></a>Custom Taxonomies</h3><ol>
-<li><code>taxonomy-{taxonomy}-{term}.php</code> – If the taxonomy is <code>sometax</code>, and taxonomy’s term is <code>someterm</code>, WordPress will look for <code>taxonomy-sometax-someterm.php.</code> In the case of <a href="https://developer.wordpress.org/themes/functionality/post-formats/" target="_blank" rel="noopener">post formats</a>, the taxonomy is ‘post_format’ and the terms are ‘post-format-{format}. i.e. <code>taxonomy-post_format-post-format-link.php</code> for the link post format.</li>
-<li><code>taxonomy-{taxonomy}.php</code> – If the taxonomy were <code>sometax</code>, WordPress would look for <code>taxonomy-sometax.php</code>.</li>
-<li><code>taxonomy.php</code></li>
-<li><code>archive.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Custom-Post-Types"><a href="#Custom-Post-Types" class="headerlink" title="Custom Post Types"></a>Custom Post Types</h3><ol>
-<li><code>archive-{post_type}.php</code> – If the post type is <code>product</code>, WordPress will look for <code>archive-product.php</code>.</li>
-<li><code>archive.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Author-display"><a href="#Author-display" class="headerlink" title="Author display"></a>Author display</h3><ol>
-<li><code>author-{nicename}.php</code></li>
-<li><code>author-{id}.php</code></li>
-<li><code>author.php</code></li>
-<li><code>archive.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h3><p>Date-based archive index pages are rendered as you would expect:</p>
-<ol>
-<li><code>date.php</code></li>
-<li><code>archive.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Search-Result"><a href="#Search-Result" class="headerlink" title="Search Result"></a>Search Result</h3><ol>
-<li><code>search.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="404-Not-Found"><a href="#404-Not-Found" class="headerlink" title="404 (Not Found)"></a>404 (Not Found)</h3><ol>
-<li><code>404.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Attachment"><a href="#Attachment" class="headerlink" title="Attachment"></a>Attachment</h3><ol>
-<li><code>{MIME-type}.php</code> – can be any <a href="http://en.wikipedia.org/wiki/Internet_media_type" target="_blank" rel="noopener">MIME type</a> (For example: <code>image.php</code>, <code>video.php</code>, <code>pdf.php</code>).<br>For <code>text/plain</code>, the following path is used (in order):<ol>
-<li><code>text-plain.php</code></li>
-<li><code>plain.php</code></li>
-<li><code>text.php</code></li>
-</ol>
-</li>
-<li><code>attachment.php</code></li>
-<li><code>single-attachment-{slug}.php</code> – For example, if the attachment slug is <code>holiday</code>, WordPress would look for <code>single-attachment-holiday.php</code>.</li>
-<li><code>single-attachment.php</code></li>
-<li><code>single.php</code></li>
-<li><code>singular.php</code></li>
-<li><code>index.php</code></li>
-</ol>
-<h3 id="Embeds"><a href="#Embeds" class="headerlink" title="Embeds"></a>Embeds</h3><p>The embed template file is used to render a post which is being embedded. Since 4.5, WordPress uses the following path:</p>
-<ol>
-<li><code>embed-{post-type}-{post_format}.php</code> – First, WordPress looks for a template for the specific post. For example, if its post type is <code>post</code> and it has the audio format, WordPress would look for <code>embed-post-audio.php</code>.</li>
-<li><code>embed-{post-type}.php</code> – If the post type is <code>product</code>, WordPress would look for <code>embed-product.php</code>.</li>
-<li><code>embed.php</code> – WordPress then falls back to embed<code>.php</code>.</li>
-<li>Finally, WordPress ultimately falls back to its own <code>wp-includes/theme-compat/embed.php</code> template.</li>
-</ol>
-<h2 id="Non-ASCII-Character-Handling"><a href="#Non-ASCII-Character-Handling" class="headerlink" title="Non-ASCII Character Handling"></a>Non-ASCII Character Handling</h2><p>Since WordPress 4.7, any dynamic part of a template name which includes non-ASCII characters in its name actually supports both the un-encoded and the encoded form, in that order. You can choose which to use.</p>
-<p>Here’s the page template hierarchy for a page named “Hello World 😀” with an ID of 6:</p>
-<p>:grinning:</p>
-<p>Here’s the page template hierarchy for a page named “Hello World 😀” with an ID of <code>6</code>:</p>
-<ul>
-<li><code>page-hello-world-😀.php</code></li>
-<li><code>page-hello-world-%f0%9f%98%80.php</code></li>
-<li><code>page-6.php</code></li>
-<li><code>page.php</code></li>
-<li><code>singular.php</code></li>
-</ul>
-<h2 id="Filter-Hierarchy"><a href="#Filter-Hierarchy" class="headerlink" title="Filter Hierarchy"></a>Filter Hierarchy</h2><p>The WordPress template system lets you filter the hierarchy. This means that you can insert and change things at specific points of the hierarchy. The filter (located in the <a href="https://developer.wordpress.org/reference/functions/get_query_template/" target="_blank" rel="noopener"><code>get_query_template()</code></a> function) uses this filter name: <code>&quot;{$type}_template&quot;</code> where <code>$type</code> is the template type.</p>
-<p>Here is a list of all available filters in the template hierarchy:</p>
-<ul>
-<li><code>embed_template</code></li>
-<li><code>404_template</code></li>
-<li><code>search_template</code></li>
-<li><code>frontpage_template</code></li>
-<li><code>home_template</code></li>
-<li><code>taxonomy_template</code></li>
-<li><code>attachment_template</code></li>
-<li><code>single_template</code></li>
-<li><code>page_template</code></li>
-<li><code>singular_template</code></li>
-<li><code>category_template</code></li>
-<li><code>tag_template</code></li>
-<li><code>author_template</code></li>
-<li><code>date_template</code></li>
-<li><code>archive_template</code></li>
-<li><code>index_template</code></li>
-</ul>
-<blockquote>
-<p>The latest list can be see <a href="https://developer.wordpress.org/themes/basics/template-hierarchy/#filter-hierarchy" target="_blank" rel="noopener">here</a></p>
-</blockquote>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>For example, let’s take the default author hierarchy:</p>
-<ul>
-<li><code>author-{nicename}.php</code></li>
-<li><code>author-{id}.php</code></li>
-<li><code>author.php</code></li>
-</ul>
-<p>To add <code>author-{role}.php</code> before <code>author.php</code>, we can manipulate the actual hierarchy using the ‘author_template’ template type. This allows a request for /author/username where username has the role of editor to display using author-editor.php if present in the current themes directory.</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">author_role_template</span><span class="params">( $templates = <span class="string">''</span> )</span> </span>&#123;</span><br><span class="line">    $author = get_queried_object();</span><br><span class="line">    $role = $author-&gt;roles[<span class="number">0</span>];</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span> ( ! is_array( $templates ) &amp;&amp; ! <span class="keyword">empty</span>( $templates ) ) &#123;</span><br><span class="line">        $templates = locate_template( <span class="keyword">array</span>( <span class="string">"author-$role.php"</span>, $templates ), <span class="keyword">false</span> );</span><br><span class="line">    &#125; <span class="keyword">elseif</span> ( <span class="keyword">empty</span>( $templates ) ) &#123;</span><br><span class="line">        $templates = locate_template( <span class="string">"author-$role.php"</span>, <span class="keyword">false</span> );</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        $new_template = locate_template( <span class="keyword">array</span>( <span class="string">"author-$role.php"</span> ) );</span><br><span class="line">        <span class="keyword">if</span> ( ! <span class="keyword">empty</span>( $new_template ) ) &#123;</span><br><span class="line">            array_unshift( $templates, $new_template );</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> $templates;</span><br><span class="line">&#125;</span><br><span class="line">add_filter( <span class="string">'author_template'</span>, <span class="string">'author_role_template'</span> );</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/wordpress/develop/theme/Basics/03 Theme Files Structure/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/wordpress/develop/theme/Basics/03 Theme Files Structure/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-24 16:02:32" itemprop="dateCreated datePublished" datetime="2017-12-24T16:02:32+08:00">2017-12-24</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/" itemprop="url" rel="index"><span itemprop="name">wordpress</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/" itemprop="url" rel="index"><span itemprop="name">develop</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/theme/" itemprop="url" rel="index"><span itemprop="name">theme</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Template-files-structure"><a href="#Template-files-structure" class="headerlink" title="Template files structure"></a>Template files structure</h1><p>While WordPress themes technically only require 4 files (<code>index.php</code> , <code>style.css</code> , <code>header.php</code> and <code>footer.php</code>), they usually are made up of many files.<br>To keep the files organized, keep the files structured in the theme folder.</p>
-<h2 id="General-Structure"><a href="#General-Structure" class="headerlink" title="General Structure"></a>General Structure</h2><p>For example:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">assets (dir)</span><br><span class="line">      - css (dir)</span><br><span class="line">      - images (dir)</span><br><span class="line">      - js (dir)</span><br><span class="line">inc (dir)</span><br><span class="line">template-parts (dir)</span><br><span class="line">      - footer (dir)</span><br><span class="line">      - header (dir)</span><br><span class="line">      - navigation (dir)</span><br><span class="line">      - page (dir)</span><br><span class="line">      - post (dir)</span><br><span class="line">404.php</span><br><span class="line">archive.php</span><br><span class="line">comments.php</span><br><span class="line">footer.php</span><br><span class="line">front-page.php</span><br><span class="line">functions.php</span><br><span class="line">header.php</span><br><span class="line">index.php</span><br><span class="line">page.php</span><br><span class="line">README.txt</span><br><span class="line">rtl.css</span><br><span class="line">screenshot.png</span><br><span class="line">search.php</span><br><span class="line">searchform.php</span><br><span class="line">sidebar.php</span><br><span class="line">single.php</span><br><span class="line">style.css</span><br></pre></td></tr></table></figure>
-<ul>
-<li>The <strong>main theme template files</strong> are in the <code>root directory</code></li>
-<li><strong>JavaScript, CSS, images</strong> are placed in <code>assets directory</code></li>
-<li><strong>Template-parts</strong> are placed in under respective <code>subdirectory of template-parts</code></li>
-<li>collection of  <strong>functions</strong> related to core functionalities are placed in <code>inc</code> directory.</li>
-</ul>
-<blockquote>
-<p><strong>style.css</strong> should be in the <code>root directory</code> of your theme instead of the CSS directory.</p>
-</blockquote>
-<h2 id="Languages-folder"><a href="#Languages-folder" class="headerlink" title="Languages folder"></a>Languages folder</h2><p>It’s best practice to <a href="https://developer.wordpress.org/themes/functionality/internationalization/" target="_blank" rel="noopener">internationalize your theme</a> so it can be translated into other languages. Default themes include the <code>languages</code> folder, which contains a .pot file for translation and any translated .mo files. While <code>languages</code> is the default name of this folder, you can change the name. If you do so, you must update <code>load_theme_textdomain()</code>.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/wordpress/develop/theme/Basics/02 Post Types/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/wordpress/develop/theme/Basics/02 Post Types/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-24 15:44:55" itemprop="dateCreated datePublished" datetime="2017-12-24T15:44:55+08:00">2017-12-24</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/" itemprop="url" rel="index"><span itemprop="name">wordpress</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/" itemprop="url" rel="index"><span itemprop="name">develop</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/theme/" itemprop="url" rel="index"><span itemprop="name">theme</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Post-Types"><a href="#Post-Types" class="headerlink" title="Post Types"></a>Post Types</h1><p><code>post type</code> means the type of content in WordPress. ‘Post’ here refers to not only a ‘post’ you publish in your blog, but also ‘page’, ‘attachment’ …</p>
-<p>There are 5 <strong>default Post Types</strong> : post, page, attachment, revision, nav_menu_item</p>
-<p>Additionally, you can also create <strong>Custom Post Types</strong>.</p>
-<p>As the whole purpose of a Template file is to display content a certain way, the Post Types purpose is to categorize what type of content you are dealing with.<br>Generally speaking, certain Post Types are tied to certain template files.</p>
-<h2 id="Default-Post-Types"><a href="#Default-Post-Types" class="headerlink" title="Default Post Types"></a>Default Post Types</h2><ul>
-<li>Post (Post Type: ‘post’)</li>
-<li>Page (Post Type: ‘page’)</li>
-<li>Attachment (Post Type: ‘attachment’)</li>
-<li>Revision (Post Type: ‘revision’)</li>
-<li>Navigation menu (Post Type: ‘nav_menu_item’)</li>
-</ul>
-<h3 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h3><p>‘post’ here means an article you  publish in your blog.</p>
-<p>Post’s properties:</p>
-<ul>
-<li>displayed in reverse sequential order by time, with the newest post first</li>
-<li>have a date and time stamp</li>
-<li>may have the default taxonomies of categories and tags applied</li>
-<li>are used for creating feeds</li>
-</ul>
-<p>The template files that display the Post post type are:</p>
-<ul>
-<li><code>single.php</code> and <code>single-post.php</code></li>
-<li><code>category.php</code> and all its iterations</li>
-<li><code>tag.php</code> and all its iterations</li>
-<li><code>taxonomy.php</code> and all its iterations</li>
-<li><code>archive.php</code> and all its iterations</li>
-<li><code>author.php</code> and all its iterations</li>
-<li><code>date.php</code> and all its iterations</li>
-<li><code>search.php</code></li>
-<li><code>home.php</code></li>
-<li><code>index.php</code></li>
-</ul>
-<h3 id="Page"><a href="#Page" class="headerlink" title="Page"></a>Page</h3><p>Pages are a static Post Type, outside of the normal blog stream/feed. Their features are:</p>
-<ul>
-<li>non-time dependent and without a time stamp</li>
-<li>are not organized using the categories and/or tags taxonomies</li>
-<li>can have page templates applied to them</li>
-<li>can be organized in a hierarchical structure — i.e. pages can be parents/children of other pages</li>
-</ul>
-<p>The template files that display the Page post type are:</p>
-<ul>
-<li><code>page.php</code> and all its iterations</li>
-<li><code>$custom.php</code> and all its iterations</li>
-<li><code>front-page.php</code></li>
-<li><code>search.php</code></li>
-<li><code>index.php</code></li>
-</ul>
-<h3 id="Attachment"><a href="#Attachment" class="headerlink" title="Attachment"></a>Attachment</h3><p>Attachments are commonly used to display images or media in content, and may also be used to link to relevant files. Their features are:</p>
-<ul>
-<li>contain information (such as name or description) about files uploaded through the media upload system</li>
-<li>for images, this includes metadata information stored in the wp_postmeta table (including size, thumbnails, location, etc)</li>
-</ul>
-<p>The template files that display the Attachment post type are:</p>
-<ul>
-<li><code>MIME_type.php</code></li>
-<li><code>attachment.php</code></li>
-<li><code>single-attachment.php</code></li>
-<li><code>single.php</code></li>
-<li><code>index.php</code></li>
-</ul>
-<h2 id="Custom-Post-Types"><a href="#Custom-Post-Types" class="headerlink" title="Custom Post Types"></a>Custom Post Types</h2><p>You can <strong>create your own post type</strong>. It is not recommend that you place this functionality in your theme. This type of functionality should be placed/created in a plugin. This ensures the portability of your user’s content, and that if the theme is changed the content stored in the Custom Post Types won’t disappear.</p>
-<p>While you generally won’t develop Custom Post Types in your theme, you may want to code ways to display Custom Post Types that were created by a plugin.  The following templates can display Custom post types:</p>
-<ul>
-<li><code>single-{post-type}.php</code></li>
-<li><code>archive-{post-type}.php</code></li>
-<li><code>search.php</code></li>
-<li><code>index.php</code></li>
-</ul>
-<p>Additionally, Theme Developers can display Custom Post Types in any template file, often by using <a href="https://developer.wordpress.org/themes/basics/the-loop/#multiple-loops" target="_blank" rel="noopener">multiple loops</a>.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -2984,7 +2743,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">60</span>
+                    <span class="site-state-item-count">64</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -3113,7 +2872,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.0</div>
 
 
 
@@ -3139,7 +2898,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -3194,37 +2956,32 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
 
 
-
-  
-  
 
   
-
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
 
 
 
   
 
+  
 
 
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
 
 
 
   
-
-
 
 
 
@@ -3266,5 +3023,10 @@
 
   
 
-</body>
+<script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534419394105')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
 </html>
