@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><link rel=manifest href=/manifest.json>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+        Equal&#39;s
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?TDH8hnXY3mvlnRKJrjsd+Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/atelier-heath-light.min.css?DZmcUCyCHxt2Gtdy1zAQZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Equal&#39;s">
+    <meta name="msapplication-starturl" content="https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Equal&#39;s">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Equal&#39;s">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Thu Dec 14 2017 19:09:28 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jun 19 2018 23:35:28 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html",
+    "headline": "",
+    "datePublished": "Thu Dec 14 2017 19:09:28 GMT+0800",
+    "dateModified": "Tue Jun 19 2018 23:35:28 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Equal Ma",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Equal's"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Equal&#39;s",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#How-to-use-BuildCraft-mod"><span class="post-toc-number">1.</span> <span class="post-toc-text">How to use BuildCraft mod.</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#管道"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">管道</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-传输类"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">1 传输类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-1-功能：传输物品的主力"><span class="post-toc-number">1.1.1.0.1.</span> <span class="post-toc-text">1.1 功能：传输物品的主力</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-2-要点："><span class="post-toc-number">1.1.1.0.2.</span> <span class="post-toc-text">1.2 要点：</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-3-多条通路"><span class="post-toc-number">1.1.1.0.3.</span> <span class="post-toc-text">1.3 多条通路</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-路由类"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">2 路由类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-1-功能：对固体物品在管道岔路的传输方向进行控制。"><span class="post-toc-number">1.1.2.0.1.</span> <span class="post-toc-text">2.1 功能：对固体物品在管道岔路的传输方向进行控制。</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 1 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Equal Ma</strong>
+        <span>12月 14, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html&pic=https://equalma.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html&via=Equal Ma" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html&title=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Equal&#39;s&title=&summary=&pics=https://equalma.github.io/img/favicon.png&url=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/index.html&text=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="How-to-use-BuildCraft-mod"><a href="#How-to-use-BuildCraft-mod" class="headerlink" title="How to use BuildCraft mod."></a>How to use BuildCraft mod.</h1><p>BuildCraft中的四大部件（<strong>容器、管道、能量、机器</strong>）</p>
+<h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><h3 id="1-传输类"><a href="#1-传输类" class="headerlink" title="1 传输类"></a>1 传输类</h3><p>​    ：圆石管道、石制管道、沙石管道、石英管道、金制管道</p>
+<h5 id="1-1-功能：传输物品的主力"><a href="#1-1-功能：传输物品的主力" class="headerlink" title="1.1 功能：传输物品的主力"></a>1.1 功能：传输物品的主力</h5><h5 id="1-2-要点："><a href="#1-2-要点：" class="headerlink" title="1.2 要点："></a>1.2 要点：</h5><ul>
+<li>圆石管道、石制管道和石英管道之间两两不能互连。当需要并排铺两排管道时候这个特性十分好用。</li>
+<li>沙石管道只能和管道相连，不能和容器或者机器相连。当管道需要从容器或者机器边擦过但又不想和容器或者机器相连时候，沙石管道十分好用。</li>
+<li>金制管道可以加速通过其中的物品。将多个金制管道串联可以把物品瞬间加速到飞。</li>
+<li>被金制管道加速过的物品通过其它管道时会受阻减速，阻力大小为：圆石管道 &gt; 沙石管道 &gt; 石制管道 &gt; 石英管道。如果想要在一条很长的管道内保持加速，就得隔几步放一个金制管道。</li>
+</ul>
+<h5 id="1-3-多条通路"><a href="#1-3-多条通路" class="headerlink" title="1.3 多条通路"></a>1.3 多条通路</h5><p>​    a) 通路被一分为二，物品通过岔路的时候会等概率随机地进入其中一条。图中分成了两条通路，则进入任何一条通路的概率都是50%。如果分成三条通路就是33.3%，以此类推。</p>
+<p><img src="http://www.mcmod.cn/pages/center/0/album/20150815/14396456894877.png" alt="alt"></p>
+<p>​    如果想控制物品的路由行为，比如说让石头走上路，泥土走下路，则需要用到路由类的钻石管道，详见下文。</p>
+<p>​    b) 另一种情况是多条通路合成为一条，如下图：</p>
+<p><img src="http://www.mcmod.cn/pages/center/0/album/20150815/14396458182861.png" alt="alt"></p>
+<p>​    这种情况有点反直觉。从A、B路出来的物品并非合并入C路，而是如图中箭头所示，A路的物品会随机等概率进入B或C路；B路的物品会随机等概率进入A或C路。</p>
+<p>​    关键之处在于传输类管道是双行道，没有特定传输方向。如果确实要实现AB并入C路的效果，则需要用到路由类的<a href="http://www.mcmod.cn/item/482.html" target="_blank" rel="noopener">铁制管道</a>，详见下文。</p>
+<p>​    c) 这里再介绍一个我们实战中常常会碰到的头疼问题——满箱溢出。</p>
+<p>看下面这个简单的例子：</p>
+<p><img src="http://www.mcmod.cn/pages/center/0/album/20150817/14398210162920.png" alt="点击查看原图"></p>
+<p>​    从输入箱子把煤炭输送到熔炉里作为燃料，需要烧东西的时候就把材料手动扔进炉子里烧。只要保证箱子里有足够的燃料，就很长时间不需要关心燃料的事情。</p>
+<p>​    这是一个简单有效的半自动熔炉结构，但有个致命问题，如果熔炉里没有材料或者是种燃烧很慢的材料，熔炉的煤炭很快就满了（64个），但此时输入端不会自动停下，会继续把煤炭往炉子里送，但熔炉此时是满的，所以煤炭会掉在地上。如果不及时发现这个问题，掉在地上的煤炭就会过5分钟消失，损失巨大。</p>
+<p>​    为了解决这个问题，我推荐这样的一种设计：</p>
+<p><img src="http://www.mcmod.cn/pages/center/0/album/20150817/14398218805417.png" alt="点击查看原图"></p>
+<p>​    这里利用了传输类管道的一个特性：<strong>如果相连的容器或者机器已满，那么物品会随机挑选当前格的其它岔路继续传输</strong>。</p>
+<p>​    在前一张图里，由于连接熔炉的最后一格管道上没有任何其它岔路，所以熔炉燃料满时，煤炭就被挤出管道了。而这个改进的设计里，煤炭在同样情况下就会往上走，进入环形通路循环。一旦熔炉里的燃料有空位出来，循环中的煤炭就会立刻被送入熔炉。由于环形通路的存在，造成部分煤炭会被送回箱子。这其实也是一个我们希望的结果，因为如果积攒在一个管道里的物品过多的话，会造成管道爆炸。</p>
+<p>​    比这个简单粗暴更好的方法是使用粘土管道，下文会提到，另外还有一些更复杂的方案，例如使用BuildCraft门（以后的教程会介绍用法），或者红石比较器的满箱检测功能，也有各自的应用场景，有机会的话会在以后的教程里介绍。</p>
+<h3 id="2-路由类"><a href="#2-路由类" class="headerlink" title="2 路由类"></a>2 路由类</h3><p>​    :铁制管道、钻石管道、青金石管道、靛金刚管道、粘土管道</p>
+<h5 id="2-1-功能：对固体物品在管道岔路的传输方向进行控制。"><a href="#2-1-功能：对固体物品在管道岔路的传输方向进行控制。" class="headerlink" title="2.1 功能：对固体物品在管道岔路的传输方向进行控制。"></a>2.1 功能：对固体物品在管道岔路的传输方向进行控制。</h5><p>扳手用于改变通道方向</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <span>转载请注明 👇 Please reproduce with</span> <br/> <br/> <span>原文作者：<a href="equalma@outlook.com">Equal Ma</a></span><br/> <span>文章来源：<a href="https://equalma.github.io">equalma.github.io</a></span> <span> ( First published in <a href="https://equalma.github.io">equalma.github.io</a> ) </span>
+
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/">https://equalma.github.io/minecraft-How-to-use-BuildCraft-mod/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/minecraft-Minecraft-Download-Mods/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/minecraft-How-To-Set-Up-a-Minecraft-Server-on-Linux/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Equal Ma's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        equalma@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="equalma@outlook.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">33</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                
+                
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/apache2/">
+                            <span>apache2</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/Node-js/">
+                            <span>Node.js</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/">
+                            <span>css</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/stylus/">
+                            <span>stylus</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/">
+                            <span>c</span>
+                            <span class="sidebar_archives-count">2</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/profiling/">
+                            <span>profiling</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/">
+                            <span>js</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/jquery/">
+                            <span>jquery</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/mdl/">
+                            <span>mdl</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/vue/">
+                            <span>vue</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/database/">
+                            <span>database</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/">
+                            <span>minecraft</span>
+                            <span class="sidebar_archives-count">7</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/pixelmon/">
+                            <span>pixelmon</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/mysql/">
+                            <span>mysql</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/powershell/">
+                            <span>powershell</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/php/">
+                            <span>php</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/python/">
+                            <span>python</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/vscode/">
+                            <span>vscode</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/web/">
+                            <span>web</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/">
+                            <span>wordpress</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/">
+                            <span>develop</span>
+                            <span class="sidebar_archives-count">12</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/theme/">
+                            <span>theme</span>
+                            <span class="sidebar_archives-count">11</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/typescript/">
+                            <span>typescript</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/">
+                            <span>unix</span>
+                            <span class="sidebar_archives-count">10</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/ubuntu-help/">
+                            <span>ubuntu help</span>
+                            <span class="sidebar_archives-count">9</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/gnome-help/">
+                            <span>gnome help</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="tag">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                tag
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">64</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/EqualMa" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Equal's
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        if(textContent)
+            textContent.textContent = copyrightNow
+    } else {
+        if(textContent)
+            textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534508120976')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
+    
+</html>

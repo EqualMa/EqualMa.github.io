@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><link rel=manifest href=/manifest.json>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            understand &#39;this&#39; in JS | 
+        
+        Equal&#39;s
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?TDH8hnXY3mvlnRKJrjsd+Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/atelier-heath-light.min.css?DZmcUCyCHxt2Gtdy1zAQZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Equal&#39;s">
+    <meta name="msapplication-starturl" content="https://equalma.github.io/js-this-in-js/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Equal&#39;s">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://equalma.github.io/js-this-in-js/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="understand &#39;this&#39; in JS | Equal&#39;s">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Mon Jan 29 2018 23:28:15 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jun 25 2018 16:14:41 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://equalma.github.io/js-this-in-js/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://equalma.github.io/js-this-in-js/index.html",
+    "headline": "understand 'this' in JS",
+    "datePublished": "Mon Jan 29 2018 23:28:15 GMT+0800",
+    "dateModified": "Mon Jun 25 2018 16:14:41 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Equal Ma",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Equal's"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Equal&#39;s",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#js中的this指向"><span class="post-toc-number">1.</span> <span class="post-toc-text">js中的this指向</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#理解this指向"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">理解this指向</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#理解function中的this指向"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">理解function中的this指向</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#对象中的function"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">对象中的function</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#理解箭头函数（Lambda函数）的this"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">理解箭头函数（Lambda函数）的this</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不绑定this"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">不绑定this</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#不绑定arguments"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">不绑定arguments</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#改变this指向"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">改变this指向</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用bind正确地创建函数别名"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">使用bind正确地创建函数别名</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#需要特定this值的函数的别名"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">需要特定this值的函数的别名</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#为需要特定this值的函数创建快捷调用"><span class="post-toc-number">1.2.1.2.</span> <span class="post-toc-text">为需要特定this值的函数创建快捷调用</span></a></li></ol></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 1 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                understand 'this' in JS
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Equal Ma</strong>
+        <span>1月 29, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=understand &#39;this&#39; in JS&url=https://equalma.github.io/js-this-in-js/index.html&pic=https://equalma.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=understand &#39;this&#39; in JS&url=https://equalma.github.io/js-this-in-js/index.html&via=Equal Ma" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://equalma.github.io/js-this-in-js/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://equalma.github.io/js-this-in-js/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://equalma.github.io/js-this-in-js/index.html&title=understand &#39;this&#39; in JS" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Equal&#39;s&title=understand &#39;this&#39; in JS&summary=&pics=https://equalma.github.io/img/favicon.png&url=https://equalma.github.io/js-this-in-js/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://equalma.github.io/js-this-in-js/index.html&text=understand &#39;this&#39; in JS" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="js中的this指向"><a href="#js中的this指向" class="headerlink" title="js中的this指向"></a>js中的this指向</h1><h2 id="理解this指向"><a href="#理解this指向" class="headerlink" title="理解this指向"></a>理解this指向</h2><h3 id="理解function中的this指向"><a href="#理解function中的this指向" class="headerlink" title="理解function中的this指向"></a>理解function中的this指向</h3><h4 id="对象中的function"><a href="#对象中的function" class="headerlink" title="对象中的function"></a>对象中的function</h4><p>example 1:</p>
+<pre><code class="js">var parent = {
+    value:&#39;parent.value&#39;,
+    getValue(){
+        return this.value; // &#39;parent.value&#39;
+    },
+    child:{
+        value:&#39;child.value&#39;,
+        getValue(){
+            return this.value; // &#39;child.value&#39;
+        }
+    }
+}
+</code></pre>
+<p>example 2.1:</p>
+<pre><code class="js">var parent = {
+    value:&#39;parent.value&#39;,
+    getValue(){
+        return this.value; // &#39;parent.value&#39;
+    }
+}
+
+var child = {
+    value:&#39;child.value&#39;,
+    getValue(){
+        return this.value; // &#39;child.value&#39;
+    },
+    functionOfParent: parent.getValue // &#39;child.value&#39;
+}
+
+parent.child = child;
+
+parent.getValue()
+// &quot;parent.value&quot;
+parent.child.getValue()
+// &quot;child.value&quot;
+parent.child.functionOfParent()
+// &quot;child.value&quot;
+</code></pre>
+<p>example 2.2:</p>
+<p>use a common function in different objects</p>
+<pre><code class="js">function commonGetValue(){
+    return this.value; // this is binded when this function is called
+}
+
+var parent = {
+    value:&#39;parent.value&#39;,
+    getValue: commonGetValue, // &#39;parent.value&#39;
+    child:{
+        value:&#39;child.value&#39;,
+        getValue: commonGetValue // &#39;child.value&#39;
+    }
+}
+
+parent.getValue()
+// &quot;parent.value&quot;
+parent.child.getValue()
+// &quot;child.value&quot;
+
+commonGetValue();
+// return undefined, or some value if &#39;this.value&#39; is assigned before, or throw an Exception because &#39;this&#39; may be null
+</code></pre>
+<p><strong><code>对example 2.1 2.2的解释</code></strong> function中的this只是一个代词，只有在调用时，才知道this绑定的是谁</p>
+<h3 id="理解箭头函数（Lambda函数）的this"><a href="#理解箭头函数（Lambda函数）的this" class="headerlink" title="理解箭头函数（Lambda函数）的this"></a>理解箭头函数（Lambda函数）的this</h3><p>关于js中的箭头函数，例如：<code>(arg0, arg1)=&gt;{ return arg0 + arg1; }</code>，可详见<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a>。</p>
+<p>特别需要指出，文档中说明：</p>
+<blockquote>
+<p><strong>箭头函数表达式</strong>不绑定自己的this，arguments，super或 new.target。这些函数表达式最适合用于非方法函数，并且它们不能用作构造函数。</p>
+</blockquote>
+<h4 id="不绑定this"><a href="#不绑定this" class="headerlink" title="不绑定this"></a>不绑定this</h4><p>箭头函数不会创建自己的<code>this</code>；它使用封闭执行上下文的<code>this</code>值。因此，在下面的代码中，传递给<code>setInterval</code>的函数内的<code>this</code>与封闭函数中的<code>this</code>值相同：</p>
+<pre><code class="js">function Person(){
+  this.age = 0;
+
+  setInterval(() =&gt; {
+    this.age++; // |this| 正确地指向person 对象
+  }, 1000);
+}
+
+var p = new Person();
+</code></pre>
+<p>由于 <code>this</code> 已经在词法层面完成了绑定，通过 <code>call()</code> 或 <code>apply()</code> 方法调用一个箭头函数时，只是传入了参数而已，不能绑定this，对 <code>this</code> 并没有什么影响：</p>
+<pre><code>var adder = {
+  base : 1,
+
+  add : function(a) {
+    var f = v =&gt; v + this.base;
+    return f(a);
+  },
+
+  addThruCall: function(a) {
+    var f = v =&gt; v + this.base;
+    var b = {
+      base : 2
+    };
+
+    return f.call(b, a);
+  }
+};
+
+console.log(adder.add(1));         // 输出 2
+console.log(adder.addThruCall(1)); // 仍然输出 2（而不是3 ——译者注）
+</code></pre><h4 id="不绑定arguments"><a href="#不绑定arguments" class="headerlink" title="不绑定arguments"></a>不绑定arguments</h4><p>箭头函数不绑定<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments" target="_blank" rel="noopener">Arguments 对象</a>。因此，在本示例中，参数只是在封闭范围内引用相同的名称：</p>
+<pre><code>var arguments = 42;
+var arr = () =&gt; arguments;
+
+arr(); // 42
+
+function foo() {
+  var f = (i) =&gt; arguments[0]+i; 
+  // foo函数的间接参数绑定
+  return f(2);
+}
+
+foo(1); // 3
+</code></pre><p>在大多数情况下，使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Rest_parameters" target="_blank" rel="noopener">剩余参数</a>是使用<code>arguments</code>对象的好选择。</p>
+<pre><code>function foo() { 
+  var f = (...args) =&gt; args[0]; 
+  return f(2); 
+}
+
+foo(1); 
+// 2
+</code></pre><blockquote>
+<p>以上’不绑定this’和’不绑定arguments’两节整理自<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a></p>
+</blockquote>
+<p>example 1:</p>
+<pre><code class="js">var parent = {
+    value:&#39;parent.value&#39;,
+    getValue: () =&gt; this.value,
+    child:{
+        value:&#39;child.value&#39;,
+        getValue: () =&gt; this.value
+    }
+}
+
+parent.getValue();
+parent.child.getValue();
+// both return undefined (unless global &#39;this.value&#39; is assigned before)
+</code></pre>
+<p>example 2.1:</p>
+<pre><code class="js">var parent = {
+    value:&#39;parent.value&#39;,
+    getValue(){
+        return this.value; // &#39;parent.value&#39;
+    },
+    getValueThruArrow(){
+        return (()=&gt;this.value)(); // &#39;parent.value&#39;
+    }
+}
+
+var child = {
+    value:&#39;child.value&#39;,
+    getValue(){
+        return this.value; // &#39;child.value&#39;
+    },
+    functionOfParent: parent.getValue, // &#39;child.value&#39;
+    functionThruArrowOfParent: parent.getValueThruArrow // &#39;parent&#39;
+}
+
+parent.child = child;
+
+parent.getValue()
+// &quot;parent.value&quot;
+parent.getValueThruArrow()
+// &quot;parent.value&quot;
+parent.child.getValue()
+// &quot;child.value&quot;
+parent.child.functionOfParent()
+// &quot;child.value&quot;
+parent.child.functionThruArrowOfParent()
+// &quot;child.value&quot;
+</code></pre>
+<p>example 2.2:</p>
+<pre><code class="js">const commonArrowToGetValue = ()=&gt;this.value;
+
+function commonGetValueThruArrow(){
+    return (()=&gt;this.value)(); // this is binded when this function is called
+}
+
+var parent = {
+    value:&#39;parent.value&#39;,
+    arrowToGetValue: commonArrowToGetValue,
+    getValueThruArrow: commonGetValueThruArrow, // &#39;parent.value&#39;
+    child:{
+        value:&#39;child.value&#39;,
+        arrowToGetValue: commonArrowToGetValue,
+        getValueThruArrow: commonGetValueThruArrow // &#39;child.value&#39;
+    }
+}
+
+parent.getValueThruArrow()
+// &quot;parent.value&quot;
+parent.arrowToGetValue()
+// undefined
+parent.child.getValueThruArrow()
+// &quot;child.value&quot;
+parent.child.arrowToGetValue()
+// undefined
+
+commonGetValueThruArrow()
+// undefined
+commonGetValueThruArrow()
+// undefined
+
+// &#39;undefined&#39; above means: return undefined, or some value if &#39;this.value&#39; is assigned before, or throw an Exception because &#39;this&#39; may be null
+</code></pre>
+<p><strong><code>对example 2.1 2.2的解释</code></strong> 可以这样理解：箭头函数一旦创建，其中this指向便被确定。(…)=&gt;{…} 语法相对于创建了一个箭头函数，每次调用就会创建一个新的箭头函数，并在这时预先“绑定”其中的this。因此如果一个箭头函数放在一个function中，则每次调用这个function，则都会创建一个箭头函数，绑定这个function的this。</p>
+<h2 id="改变this指向"><a href="#改变this指向" class="headerlink" title="改变this指向"></a>改变this指向</h2><p>js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：</p>
+<ul>
+<li>call</li>
+<li>apply</li>
+<li>bind</li>
+</ul>
+<p>这三种函数的使用方法为：</p>
+<p>//TODO </p>
+<pre><code class="js">
+</code></pre>
+<h3 id="使用bind正确地创建函数别名"><a href="#使用bind正确地创建函数别名" class="headerlink" title="使用bind正确地创建函数别名"></a>使用bind正确地创建函数别名</h3><h4 id="需要特定this值的函数的别名"><a href="#需要特定this值的函数的别名" class="headerlink" title="需要特定this值的函数的别名"></a>需要特定this值的函数的别名</h4><pre><code class="js">const id = document.getElementById;
+id(&#39;someid&#39;).innerText=&quot;text&quot;;
+</code></pre>
+<p>以上代码会throw an error:<code>Uncaught TypeError: Illegal invocation</code>.</p>
+<p>因为document.getElementById调用时要求this是document. 以下是解决方法。</p>
+<blockquote>
+<p>解决方法引自 <a href="https://stackoverflow.com/a/18993841" target="_blank" rel="noopener">https://stackoverflow.com/a/18993841</a></p>
+</blockquote>
+<pre><code class="js">var id = document.getElemenyById.bind( document );
+</code></pre>
+<h4 id="为需要特定this值的函数创建快捷调用"><a href="#为需要特定this值的函数创建快捷调用" class="headerlink" title="为需要特定this值的函数创建快捷调用"></a>为需要特定this值的函数创建快捷调用</h4><blockquote>
+<p>引自 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind#Example:_Creating_shortcuts" target="_blank" rel="noopener">MDN web docs &gt; Function.prototype.bind() &gt; 快捷调用</a></p>
+</blockquote>
+<p><code>在你想要为一个需要特定的 this 值的函数创建一个捷径（shortcut）的时候，bind()</code> 方法也很好用。</p>
+<p>你可以用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target="_blank" rel="noopener"><code>Array.prototype.slice</code></a> 来将一个类似于数组的对象（array-like object）转换成一个真正的数组，就拿它来举例子吧。你可以创建这样一个捷径：</p>
+<pre><code>var slice = Array.prototype.slice;
+
+// ...
+
+slice.apply(arguments);
+</code></pre><p>用 <code>bind()</code>可以使这个过程变得简单。在下面这段代码里面，<code>slice</code> 是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" target="_blank" rel="noopener"><code>Function.prototype</code></a> 的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank" rel="noopener"><code>apply()</code></a> 方法的绑定函数，并且将 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype" target="_blank" rel="noopener"><code>Array.prototype</code></a>的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target="_blank" rel="noopener"><code>slice()</code></a> 方法作为 <code>this</code> 的值。这意味着我们压根儿用不着上面那个 <code>apply()</code>调用了。</p>
+<pre><code>// same as &quot;slice&quot; in the previous example
+var unboundSlice = Array.prototype.slice;
+var slice = Function.prototype.apply.bind(unboundSlice);
+
+// ...
+
+slice(arguments);
+</code></pre>
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <span>转载请注明 👇 Please reproduce with</span> <br/> <br/> <span>原文作者：<a href="equalma@outlook.com">Equal Ma</a></span><br/> <span>文章来源：<a href="https://equalma.github.io">equalma.github.io</a></span> <span> ( First published in <a href="https://equalma.github.io">equalma.github.io</a> ) </span>
+
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://equalma.github.io/js-this-in-js/">https://equalma.github.io/js-this-in-js/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/js-simple-mvvm/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/js-constructor-in-js5/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Equal Ma's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        equalma@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="equalma@outlook.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">33</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                
+                
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/apache2/">
+                            <span>apache2</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/Node-js/">
+                            <span>Node.js</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/">
+                            <span>css</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/stylus/">
+                            <span>stylus</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/">
+                            <span>c</span>
+                            <span class="sidebar_archives-count">2</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/profiling/">
+                            <span>profiling</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/">
+                            <span>js</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/jquery/">
+                            <span>jquery</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/mdl/">
+                            <span>mdl</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/vue/">
+                            <span>vue</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/database/">
+                            <span>database</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/">
+                            <span>minecraft</span>
+                            <span class="sidebar_archives-count">7</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/pixelmon/">
+                            <span>pixelmon</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/mysql/">
+                            <span>mysql</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/powershell/">
+                            <span>powershell</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/php/">
+                            <span>php</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/python/">
+                            <span>python</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/vscode/">
+                            <span>vscode</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/web/">
+                            <span>web</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/">
+                            <span>wordpress</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/">
+                            <span>develop</span>
+                            <span class="sidebar_archives-count">12</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/theme/">
+                            <span>theme</span>
+                            <span class="sidebar_archives-count">11</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/typescript/">
+                            <span>typescript</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/">
+                            <span>unix</span>
+                            <span class="sidebar_archives-count">10</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/ubuntu-help/">
+                            <span>ubuntu help</span>
+                            <span class="sidebar_archives-count">9</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/gnome-help/">
+                            <span>gnome help</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="tag">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                tag
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">64</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/EqualMa" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Equal's
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        if(textContent)
+            textContent.textContent = copyrightNow
+    } else {
+        if(textContent)
+            textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534508120976')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
+    
+</html>

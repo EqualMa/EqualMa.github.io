@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><link rel=manifest href=/manifest.json>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
 
@@ -8,2378 +31,1397 @@
 
 
 
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
 
 
 
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+        Equal&#39;s
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?TDH8hnXY3mvlnRKJrjsd+Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
   
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
 
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
-<head><link rel=manifest href=/manifest.json>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222">
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
 
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
 
+  .toTop {
+    background: #757575 !important;
+  }
 
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
 
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
 
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
 
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
 
+</style>
 
 
+<!-- Theme Background Related-->
 
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
 
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
+<!-- Fade Effect -->
 
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
 
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
 
 
+<!-- Import Font -->
+<!-- Import Roboto -->
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
 
+<!-- Import Material Icons -->
 
 
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 
 
 
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
 
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Equal&#39;s">
+    <meta name="msapplication-starturl" content="https://equalma.github.io/page/3/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Equal&#39;s">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
 
+    <!-- Site Verification -->
+    
+    
 
+    <!-- RSS -->
+    
 
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://equalma.github.io/page/3/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Equal&#39;s">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
 
+    
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
 
-<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://equalma.github.io/page/3/index.html" />
+    
 
+    <!-- Structured-data for SEO -->
+    
+        
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
+    
 
+    <!-- Analytics -->
+    
+    
+    
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '6.4.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Equal&#39;s">
-<meta property="og:url" content="https://equalma.github.io/page/3/index.html">
-<meta property="og:site_name" content="Equal&#39;s">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Equal&#39;s">
-
-
-
-
-
-
-  <link rel="canonical" href="https://equalma.github.io/page/3/"/>
-
-
-
-<script type="text/javascript" id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>Equal's</title>
-  
-
-
-
-
-
-
-
-
-
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
-
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
-
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
+    <!-- Custom Head -->
+    
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  
-  
     
-  
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
 
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
+
+    <!-- Pin on top -->
     
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Equal's</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/wordpress-develop-using-phpstorm/"></a></p>
     </div>
-    
-      
-        <p class="site-subtitle">Coding Blog</p>
-      
-    
-  </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/wordpress-develop-using-phpstorm/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>2月 16, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/wordpress/">wordpress</a>, <a class="post_category-link" href="/categories/wordpress/develop/">develop</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/Node-js-arguments/">Arguments in Node.js</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/Node-js-arguments/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>2月 15, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Node-js/">Node.js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/js-mouse-events/">mouse events</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            mouseleave mouseenter
+​                    v s
+mouseout     ...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/js-mouse-events/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>2月 13, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/js/">js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/vscode-customize/">customize vscode</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/vscode-customize/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>2月 11, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/vscode/">vscode</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/js-jsdoc/">use jsdoc</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            usejsdoc
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/js-jsdoc/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>2月 10, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/js/">js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/js-js-dev-tools/">JS Dev Tools</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            we...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/js-js-dev-tools/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>2月 10, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/js/">js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/js-simple-mvvm/">Simple implementation for MVVM</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+转载于
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/js-simple-mvvm/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>1月 30, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/js/">js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/js-this-in-js/">understand &#39;this&#39; in JS</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/js-this-in-js/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>1月 29, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/js/">js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/js-constructor-in-js5/">Constructor in ES5</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/js-constructor-in-js5/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>1月 26, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/js/">js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/Node-js-config/">config Node.js</a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            使用
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/Node-js-config/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>1月 25, 2018</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/Node-js/">Node.js</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+    <!-- Index nav -->
+        <nav class="material-nav mdl-cell mdl-cell--12-col">
+            <a class="extend prev" rel="prev" href="/page/2/"><button aria-label="Last page" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_back</i></button></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/"><button aria-label="Next page" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_forward</i></button></a>
+        </nav>
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 1 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
     </button>
-  </div>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Equal Ma's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        equalma@outlook.com
+        <b class="caret"></b>
+    </a>
 </div>
 
 
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="equalma@outlook.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
 
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
         
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">33</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
         
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                
+                
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/apache2/">
+                            <span>apache2</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/Node-js/">
+                            <span>Node.js</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/">
+                            <span>css</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/stylus/">
+                            <span>stylus</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/">
+                            <span>c</span>
+                            <span class="sidebar_archives-count">2</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/profiling/">
+                            <span>profiling</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/">
+                            <span>js</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/jquery/">
+                            <span>jquery</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/mdl/">
+                            <span>mdl</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/vue/">
+                            <span>vue</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/database/">
+                            <span>database</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/">
+                            <span>minecraft</span>
+                            <span class="sidebar_archives-count">7</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/pixelmon/">
+                            <span>pixelmon</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/mysql/">
+                            <span>mysql</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/powershell/">
+                            <span>powershell</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/php/">
+                            <span>php</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/python/">
+                            <span>python</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/vscode/">
+                            <span>vscode</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/web/">
+                            <span>web</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/">
+                            <span>wordpress</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/">
+                            <span>develop</span>
+                            <span class="sidebar_archives-count">12</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/theme/">
+                            <span>theme</span>
+                            <span class="sidebar_archives-count">11</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/typescript/">
+                            <span>typescript</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/">
+                            <span>unix</span>
+                            <span class="sidebar_archives-count">10</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/ubuntu-help/">
+                            <span>ubuntu help</span>
+                            <span class="sidebar_archives-count">9</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/gnome-help/">
+                            <span>gnome help</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                
+            </ul>
+        </li>
         
-          
-          <li class="menu-item menu-item-home">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
-  </li>
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="tag">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                tag
+            </a>
+        </li>
         
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">64</span>
+            </a>
+        </li>
         
-        
-          
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
-</nav>
+    
+</ul>
 
 
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
 
-  
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
 
 
+<!-- Theme Material -->
 
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
 </div>
-    </header>
 
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-            
-
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/wordpress/develop/using-phpstorm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/wordpress/develop/using-phpstorm/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-16 18:06:31" itemprop="dateCreated datePublished" datetime="2018-02-16T18:06:31+08:00">2018-02-16</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/" itemprop="url" rel="index"><span itemprop="name">wordpress</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/wordpress/develop/" itemprop="url" rel="index"><span itemprop="name">develop</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="WordPress-Development-using-PhpStorm"><a href="#WordPress-Development-using-PhpStorm" class="headerlink" title="WordPress Development using PhpStorm"></a>WordPress Development using PhpStorm</h1><blockquote>
-<p>参考：</p>
-<p><a href="https://confluence.jetbrains.com/display/PhpStorm/WordPress+Development+using+PhpStorm" target="_blank" rel="noopener">JetBrains &gt; WordPress Development using PhpStorm</a></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/Node.js/arguments/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Node.js/arguments/" itemprop="url">
-                  Arguments in Node.js
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-15 00:27:56" itemprop="dateCreated datePublished" datetime="2018-02-15T00:27:56+08:00">2018-02-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Node-js/" itemprop="url" rel="index"><span itemprop="name">Node.js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="https://www.jianshu.com/p/474e6d76f867" target="_blank" rel="noopener">https://www.jianshu.com/p/474e6d76f867</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/mouse-events/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/js/mouse-events/" itemprop="url">
-                  mouse events
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-13 01:13:15" itemprop="dateCreated datePublished" datetime="2018-02-13T01:13:15+08:00">2018-02-13</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>mouseleave mouseenter</p>
-<p>​                    v s</p>
-<p>mouseout      mouseover</p>
-<p>测试浏览器：Google Chrome 版本 64.0.3282.140（正式版本） （64 位）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">element.addEventListener(<span class="string">'mouseleave'</span>,()=&gt;&#123;<span class="built_in">console</span>.log(<span class="string">'mouseleave!'</span>)&#125;);</span><br><span class="line">element.addEventListener(<span class="string">'mouseenter'</span>,()=&gt;&#123;<span class="built_in">console</span>.log(<span class="string">'mouseenter!'</span>)&#125;)</span><br><span class="line"></span><br><span class="line">element.addEventListener(<span class="string">'mouseout'</span>,()=&gt;&#123;<span class="built_in">console</span>.log(<span class="string">'mouseout!'</span>)&#125;)</span><br><span class="line">element.addEventListener(<span class="string">'mouseover'</span>,()=&gt;&#123;<span class="built_in">console</span>.log(<span class="string">'mouseover!'</span>)&#125;)</span><br></pre></td></tr></table></figure>
-<p>结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mouseover!</span><br><span class="line">mouseenter!</span><br><span class="line">mouseout!</span><br><span class="line">mouseover!</span><br><span class="line">mouseout!</span><br><span class="line">mouseover!</span><br><span class="line">mouseout!</span><br><span class="line">mouseleave!</span><br></pre></td></tr></table></figure>
-<p>结果显示：</p>
-<ol>
-<li>鼠标进入元素时，先触发mouseover，再触发mouseenter。</li>
-<li>如果该元素有子元素，鼠标在子元素间移动时，会先触发mouseout，再触发mouseover，而不会触发mouseenter和mouseleave。</li>
-<li>鼠标移出元素时，先触发mouseout，再触发mouseleave。</li>
-</ol>
-<p>总结：表示状态的对子元素敏感，先触发；表示动作的对子元素不敏感，后触发。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"></th>
-<th style="text-align:center">mouseover, mouseout</th>
-<th style="text-align:center">mouseenter, mouseleave</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">表示状态</td>
-<td style="text-align:center">表示动作</td>
-</tr>
-<tr>
-<td style="text-align:center">是否子元素敏感</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td style="text-align:center">触发时间</td>
-<td style="text-align:center">先</td>
-<td style="text-align:center">后</td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/vscode/customize/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/vscode/customize/" itemprop="url">
-                  customize vscode
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-11 17:07:08" itemprop="dateCreated datePublished" datetime="2018-02-11T17:07:08+08:00">2018-02-11</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/vscode/" itemprop="url" rel="index"><span itemprop="name">vscode</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://blog.csdn.net/greatbody/article/details/54581226" target="_blank" rel="noopener">配置完全手册</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/jsdoc/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/js/jsdoc/" itemprop="url">
-                  use jsdoc
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-10 22:46:48" itemprop="dateCreated datePublished" datetime="2018-02-10T22:46:48+08:00">2018-02-10</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="usejsdoc.org">usejsdoc</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/js-dev-tools/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/js/js-dev-tools/" itemprop="url">
-                  JS Dev Tools
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-02-10 16:14:43" itemprop="dateCreated datePublished" datetime="2018-02-10T16:14:43+08:00">2018-02-10</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h3><p><a href="https://www.jianshu.com/p/42e11515c10f" target="_blank" rel="noopener">https://www.jianshu.com/p/42e11515c10f</a></p>
-<p><a href="https://doc.webpack-china.org/guides/getting-started" target="_blank" rel="noopener">https://doc.webpack-china.org/guides/getting-started</a></p>
-<h4 id="source-map"><a href="#source-map" class="headerlink" title="source-map"></a>source-map</h4><p><a href="https://segmentfault.com/a/1190000008315937" target="_blank" rel="noopener">https://segmentfault.com/a/1190000008315937</a></p>
-<h4 id="css-modules"><a href="#css-modules" class="headerlink" title="css modules"></a>css modules</h4><p><a href="https://segmentfault.com/a/1190000004990977" target="_blank" rel="noopener">usage</a></p>
-<h3 id="babel"><a href="#babel" class="headerlink" title="babel"></a>babel</h3><p><a href="http://babeljs.io/docs/setup/#installation" target="_blank" rel="noopener">http://babeljs.io/docs/setup/#installation</a></p>
-<p><a href="http://www.ruanyifeng.com/blog/2016/01/babel.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2016/01/babel.html</a></p>
-<p>babel可以将es6语法编译为es5语法，以兼容各种版本浏览器。</p>
-<p>babel会将es6中的import和export语句编译为CommonJS规范中的exports和require。由于Node.js不支持es6的import和export，而支持CommonJS规范的语法，从而经过babel编译后可以在Node.js中运行。</p>
-<p>但是很多浏览器原生并不支持任何模块功能（详见<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9" target="_blank" rel="noopener">import的浏览器兼容</a>）。因此需要在html中引入CommonJS规范或AMD规范（例如RequireJS）的js库（关于它们的区别，可见<a href="http://blog.csdn.net/crystal6918/article/details/74906757" target="_blank" rel="noopener">CommonJS、requirejs、ES6的对比</a>）。或者先用webpack等打包工具打包后再发布。</p>
-<h3 id="判断是否在调试环境（防止调试）"><a href="#判断是否在调试环境（防止调试）" class="headerlink" title="判断是否在调试环境（防止调试）"></a>判断是否在调试环境（防止调试）</h3><p><a href="https://stackoverflow.com/questions/7798748/find-out-whether-chrome-console-is-open" target="_blank" rel="noopener">https://stackoverflow.com/questions/7798748/find-out-whether-chrome-console-is-open</a></p>
-<h3 id="前端加密"><a href="#前端加密" class="headerlink" title="前端加密"></a>前端加密</h3><p><a href="http://div.io/topic/1220" target="_blank" rel="noopener">http://div.io/topic/1220</a></p>
-<p><a href="https://developers.google.com/closure/compiler/" target="_blank" rel="noopener">google closure compiler</a></p>
-<h3 id="screenful"><a href="#screenful" class="headerlink" title="screenful"></a>screenful</h3><p><a href="https://github.com/sindresorhus/screenfull.js" target="_blank" rel="noopener">https://github.com/sindresorhus/screenfull.js</a></p>
-<h3 id="混淆工具"><a href="#混淆工具" class="headerlink" title="混淆工具"></a>混淆工具</h3><p><a href="https://www.npmjs.com/package/uglify-js" target="_blank" rel="noopener">uglify-js</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/simple-mvvm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/js/simple-mvvm/" itemprop="url">
-                  Simple implementation for MVVM
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-01-30 20:15:23" itemprop="dateCreated datePublished" datetime="2018-01-30T20:15:23+08:00">2018-01-30</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>转载于<a href="https://zhuanlan.zhihu.com/p/24475845" target="_blank" rel="noopener">250行实现一个简单的MVVM</a></p>
-</blockquote>
-<p>MVVM这两年在前端届掀起了一股热潮，火热的Vue和Angular带给了开发者无数的便利，本文将实现一个简单的MVVM，用200多行代码探索MVVM的秘密。您可以<a href="https://link.zhihu.com/?target=https%3A//jsbin.com/juqeduf/edit%3Fconsole%2Coutput" target="_blank" rel="noopener">先点击本文的JS Bin查看效果</a>，代码使用ES6，所以你可能需要转码。</p>
-<h1 id="什么是MVVM？"><a href="#什么是MVVM？" class="headerlink" title="什么是MVVM？"></a>什么是MVVM？</h1><p>MVVM是一种程序架构设计。把它拆开来看应该是Model-View-ViewModel。</p>
-<h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><p>Model指的是数据层，是纯净的数据。对于前端来说，它往往是一个简单的对象。例如：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  name: <span class="string">'mirone'</span>,</span><br><span class="line">  age: <span class="number">20</span>,</span><br><span class="line">  friends: [<span class="string">'singleDogA'</span>, <span class="string">'singleDogB'</span>],</span><br><span class="line">  details: &#123;</span><br><span class="line">    type: <span class="string">'notSingleDog'</span>,</span><br><span class="line">    tags: [<span class="string">'fff'</span>, <span class="string">'sox'</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>数据层是我们需要渲染后呈现给用户的数据，数据层本身是可变的。数据层不应该承担逻辑操作和计算的功能。</p>
-<h2 id="View"><a href="#View" class="headerlink" title="View"></a>View</h2><p>View指视图层，是直接呈现给用户的部分，简单的来说，对于前端就是HTML。例如上面的数据层，它对应的视图层可能是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">    &lt;b&gt;name: &lt;/b&gt;</span><br><span class="line">    &lt;span&gt;mirone&lt;/span&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;p&gt;</span><br><span class="line">    &lt;b&gt;age: &lt;/b&gt;</span><br><span class="line">    &lt;span&gt;20&lt;/span&gt;</span><br><span class="line">  &lt;/p&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li&gt;singleDogA&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;singleDogB&lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;p&gt;notSingleDog&lt;/p&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">      &lt;li&gt;fff&lt;/li&gt;</span><br><span class="line">      &lt;li&gt;sox&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>当然视图层是可变的，你完全可以在其中随意添加元素。这不会改变数据层，只会改变视图层呈现数据的方式。视图层应该和数据层完全分离。</p>
-<h2 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h2><p>既然视图层应该和数据层分离，那么我们就需要设计一种结构，让它们建立起某种联系。当我们对Model进行修改的时候，ViewModel就会把修改自动同步到View层去。同样当我们修改View，Model同样被ViewModel自动修改。</p>
-<p>可以看出，如何设计能够高效自动同步View与Model的ViewModel是整个MVVM框架的核心和难点。</p>
-<h1 id="MVVM的原理"><a href="#MVVM的原理" class="headerlink" title="MVVM的原理"></a>MVVM的原理</h1><h2 id="差异"><a href="#差异" class="headerlink" title="差异"></a>差异</h2><p>不同的框架对于MVVM的实现是不同的。</p>
-<h3 id="数据劫持"><a href="#数据劫持" class="headerlink" title="数据劫持"></a>数据劫持</h3><p>Vue的实现方式，对数据（Model）进行劫持，当数据发生变动时，数据会触发劫持时绑定的方法，对视图进行更新。</p>
-<h3 id="脏检查机制"><a href="#脏检查机制" class="headerlink" title="脏检查机制"></a>脏检查机制</h3><p>Angular的实现方式，当发生了某种事件（例如输入），Angular会检查新的数据结构和之前的数据结构是否发生了变动，来决定是否更新视图。</p>
-<h3 id="发布订阅模式"><a href="#发布订阅模式" class="headerlink" title="发布订阅模式"></a>发布订阅模式</h3><p>Knockout的实现方式，实现了一个发布订阅器，解析时会在对应视图节点绑定订阅器，而在数据上绑定发布器，当修改数据时，就出发了发布器，视图收到后进行对应更新。</p>
-<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><p>但是还是有很多相同点的，它们都有三个步骤：</p>
-<ul>
-<li>解析模版</li>
-<li>解析数据</li>
-<li>绑定模版与数据</li>
-</ul>
-<h3 id="解析模版"><a href="#解析模版" class="headerlink" title="解析模版"></a>解析模版</h3><p>何谓模版？我们可以看一下主流MVVM的模版：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- Vue --&gt;</span><br><span class="line">&lt;div id=&quot;mobile-list&quot;&gt;</span><br><span class="line">  &lt;h1 v-text=&quot;title&quot;&gt;&lt;/h1&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">    &lt;li v-for=&quot;item in brands&quot;&gt;</span><br><span class="line">      &lt;b v-text=&quot;item.name&quot;&gt;&lt;/b&gt;</span><br><span class="line">      &lt;span v-show=&quot;showRank&quot;&gt;Rank: &#123;&#123;item.rank&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!-- Angular --&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">  &lt;li ng-repeat=&quot;phone in phones&quot;&gt;</span><br><span class="line">    &#123;&#123;phone.name&#125;&#125;</span><br><span class="line">    &lt;p&gt;&#123;&#123;phone.snippet&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;!-- Knockout --&gt;</span><br><span class="line">&lt;tbody data-bind=&quot;foreach: seats&quot;&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;td data-bind=&quot;text: name&quot;&gt;&lt;/td&gt;</span><br><span class="line">    &lt;td data-bind=&quot;text: meal().mealName&quot;&gt;&lt;/td&gt;</span><br><span class="line">    &lt;td data-bind=&quot;text: meal().price&quot;&gt;&lt;/td&gt;</span><br><span class="line">  &lt;/tr&gt;    </span><br><span class="line">&lt;/tbody&gt;</span><br></pre></td></tr></table></figure>
-<p>可以看到它们都定义了自己的模版关键字，这一模块的作用就是根据这些关键字解析模版，将模版对应到期望的数据结构。</p>
-<h3 id="解析数据"><a href="#解析数据" class="headerlink" title="解析数据"></a>解析数据</h3><p>Model中的数据经过劫持或绑定发布器来解析。数据解析器的编写要考虑VM的实现方式，但是无论如何解析数据只要做好一件事：定义数据变动时要通知的对象。解析数据时应保证数据解析后的一致性，对于每种数据解析后暴露的接口应该保持一致。</p>
-<h3 id="绑定模版与数据"><a href="#绑定模版与数据" class="headerlink" title="绑定模版与数据"></a>绑定模版与数据</h3><p>这一部分定义了数据结构以何种方式和模版进行绑定，就是传说中的“双向绑定”。绑定之后我们直接对数据进行操作时，应用就能自动更新视图了。数据和模版往往是多对多的关系，而且不同的模版更新数据的方式往往不同。例如有的是改变标签的文本节点，有的是改变标签的className。</p>
-<h1 id="动手实现MVVM"><a href="#动手实现MVVM" class="headerlink" title="动手实现MVVM"></a>动手实现MVVM</h1><p>经过一番分析，来动手实现MVVM吧。</p>
-<h2 id="期望效果"><a href="#期望效果" class="headerlink" title="期望效果"></a>期望效果</h2><p>对于我的MVVM，我希望对应一个数据结构：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">let data = &#123;</span><br><span class="line">  title: &apos;todo list&apos;,</span><br><span class="line">  user: &apos;mirone&apos;,</span><br><span class="line">  todos: [</span><br><span class="line">    &#123;</span><br><span class="line">      creator: &apos;mirone&apos;,</span><br><span class="line">      content: &apos;write mvvm&apos;</span><br><span class="line">      done: &apos;undone&apos;,</span><br><span class="line">      date: &apos;2016-11-17&apos;,</span><br><span class="line">      members: [</span><br><span class="line">        &#123;</span><br><span class="line">          name: &apos;kaito&apos;</span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>我可以对应的编写模版：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;root&quot;&gt;</span><br><span class="line">  &lt;h1 data-model=&quot;title&quot;&gt;&lt;/h1&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;div data-model=&quot;user&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;ul data-list=&quot;todos&quot;&gt;</span><br><span class="line">      &lt;li data-list-item=&quot;todos&quot;&gt;</span><br><span class="line">        &lt;p data-class=&quot;todos:done&quot; data-model=&quot;todos:creator&quot;&gt;&lt;/p&gt;</span><br><span class="line">        &lt;p data-model=&quot;todos:date&quot;&gt;&lt;/p&gt;</span><br><span class="line">        &lt;p data-model=&quot;todos:content&quot;&gt;&lt;/p&gt;</span><br><span class="line">        &lt;ul data-list=&quot;todos:members&quot;&gt;</span><br><span class="line">          &lt;li data-list-item=&quot;todos:members&quot;&gt;</span><br><span class="line">            &lt;span data-model=&quot;todos:members:name&quot;&gt;&lt;/span&gt;</span><br><span class="line">          &lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">      &lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>然后通过调用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new Parser(&apos;#root&apos;, data)</span><br></pre></td></tr></table></figure>
-<p>就可以完成mvvm的绑定，之后可以直接操作data对象来对View进行更改。</p>
-<h2 id="解析模版-1"><a href="#解析模版-1" class="headerlink" title="解析模版"></a>解析模版</h2><p>模版的解析其实是一个树的遍历过程。</p>
-<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>众所周知，DOM是一个树状结构，这也是为什么它被称为“DOM树”。对于树的遍历，只要递归，便能很轻松的完成一个深度优先遍历，请看代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function scan(node) &#123;</span><br><span class="line">  console.log(node)</span><br><span class="line">  for(let i = 0; i &lt; node.children.length; i++) &#123;</span><br><span class="line">    const _thisNode  = node.children[i]</span><br><span class="line">    console.log(_thisNode)</span><br><span class="line">    if(_thisNode.children.length) &#123;</span><br><span class="line">      scan(_thisNode)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这个函数遍历了一个DOM节点，依次打印遍历得到的节点。</p>
-<h3 id="遍历不同结构"><a href="#遍历不同结构" class="headerlink" title="遍历不同结构"></a>遍历不同结构</h3><p>知道了如何遍历一个DOM树，那么我们如何获取需要分析的DOM树？根据之前的构想，我们需要这么几种标识：</p>
-<ul>
-<li>data-model——用于将DOM的文本节点替换为制定内容</li>
-<li>data-class——用于将 DOM的className替换为制定内容</li>
-<li>data-list——用于标识接下来将出现一个列表，列表为制定结构</li>
-<li>data-list-item——用于标识列表项的内部结构</li>
-<li>data-event——用于为DOM节点绑定指定事件</li>
-</ul>
-<p>简单的归类一下：data-model、data-class和data-event应该是一类，它们都只影响当前节点；而data-list和data-item作为列表应该要单独考虑。那么我们可以这样遍历：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"> function scan(node) &#123;</span><br><span class="line">  if(!node.getAttribute(&apos;data-list&apos;)) &#123;</span><br><span class="line">    for(let i = 0; i &lt; node.children.length; i++) &#123;</span><br><span class="line">      const _thisNode = node.children[i]</span><br><span class="line">      parseModel(_thisNode)</span><br><span class="line">      parseClass(_thisNode)</span><br><span class="line">      parseEvent(_thisNode)</span><br><span class="line">      if(_thisNode.children.length) &#123;</span><br><span class="line">        scan(_thisNode)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    parseList(node)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function parseModel(node) &#123;</span><br><span class="line">  //TODO:解析Model节点</span><br><span class="line">&#125;</span><br><span class="line">function parseClass(node) &#123;</span><br><span class="line">  //TODO:解析className</span><br><span class="line">&#125;</span><br><span class="line">function parseEvent(node) &#123;</span><br><span class="line">  //TODO:解析事件</span><br><span class="line">&#125;</span><br><span class="line">function parseList(node) &#123;</span><br><span class="line">  //TODO: 解析列表</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样我们就搭好了遍历器的大概框架</p>
-<h3 id="不同结构的处理方法"><a href="#不同结构的处理方法" class="headerlink" title="不同结构的处理方法"></a>不同结构的处理方法</h3><p>parseModel，parseClass和parseEvent的处理方式比较相似，唯一值得注意的就是对于嵌套元素的处理，回忆一下我们的模版设计：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--遇到嵌套部分--&gt;</span><br><span class="line">&lt;div data-model=&quot;todos:date&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>这里的todos:date其实大大方便了我们解析模版，因为它展示了当前数据在Model结构中的位置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">//event要有一个eventList,大概结构为：</span><br><span class="line">const eventList = &#123;</span><br><span class="line">  typeWriter: &#123;</span><br><span class="line">    type: &apos;input&apos;, //事件的种类</span><br><span class="line">    fn: function() &#123;</span><br><span class="line">      //事件的处理函数，函数的this代表函数绑定的DOM节点</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function parseEvent(node) &#123;</span><br><span class="line">  if(node.getAttribute(&apos;data-event&apos;)) &#123;</span><br><span class="line">    const eventName = node.getAttribute(&apos;data-event&apos;)</span><br><span class="line">    node.addEventListener(eventList[eventName].type, eventList[eventName].fn.bind(node))</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">//根据在模版中的位置解析模版，这里的Path是一个数组，代表了当前数据在Model中的位置</span><br><span class="line">function parseData(str, node) &#123;</span><br><span class="line">  const _list = str.split(&apos;:&apos;)</span><br><span class="line">  let _data,</span><br><span class="line">    _path</span><br><span class="line">  let p = []</span><br><span class="line">  _list.forEach((key, index) =&gt; &#123;</span><br><span class="line">    if(index === 0) &#123;</span><br><span class="line">      _data = data[key]</span><br><span class="line">      p.push(key)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      _path = node.path[index-1]</span><br><span class="line">      p.push(_path)</span><br><span class="line">      _data = _data[_path][key]</span><br><span class="line">      p.push(key)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  return &#123;</span><br><span class="line">    path: p,</span><br><span class="line">    data: _data</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function parseModel(node) &#123;</span><br><span class="line">  if(node.getAttribute(&apos;data-model&apos;)) &#123;</span><br><span class="line">    const modelName = node.getAttribute(&apos;data-model&apos;)</span><br><span class="line">    const _data = parseData(modelName, node)</span><br><span class="line">    if(node.tagName === &apos;INPUT&apos;) &#123;</span><br><span class="line">      node.value = _data.data</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      node.innerText = _data.data</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function parseClass(node) &#123;</span><br><span class="line">  if(node.getAttribute(&apos;data-class&apos;)) &#123;</span><br><span class="line">    const className = node.getAttribute(&apos;data-class&apos;)</span><br><span class="line">    const _data = parseData(className, node)</span><br><span class="line">    if(!node.classList.contains(_data.data)) &#123;</span><br><span class="line">      node.classList.add(_data.data)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>接下来解析列表，我们遇到列表时，应该先递归找出列表项的结构</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> parseListItem(node) &#123;</span><br><span class="line">  let target</span><br><span class="line">  !function getItem(node) &#123;</span><br><span class="line">    for(let i = 0; i &lt; node.children.length; i++) &#123;</span><br><span class="line">      const _thisNode = node.children[i]</span><br><span class="line">      if(node.path) &#123;</span><br><span class="line">        _thisNode.path = node.path.slice()</span><br><span class="line">      &#125;</span><br><span class="line">      parseEvent(_thisNode)</span><br><span class="line">      parseClass(_thisNode)</span><br><span class="line">      parseModel(_thisNode)</span><br><span class="line">      if(_thisNode.getAttribute(&apos;data-list-item&apos;)) &#123;</span><br><span class="line">        target = _thisNode</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        getItem(_thisNode)</span><br><span class="line">      &#125; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;(node)</span><br><span class="line">  return target</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>之后在用这个列表项来按需拷贝出一定数量的列表项，并填充数据</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function parseList(node) &#123;</span><br><span class="line">  const _item = parseListItem(node)</span><br><span class="line">  const _list = node.getAttribute(&apos;data-list&apos;)</span><br><span class="line">  const _listData = parseData(_list, node)</span><br><span class="line">  _listData.data.forEach((_dataItem, index) =&gt; &#123;</span><br><span class="line">    const _copyItem = _item.cloneNode(true)</span><br><span class="line">    if(node.path) &#123;</span><br><span class="line">      _copyItem.path = node.path.slice()</span><br><span class="line">    &#125;</span><br><span class="line">    if(!_copyItem.path) &#123;</span><br><span class="line">      _copyItem.path = []</span><br><span class="line">    &#125;</span><br><span class="line">    _copyItem.path.push(index)</span><br><span class="line">    scan(_copyItem)</span><br><span class="line">    node.insertBefore(_copyItem, _item)</span><br><span class="line">  &#125;)</span><br><span class="line">  node.removeChild(_item)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样我们就完成了模版的渲染，scan函数会扫描模版对模版进行渲染</p>
-<h2 id="解析数据-1"><a href="#解析数据-1" class="headerlink" title="解析数据"></a>解析数据</h2><p>解析了模版之后，我们就要研究如何进行数据解析了，这里我采用劫持数据的方法来进行。</p>
-<h3 id="普通对象的劫持"><a href="#普通对象的劫持" class="headerlink" title="普通对象的劫持"></a>普通对象的劫持</h3><p>如何劫持数据？一般对数据的劫持都是通过Object.defineProperty方法进行的，先看一个小例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> var obj = &#123;</span><br><span class="line">  name: &apos;mi&apos;</span><br><span class="line">&#125;</span><br><span class="line">function observe(obj, key) &#123;</span><br><span class="line">  let old = obj[key]</span><br><span class="line">  Object.defineProperty(obj, key, &#123;</span><br><span class="line">    enumerable: true,</span><br><span class="line">    configurable: true,</span><br><span class="line">    get: function() &#123;</span><br><span class="line">      return old</span><br><span class="line">    &#125;,</span><br><span class="line">    set: function(now) &#123;</span><br><span class="line">      if(now !== old) &#123;</span><br><span class="line">        console.log(`$&#123;old&#125; ---&gt; $&#123;now&#125;`)</span><br><span class="line">        old = now</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">observe(obj, &apos;name&apos;)</span><br><span class="line">obj.name = &apos;mirone&apos;</span><br><span class="line">//输出结果：</span><br><span class="line">//&quot;mi ---&gt; mirone&quot;</span><br></pre></td></tr></table></figure>
-<p>这样我们就通过object.defineProperty进行了数据劫持，如果我们想自定义劫持数据时发生的操作，只要添加一个回调函数参数即可：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">function observer(obj, k, callback) &#123;</span><br><span class="line">  let old = obj[k]  </span><br><span class="line">  Object.defineProperty(obj, k, &#123;</span><br><span class="line">    enumerable: true,</span><br><span class="line">    configurable: true,</span><br><span class="line">    get: function() &#123;</span><br><span class="line">      return old</span><br><span class="line">    &#125;,</span><br><span class="line">    set: function(now) &#123;</span><br><span class="line">      if(now !== old) &#123;</span><br><span class="line">        callback(old, now)</span><br><span class="line">      &#125;</span><br><span class="line">      old = now</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="嵌套对象的劫持"><a href="#嵌套对象的劫持" class="headerlink" title="嵌套对象的劫持"></a>嵌套对象的劫持</h3><p>对于对象中的对象，我么还需要多进行一个步骤，使用递归来劫持对象中的对象：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//实现一个observeAllKey函数，劫持该对象的所有属性</span><br><span class="line">function observeAllKey(obj, callback) &#123;</span><br><span class="line">  Object.keys(obj).forEach(function(key)&#123;</span><br><span class="line">    observer(obj, key, callback)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">function observer(obj, k, callback) &#123;</span><br><span class="line">  let old = obj[k]</span><br><span class="line">  if (old.toString() === &apos;[object Object]&apos;) &#123;</span><br><span class="line">    observeAllKey(old, callback)</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    //...同前文，省略</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="对象中数组的劫持"><a href="#对象中数组的劫持" class="headerlink" title="对象中数组的劫持"></a>对象中数组的劫持</h3><p>对于对象中的数组，我们使用重写数组的prototype的方法来劫持它</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function observeArray(arr, callback) &#123;</span><br><span class="line">  const oam = [&apos;push&apos;, &apos;pop&apos;, &apos;shift&apos;, &apos;unshift&apos;, &apos;splice&apos;, &apos;sort&apos;, &apos;reverse&apos;]</span><br><span class="line">  const arrayProto = Array.prototype</span><br><span class="line">  const hackProto = Object.create(Array.prototype)</span><br><span class="line">  oam.forEach(function(method)&#123;</span><br><span class="line">    Object.defineProperty(hackProto, method, &#123;</span><br><span class="line">      writable: true,</span><br><span class="line">      enumerable: true,</span><br><span class="line">      configurable: true,</span><br><span class="line">      value: function(...arg) &#123;</span><br><span class="line">        let me = this</span><br><span class="line">        let old = arr.slice()</span><br><span class="line">        let now = arrayProto[method].call(me, ...arg)</span><br><span class="line">        callback(old, me, ...arg)</span><br><span class="line">        return now</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">  arr.__proto__ = hackProto</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>写完劫持数组的函数后，将它添加进主函数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function observer(obj, k, callback) &#123;</span><br><span class="line">  let old = obj[k]</span><br><span class="line">  if(Object.prototype.toString.call(old) === &apos;[object Array]&apos;) &#123;</span><br><span class="line">    observeArray(old, callback)</span><br><span class="line">  &#125; else if (old.toString() === &apos;[object Object]&apos;) &#123;</span><br><span class="line">    observeAllKey(old, callback)</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    //...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="处理路径参数"><a href="#处理路径参数" class="headerlink" title="处理路径参数"></a>处理路径参数</h3><p>之前我们所有的方法都是面对单个key值的，回想一下我们的模版，有很多例如todos:todo:member这样的路径，我们应该允许传入一个路径数组，根据路径数组来监听指定的对象数据</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function observePath(obj, path, callback) &#123;</span><br><span class="line">  let _path = obj</span><br><span class="line">  let _key</span><br><span class="line">  path.forEach((p, index) =&gt; &#123;</span><br><span class="line">    if(parseInt(p) === p) &#123;</span><br><span class="line">      p = parseInt(p)</span><br><span class="line">    &#125;</span><br><span class="line">    if(index &lt; path.length - 1) &#123;</span><br><span class="line">      _path = _path[p]</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      _key = p</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  observer(_path, _key, callback)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>之后再将它添加进主函数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function observer(obj, k, callback) &#123;</span><br><span class="line">  if(Object.prototype.toString.call(k) === &apos;[object Array]&apos;) &#123;</span><br><span class="line">    observePath(obj, k, callback)</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    let old = obj[k]</span><br><span class="line">    if(Object.prototype.toString.call(old) === &apos;[object Array]&apos;) &#123;</span><br><span class="line">      observeArray(old, callback)</span><br><span class="line">    &#125; else if (old.toString() === &apos;[object Object]&apos;) &#123;</span><br><span class="line">      observeAllKey(old, callback)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      //...</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样，我们就完成了监听函数。</p>
-<h2 id="多对一监视的实现"><a href="#多对一监视的实现" class="headerlink" title="多对一监视的实现"></a>多对一监视的实现</h2><p>有可能绑定某个数据结构的节点不止一个，有时我们需要修改完成时同时通知所有节点，那么我们还需要一个单独的模块负责通知所有节点，我们称之为Register模块，负责针对不同模块注册不同的一个或多个回调函数。</p>
-<h3 id="监视者的实现"><a href="#监视者的实现" class="headerlink" title="监视者的实现"></a>监视者的实现</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">class Register &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    //存放所有回调对象，回调对象由三个key组成：obj, key, fn，其中fn应该是一个数组，放着所有发生变化时要执行的回调函数</span><br><span class="line">    this.routes = []</span><br><span class="line">  &#125;</span><br><span class="line">  //添加一个回调</span><br><span class="line">  regist(obj, k, fn) &#123;</span><br><span class="line">    const _i = this.routes.find(function(el) &#123;</span><br><span class="line">      if((el.key === k || el.key.toString() === k.toString()) </span><br><span class="line">        &amp;&amp; Object.is(el.obj, obj)) &#123;</span><br><span class="line">        return el</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    if(_i) &#123;</span><br><span class="line">      //如果已经存在该obj和key组成的对象</span><br><span class="line">      _i.fn.push(fn)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      //如果尚不存在</span><br><span class="line">      this.routes.push(&#123;</span><br><span class="line">        obj: obj,</span><br><span class="line">        key: k,</span><br><span class="line">        fn: [fn]</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  //解析结束时调用，绑定所有回调</span><br><span class="line">  build() &#123;</span><br><span class="line">    this.routes.forEach((route) =&gt; &#123;</span><br><span class="line">      observer(route.obj, route.key, route.fn)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="observer模块的修改"><a href="#observer模块的修改" class="headerlink" title="observer模块的修改"></a>observer模块的修改</h3><p>由于现在一个key可能对应多个回调操作了，需要对observer进行修改：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function observer(obj, k, callback) &#123;</span><br><span class="line">  //...与前文相同</span><br><span class="line">  if(now !== old) &#123;</span><br><span class="line">    callback.forEach((fn) =&gt; &#123;</span><br><span class="line">      fn(old, now)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function observerArray(arr, callback) &#123;</span><br><span class="line">  //...与前文相同</span><br><span class="line">  //将原来的callback(old, this, ...arg)替换为</span><br><span class="line">  callback.forEach((fn) =&gt; &#123;</span><br><span class="line">    fn(old, this, ...arg)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="绑定模版与数据-1"><a href="#绑定模版与数据-1" class="headerlink" title="绑定模版与数据"></a>绑定模版与数据</h2><p>现在，我们要在解析过程中添加对数据的监视了，还记得之前的parse系列函数吗？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">const register = new Register()</span><br><span class="line">function parseModel(node) &#123;</span><br><span class="line">  if(node.getAttribute(&apos;data-model&apos;)) &#123;</span><br><span class="line">    //...之前逻辑不变</span><br><span class="line">    register.regist(data, _data.path, function(old, now) &#123;</span><br><span class="line">      if(node.tagName === &apos;INPUT&apos;) &#123;</span><br><span class="line">        node.value = now</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        node.innerText = now</span><br><span class="line">      &#125;</span><br><span class="line">      //添加console便于调试</span><br><span class="line">      console.log(`$&#123;old&#125; ---&gt; $&#123;now&#125;`)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">function parseClass(node) &#123;</span><br><span class="line">  if(node.getAttribute(&apos;data-class&apos;)) &#123;</span><br><span class="line">    //...</span><br><span class="line">    register.regist(data, _data.path, function(old, now) &#123;</span><br><span class="line">      node.classList.remove(old)</span><br><span class="line">      node.classList.add(now)</span><br><span class="line">      console.log(`$&#123;old&#125; ---&gt; $&#123;now&#125;`)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">//当列表发生变化时，为了简单直接重新渲染了当前列表</span><br><span class="line">function parseList(node) &#123;</span><br><span class="line">  //...</span><br><span class="line">  register.regist(data, _listData.path, () =&gt; &#123;</span><br><span class="line">    while(node.firstChild) &#123;</span><br><span class="line">      node.removeChild(node.firstChild)</span><br><span class="line">    &#125;</span><br><span class="line">    const _listData = parseData(_list, node)</span><br><span class="line">    node.appendChild(_item)</span><br><span class="line">    _listData.data.forEach((_dataItem, index) =&gt; &#123;</span><br><span class="line">      const _copyItem = _item.cloneNode(true)</span><br><span class="line">      if(node.path) &#123;</span><br><span class="line">        _copyItem.path = node.path.slice()</span><br><span class="line">      &#125;</span><br><span class="line">      if(!_copyItem.path) &#123;</span><br><span class="line">        _copyItem.path = []</span><br><span class="line">      &#125;</span><br><span class="line">      _copyItem.path.push(index)</span><br><span class="line">      scan(_copyItem)</span><br><span class="line">      node.insertBefore(_copyItem, _item)</span><br><span class="line">    &#125;)</span><br><span class="line">    node.removeChild(_item)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line">//当模版解析结束后绑定所有事件</span><br><span class="line">register.build()</span><br></pre></td></tr></table></figure>
-<p>至此我们就基本完成了一个简单的MVVM，之后我进行了一点细微的细节优化，源码放在<a href="https://gist.github.com/Saul-Mirone/c356e18f0199482f7671c3442fe5c153" target="_blank" rel="noopener">我的Gist上</a>。各位也可以去<a href="https://link.zhihu.com/?target=https%3A//jsbin.com/juqeduf/edit%3Fconsole%2Coutput" target="_blank" rel="noopener">本教程的JSBin</a>查看效果。水平有限，欢迎吐槽。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/this-in-js/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/js/this-in-js/" itemprop="url">
-                  understand 'this' in JS
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-01-29 23:28:15" itemprop="dateCreated datePublished" datetime="2018-01-29T23:28:15+08:00">2018-01-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-25 16:14:41" itemprop="dateModified" datetime="2018-06-25T16:14:41+08:00">2018-06-25</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="js中的this指向"><a href="#js中的this指向" class="headerlink" title="js中的this指向"></a>js中的this指向</h1><h2 id="理解this指向"><a href="#理解this指向" class="headerlink" title="理解this指向"></a>理解this指向</h2><h3 id="理解function中的this指向"><a href="#理解function中的this指向" class="headerlink" title="理解function中的this指向"></a>理解function中的this指向</h3><h4 id="对象中的function"><a href="#对象中的function" class="headerlink" title="对象中的function"></a>对象中的function</h4><p>example 1:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        getValue()&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'child.value'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>example 2.1:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> child = &#123;</span><br><span class="line">    value:<span class="string">'child.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    functionOfParent: parent.getValue <span class="comment">// 'child.value'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.child = child;</span><br><span class="line"></span><br><span class="line">parent.getValue()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.child.getValue()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.functionOfParent()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br></pre></td></tr></table></figure>
-<p>example 2.2:</p>
-<p>use a common function in different objects</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">commonGetValue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// this is binded when this function is called</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue: commonGetValue, <span class="comment">// 'parent.value'</span></span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        getValue: commonGetValue <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.getValue()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.child.getValue()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line"></span><br><span class="line">commonGetValue();</span><br><span class="line"><span class="comment">// return undefined, or some value if 'this.value' is assigned before, or throw an Exception because 'this' may be null</span></span><br></pre></td></tr></table></figure>
-<p><strong><code>对example 2.1 2.2的解释</code></strong> function中的this只是一个代词，只有在调用时，才知道this绑定的是谁</p>
-<h3 id="理解箭头函数（Lambda函数）的this"><a href="#理解箭头函数（Lambda函数）的this" class="headerlink" title="理解箭头函数（Lambda函数）的this"></a>理解箭头函数（Lambda函数）的this</h3><p>关于js中的箭头函数，例如：<code>(arg0, arg1)=&gt;{ return arg0 + arg1; }</code>，可详见<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a>。</p>
-<p>特别需要指出，文档中说明：</p>
-<blockquote>
-<p><strong>箭头函数表达式</strong>不绑定自己的this，arguments，super或 new.target。这些函数表达式最适合用于非方法函数，并且它们不能用作构造函数。</p>
-</blockquote>
-<h4 id="不绑定this"><a href="#不绑定this" class="headerlink" title="不绑定this"></a>不绑定this</h4><p>箭头函数不会创建自己的<code>this</code>；它使用封闭执行上下文的<code>this</code>值。因此，在下面的代码中，传递给<code>setInterval</code>的函数内的<code>this</code>与封闭函数中的<code>this</code>值相同：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.age = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">  setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.age++; <span class="comment">// |this| 正确地指向person 对象</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
-<p>由于 <code>this</code> 已经在词法层面完成了绑定，通过 <code>call()</code> 或 <code>apply()</code> 方法调用一个箭头函数时，只是传入了参数而已，不能绑定this，对 <code>this</code> 并没有什么影响：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var adder = &#123;</span><br><span class="line">  base : 1,</span><br><span class="line">    </span><br><span class="line">  add : function(a) &#123;</span><br><span class="line">    var f = v =&gt; v + this.base;</span><br><span class="line">    return f(a);</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  addThruCall: function(a) &#123;</span><br><span class="line">    var f = v =&gt; v + this.base;</span><br><span class="line">    var b = &#123;</span><br><span class="line">      base : 2</span><br><span class="line">    &#125;;</span><br><span class="line">            </span><br><span class="line">    return f.call(b, a);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">console.log(adder.add(1));         // 输出 2</span><br><span class="line">console.log(adder.addThruCall(1)); // 仍然输出 2（而不是3 ——译者注）</span><br></pre></td></tr></table></figure>
-<h4 id="不绑定arguments"><a href="#不绑定arguments" class="headerlink" title="不绑定arguments"></a>不绑定arguments</h4><p>箭头函数不绑定<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments" target="_blank" rel="noopener">Arguments 对象</a>。因此，在本示例中，参数只是在封闭范围内引用相同的名称：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var arguments = 42;</span><br><span class="line">var arr = () =&gt; arguments;</span><br><span class="line"></span><br><span class="line">arr(); // 42</span><br><span class="line"></span><br><span class="line">function foo() &#123;</span><br><span class="line">  var f = (i) =&gt; arguments[0]+i; </span><br><span class="line">  // foo函数的间接参数绑定</span><br><span class="line">  return f(2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(1); // 3</span><br></pre></td></tr></table></figure>
-<p>在大多数情况下，使用<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Rest_parameters" target="_blank" rel="noopener">剩余参数</a>是使用<code>arguments</code>对象的好选择。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123; </span><br><span class="line">  var f = (...args) =&gt; args[0]; </span><br><span class="line">  return f(2); </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(1); </span><br><span class="line">// 2</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>以上’不绑定this’和’不绑定arguments’两节整理自<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank" rel="noopener">mozilla官方文档 &gt; JavaScript &gt; 箭头函数</a></p>
-</blockquote>
-<p>example 1:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue: <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">this</span>.value,</span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        getValue: <span class="function"><span class="params">()</span> =&gt;</span> <span class="keyword">this</span>.value</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.getValue();</span><br><span class="line">parent.child.getValue();</span><br><span class="line"><span class="comment">// both return undefined (unless global 'this.value' is assigned before)</span></span><br></pre></td></tr></table></figure>
-<p>example 2.1:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    getValueThruArrow()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="function">(<span class="params">(</span>)=&gt;</span><span class="keyword">this</span>.value)(); <span class="comment">// 'parent.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> child = &#123;</span><br><span class="line">    value:<span class="string">'child.value'</span>,</span><br><span class="line">    getValue()&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.value; <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    functionOfParent: parent.getValue, <span class="comment">// 'child.value'</span></span><br><span class="line">    functionThruArrowOfParent: parent.getValueThruArrow <span class="comment">// 'parent'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.child = child;</span><br><span class="line"></span><br><span class="line">parent.getValue()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.getValueThruArrow()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.child.getValue()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.functionOfParent()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.functionThruArrowOfParent()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br></pre></td></tr></table></figure>
-<p>example 2.2:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> commonArrowToGetValue = <span class="function"><span class="params">()</span>=&gt;</span><span class="keyword">this</span>.value;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">commonGetValueThruArrow</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function">(<span class="params">(</span>)=&gt;</span><span class="keyword">this</span>.value)(); <span class="comment">// this is binded when this function is called</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> parent = &#123;</span><br><span class="line">    value:<span class="string">'parent.value'</span>,</span><br><span class="line">    arrowToGetValue: commonArrowToGetValue,</span><br><span class="line">    getValueThruArrow: commonGetValueThruArrow, <span class="comment">// 'parent.value'</span></span><br><span class="line">    child:&#123;</span><br><span class="line">        value:<span class="string">'child.value'</span>,</span><br><span class="line">        arrowToGetValue: commonArrowToGetValue,</span><br><span class="line">        getValueThruArrow: commonGetValueThruArrow <span class="comment">// 'child.value'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">parent.getValueThruArrow()</span><br><span class="line"><span class="comment">// "parent.value"</span></span><br><span class="line">parent.arrowToGetValue()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line">parent.child.getValueThruArrow()</span><br><span class="line"><span class="comment">// "child.value"</span></span><br><span class="line">parent.child.arrowToGetValue()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line">commonGetValueThruArrow()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line">commonGetValueThruArrow()</span><br><span class="line"><span class="comment">// undefined</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 'undefined' above means: return undefined, or some value if 'this.value' is assigned before, or throw an Exception because 'this' may be null</span></span><br></pre></td></tr></table></figure>
-<p><strong><code>对example 2.1 2.2的解释</code></strong> 可以这样理解：箭头函数一旦创建，其中this指向便被确定。(…)=&gt;{…} 语法相对于创建了一个箭头函数，每次调用就会创建一个新的箭头函数，并在这时预先“绑定”其中的this。因此如果一个箭头函数放在一个function中，则每次调用这个function，则都会创建一个箭头函数，绑定这个function的this。</p>
-<h2 id="改变this指向"><a href="#改变this指向" class="headerlink" title="改变this指向"></a>改变this指向</h2><p>js为Function类提供了三种方法，从而能够在调用该函数时同时设置this的指向：</p>
-<ul>
-<li>call</li>
-<li>apply</li>
-<li>bind</li>
-</ul>
-<p>这三种函数的使用方法为：</p>
-<p>//TODO </p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="使用bind正确地创建函数别名"><a href="#使用bind正确地创建函数别名" class="headerlink" title="使用bind正确地创建函数别名"></a>使用bind正确地创建函数别名</h3><h4 id="需要特定this值的函数的别名"><a href="#需要特定this值的函数的别名" class="headerlink" title="需要特定this值的函数的别名"></a>需要特定this值的函数的别名</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> id = <span class="built_in">document</span>.getElementById;</span><br><span class="line">id(<span class="string">'someid'</span>).innerText=<span class="string">"text"</span>;</span><br></pre></td></tr></table></figure>
-<p>以上代码会throw an error:<code>Uncaught TypeError: Illegal invocation</code>.</p>
-<p>因为document.getElementById调用时要求this是document. 以下是解决方法。</p>
-<blockquote>
-<p>解决方法引自 <a href="https://stackoverflow.com/a/18993841" target="_blank" rel="noopener">https://stackoverflow.com/a/18993841</a></p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> id = <span class="built_in">document</span>.getElemenyById.bind( <span class="built_in">document</span> );</span><br></pre></td></tr></table></figure>
-<h4 id="为需要特定this值的函数创建快捷调用"><a href="#为需要特定this值的函数创建快捷调用" class="headerlink" title="为需要特定this值的函数创建快捷调用"></a>为需要特定this值的函数创建快捷调用</h4><blockquote>
-<p>引自 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind#Example:_Creating_shortcuts" target="_blank" rel="noopener">MDN web docs &gt; Function.prototype.bind() &gt; 快捷调用</a></p>
-</blockquote>
-<p><code>在你想要为一个需要特定的 this 值的函数创建一个捷径（shortcut）的时候，bind()</code> 方法也很好用。</p>
-<p>你可以用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target="_blank" rel="noopener"><code>Array.prototype.slice</code></a> 来将一个类似于数组的对象（array-like object）转换成一个真正的数组，就拿它来举例子吧。你可以创建这样一个捷径：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var slice = Array.prototype.slice;</span><br><span class="line"></span><br><span class="line">// ...</span><br><span class="line"></span><br><span class="line">slice.apply(arguments);</span><br></pre></td></tr></table></figure>
-<p>用 <code>bind()</code>可以使这个过程变得简单。在下面这段代码里面，<code>slice</code> 是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype" target="_blank" rel="noopener"><code>Function.prototype</code></a> 的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply" target="_blank" rel="noopener"><code>apply()</code></a> 方法的绑定函数，并且将 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype" target="_blank" rel="noopener"><code>Array.prototype</code></a>的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target="_blank" rel="noopener"><code>slice()</code></a> 方法作为 <code>this</code> 的值。这意味着我们压根儿用不着上面那个 <code>apply()</code>调用了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// same as &quot;slice&quot; in the previous example</span><br><span class="line">var unboundSlice = Array.prototype.slice;</span><br><span class="line">var slice = Function.prototype.apply.bind(unboundSlice);</span><br><span class="line"></span><br><span class="line">// ...</span><br><span class="line"></span><br><span class="line">slice(arguments);</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/js/constructor-in-js5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/js/constructor-in-js5/" itemprop="url">
-                  Constructor in ES5
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-01-26 15:49:11" itemprop="dateCreated datePublished" datetime="2018-01-26T15:49:11+08:00">2018-01-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="构造与原型混合模式创建对象"><a href="#构造与原型混合模式创建对象" class="headerlink" title="构造与原型混合模式创建对象"></a>构造与原型混合模式创建对象</h1><p>我们结合原型模式在共享方法属性以及构造函数模式在实例方法属性方面的优势，使用以下的方法创建对象：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//我们希望每个stu拥有属于自己的name和age属性</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Student</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//所有的stu应该共享一个alertName()方法</span></span><br><span class="line">Student.prototype = &#123;</span><br><span class="line">  <span class="keyword">constructor</span> : Student,</span><br><span class="line">  alertName : function() &#123;</span><br><span class="line">                alert(<span class="keyword">this</span>.name);</span><br><span class="line">              &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> stu1 = <span class="keyword">new</span> Student(<span class="string">"Jim"</span>, <span class="number">20</span>);</span><br><span class="line"><span class="keyword">var</span> stu2 = <span class="keyword">new</span> Student(<span class="string">"Tom"</span>, <span class="number">21</span>);</span><br><span class="line"></span><br><span class="line">stu1.alertName();  <span class="comment">//Jim  实例属性</span></span><br><span class="line">stu2.alertName();  <span class="comment">//Tom  实例属性</span></span><br><span class="line"></span><br><span class="line">alert(stu1.alertName == stu2.alertName);  <span class="comment">//true  共享函数</span></span><br><span class="line"><span class="number">12345678910111213141516171819202122</span></span><br></pre></td></tr></table></figure>
-<p>以上，在构造函数中定义实例属性，在原型中定义共享属性的模式，是目前使用最广泛的方式。通常情况下，我们都会默认使用这种方式来定义引用类型变量。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/Node.js/config/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Node.js/config/" itemprop="url">
-                  config Node.js
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-01-25 22:28:17" itemprop="dateCreated datePublished" datetime="2018-01-25T22:28:17+08:00">2018-01-25</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Node-js/" itemprop="url" rel="index"><span itemprop="name">Node.js</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="使用淘宝镜像"><a href="#使用淘宝镜像" class="headerlink" title="使用淘宝镜像"></a>使用<a href="npm.taobao.org/">淘宝镜像</a></h2><h2 id="windows-build-tools"><a href="#windows-build-tools" class="headerlink" title="windows-build-tools"></a>windows-build-tools</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --global --production windows-build-tools</span><br></pre></td></tr></table></figure>
-<h2 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h2><p><a href="https://github.com/Automattic/node-canvas/wiki/Installation---Windows" target="_blank" rel="noopener">https://github.com/Automattic/node-canvas/wiki/Installation---Windows</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Equal Ma</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">64</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
                     
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">26</span>
-                    <span class="site-state-item-name">分类</span>
-                  
-                </div>
-              
 
-              
-            </nav>
-          
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
 
-          
+    <!-- Facebook -->
+    
 
-          
+    <!-- Google + -->
+    
 
-          
-          
+    <!-- Weibo -->
+    
 
-          
-          
+    <!-- Instagram -->
+    
 
-          
-            
-          
-          
+    <!-- Tumblr -->
+    
 
-        </div>
-      </section>
+    <!-- Github -->
+    
+        <a href="https://github.com/EqualMa" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
 
-      
+    <!-- LinkedIn -->
+    
 
-      
+    <!-- Zhihu -->
+    
 
-    </div>
-  </aside>
+    <!-- Bilibili -->
+    
 
+    <!-- Telegram -->
+    
 
-        
-      </div>
-    </main>
+    <!-- V2EX -->
+    
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Equal Ma</span>
-
-  
-
-  
+    <!-- Segmentfault -->
+    
 </div>
 
 
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Equal's
+            
+        </div>
 
+        <!-- Paradox Footer Right Section -->
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
 
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.0</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+</footer>
 
-    
-	
-    
 
-    
-  </div>
+                    <!-- Import JS File -->
 
-  
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
 </script>
 
 
@@ -2394,109 +1436,92 @@
 
 
 
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
 
 
 
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
 
 
 
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
 
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        if(textContent)
+            textContent.textContent = copyrightNow
+    } else {
+        if(textContent)
+            textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
 
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
 
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
 
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-<script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1534419394105')
+                </main>
+            </div>
+        <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534508120976')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
 </script></body>
+    
 </html>

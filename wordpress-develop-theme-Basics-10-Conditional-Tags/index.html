@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><link rel=manifest href=/manifest.json>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+        Equal&#39;s
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?TDH8hnXY3mvlnRKJrjsd+Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/atelier-heath-light.min.css?DZmcUCyCHxt2Gtdy1zAQZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Equal&#39;s">
+    <meta name="msapplication-starturl" content="https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Equal&#39;s">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Equal&#39;s">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Mon Dec 25 2017 14:38:51 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jun 19 2018 23:31:21 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html",
+    "headline": "",
+    "datePublished": "Mon Dec 25 2017 14:38:51 GMT+0800",
+    "dateModified": "Tue Jun 19 2018 23:31:21 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Equal Ma",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Equal's"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Equal&#39;s",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Conditional-Tags"><span class="post-toc-number">1.</span> <span class="post-toc-text">Conditional Tags</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Common-Conditional-Tags"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Common Conditional Tags</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#The-Main-Page"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">The Main Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#The-Front-Page"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">The Front Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#The-Administration-Panels"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">The Administration Panels</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Single-Post-Page"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">A Single Post Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Single-Post-Page-or-Attachment"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">A Single Post, Page, or Attachment</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Sticky-Post"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">A Sticky Post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Post-Type"><span class="post-toc-number">1.1.7.</span> <span class="post-toc-text">A Post Type</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Post-Type-is-Hierarchical"><span class="post-toc-number">1.1.8.</span> <span class="post-toc-text">A Post Type is Hierarchical</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Post-Type-Archive"><span class="post-toc-number">1.1.9.</span> <span class="post-toc-text">A Post Type Archive</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Comments-Popup"><span class="post-toc-number">1.1.10.</span> <span class="post-toc-text">A Comments Popup</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Any-Page-Containing-Posts"><span class="post-toc-number">1.1.11.</span> <span class="post-toc-text">Any Page Containing Posts</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-“PAGE”-Page"><span class="post-toc-number">1.1.12.</span> <span class="post-toc-text">A “PAGE” Page</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Testing-for-Paginated-Pages"><span class="post-toc-number">1.1.12.1.</span> <span class="post-toc-text">Testing for Paginated Pages</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Example-1"><span class="post-toc-number">1.1.12.1.1.</span> <span class="post-toc-text">Example 1</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Example-2"><span class="post-toc-number">1.1.12.1.2.</span> <span class="post-toc-text">Example 2</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Testing-for-Sub-Pages"><span class="post-toc-number">1.1.12.2.</span> <span class="post-toc-text">Testing for Sub-Pages</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Snippet-1"><span class="post-toc-number">1.1.12.2.1.</span> <span class="post-toc-text">Snippet 1</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Snippet-2"><span class="post-toc-number">1.1.12.2.2.</span> <span class="post-toc-text">Snippet 2</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Snippet-3"><span class="post-toc-number">1.1.12.2.3.</span> <span class="post-toc-text">Snippet 3</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Snippet-4"><span class="post-toc-number">1.1.12.2.4.</span> <span class="post-toc-text">Snippet 4</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Is-a-Page-Template"><span class="post-toc-number">1.1.13.</span> <span class="post-toc-text">Is a Page Template</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Category-Page"><span class="post-toc-number">1.1.14.</span> <span class="post-toc-text">A Category Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Tag-Page"><span class="post-toc-number">1.1.15.</span> <span class="post-toc-text">A Tag Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Taxonomy-Page"><span class="post-toc-number">1.1.16.</span> <span class="post-toc-text">A Taxonomy Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Registered-Taxonomy"><span class="post-toc-number">1.1.17.</span> <span class="post-toc-text">A Registered Taxonomy</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#An-Author-Page"><span class="post-toc-number">1.1.18.</span> <span class="post-toc-text">An Author Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Multi-author-Site"><span class="post-toc-number">1.1.19.</span> <span class="post-toc-text">A Multi-author Site</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Date-Page"><span class="post-toc-number">1.1.20.</span> <span class="post-toc-text">A Date Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Any-Archive-Page"><span class="post-toc-number">1.1.21.</span> <span class="post-toc-text">Any Archive Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Search-Result-Page"><span class="post-toc-number">1.1.22.</span> <span class="post-toc-text">A Search Result Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-404-Not-Found-Page"><span class="post-toc-number">1.1.23.</span> <span class="post-toc-text">A 404 Not Found Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#An-Attachment"><span class="post-toc-number">1.1.24.</span> <span class="post-toc-text">An Attachment</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Single-Page-Single-Post-or-Attachment"><span class="post-toc-number">1.1.25.</span> <span class="post-toc-text">A Single Page, Single Post or Attachment</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Syndication"><span class="post-toc-number">1.1.26.</span> <span class="post-toc-text">A Syndication</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Trackback"><span class="post-toc-number">1.1.27.</span> <span class="post-toc-text">A Trackback</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Preview"><span class="post-toc-number">1.1.28.</span> <span class="post-toc-text">A Preview</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Has-An-Excerpt"><span class="post-toc-number">1.1.29.</span> <span class="post-toc-text">Has An Excerpt</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Has-A-Nav-Menu-Assigned"><span class="post-toc-number">1.1.30.</span> <span class="post-toc-text">Has A Nav Menu Assigned</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Inside-The-Loop"><span class="post-toc-number">1.1.31.</span> <span class="post-toc-text">Inside The Loop</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Is-Sidebar-Active"><span class="post-toc-number">1.1.32.</span> <span class="post-toc-text">Is Sidebar Active</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Part-of-a-Network-Multisite"><span class="post-toc-number">1.1.33.</span> <span class="post-toc-text">Part of a Network (Multisite)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Main-Site-Multisite"><span class="post-toc-number">1.1.34.</span> <span class="post-toc-text">Main Site (Multisite)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Admin-of-a-Network-Multisite"><span class="post-toc-number">1.1.35.</span> <span class="post-toc-text">Admin of a Network (Multisite)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#An-Active-Plugin"><span class="post-toc-number">1.1.36.</span> <span class="post-toc-text">An Active Plugin</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Child-Theme"><span class="post-toc-number">1.1.37.</span> <span class="post-toc-text">A Child Theme</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Theme-supports-a-feature"><span class="post-toc-number">1.1.38.</span> <span class="post-toc-text">Theme supports a feature</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Working-Examples"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Working Examples</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Single-Post"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">Single Post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Check-for-Multiple-Conditionals"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">Check for Multiple Conditionals</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Variable-Sidebar-Content"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">Variable Sidebar Content</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Helpful-404-Page"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">Helpful 404 Page</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#In-the-theme’s-footer-php-file"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">In the theme’s footer.php file</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Conditional-Tags-Index"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Conditional Tags Index</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Function-Reference"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">Function Reference</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 1 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Equal Ma</strong>
+        <span>12月 25, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html&pic=https://equalma.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html&via=Equal Ma" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html&title=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Equal&#39;s&title=&summary=&pics=https://equalma.github.io/img/favicon.png&url=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/index.html&text=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="Conditional-Tags"><a href="#Conditional-Tags" class="headerlink" title="Conditional Tags"></a>Conditional Tags</h1><p>You can use <code>Conditional Tags</code> with <code>if else</code> to alter the display of content depending on the conditions that the current page matches.</p>
+<p>For example:</p>
+<pre><code class="php">if ( is_user_logged_in() ):
+    echo &#39;Welcome, registered user!&#39;;
+else:
+    echo &#39;Welcome, visitor!&#39;;
+endif;
+</code></pre>
+<p>For a Conditional Tag to modify your data, the information must already have been retrieved from your database, i.e. the query must have already run. If you use a Conditional Tag before there is data, there’ll be nothing to ask the if/else statement about.</p>
+<p>It’s important to note that WordPress loads <code>functions.php</code> before the query is run, so if you simply include a Conditional Tag in that file, it won’t work.</p>
+<p><strong>Two ways to implement Conditional Tags:</strong></p>
+<ul>
+<li>place it in a Template File</li>
+<li>create a function out of it in <code>functions.php</code>that hooks into an action/filter that triggers at a later point</li>
+</ul>
+<h2 id="Common-Conditional-Tags"><a href="#Common-Conditional-Tags" class="headerlink" title="Common Conditional Tags"></a>Common Conditional Tags</h2><p>Below are some common conditional tags for:</p>
+<h3 id="The-Main-Page"><a href="#The-Main-Page" class="headerlink" title="The Main Page"></a>The Main Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_home/" target="_blank" rel="noopener">is_home()</a></p>
+<p>This condition returns true when the main blog page is being displayed, usually in standard reverse chronological order. If your home page has been set to a Static Page instead, then this will only prove true on the page which you set as the “Posts page” in Settings &gt; Reading.</p>
+<h3 id="The-Front-Page"><a href="#The-Front-Page" class="headerlink" title="The Front Page"></a>The Front Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_front_page/" target="_blank" rel="noopener">is_front_page()</a></p>
+<p>This condition returns true when the front page of the site is displayed, regardless of whether it is set to show posts or a static page.</p>
+<p>Returns true when:</p>
+<ol>
+<li>the main blog page is being displayed <strong>and</strong></li>
+<li>the Settings &gt; Reading -&gt; <em>Front page displays</em> option is set to <em>Your latest posts</em></li>
+</ol>
+<p><strong>OR</strong></p>
+<ol>
+<li>when Settings &gt; Reading -&gt; <em>Front page displays</em> is set to <em>A static page</em> <strong>and</strong></li>
+<li>the Front Page value is the current Page being displayed.</li>
+</ol>
+<h3 id="The-Administration-Panels"><a href="#The-Administration-Panels" class="headerlink" title="The Administration Panels"></a>The Administration Panels</h3><p><a href="https://developer.wordpress.org/reference/functions/is_admin/" target="_blank" rel="noopener">is_admin()</a></p>
+<p>This condition returns true when the Dashboard or the administration panels are being displayed.</p>
+<h3 id="A-Single-Post-Page"><a href="#A-Single-Post-Page" class="headerlink" title="A Single Post Page"></a>A Single Post Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_single/" target="_blank" rel="noopener">is_single()</a></p>
+<p>Returns true when any single Post (or attachment, or custom Post Type) is being displayed. This condition returns false if you are on a page.</p>
+<p><strong>is_single( ’17’ )</strong></p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_single/" target="_blank" rel="noopener">is_single()</a> can also check for certain posts by ID and other parameters. The above example proves true when Post 17 is being displayed as a single Post.</p>
+<p><strong>is_single( ‘Irish Stew’ )</strong></p>
+<p>Parameters include Post titles, as well. In this case, it proves true when the Post with title “Irish Stew” is being displayed as a single Post.</p>
+<p><strong>is_single( ‘beef-stew’ )</strong></p>
+<p>Proves true when the Post with Post Slug “beef-stew” is being displayed as a single Post.</p>
+<p><strong>is_single( array( 17, ‘beef-stew’, ‘Irish Stew’ ) )</strong></p>
+<p>Returns true when the single post being displayed is either post ID 17, or the post_name is “beef-stew”, or the post_title is “Irish Stew”.</p>
+<p><strong>is_single( array( 17, 19, 1, 11 ) )</strong></p>
+<p>Returns true when the single post being displayed is either post ID = 17, post ID = 19, post ID = 1 or post ID = 11.</p>
+<p><strong>is_single( array( ‘beef-stew’, ‘pea-soup’, ‘chilli’ ) )</strong></p>
+<p>Returns true when the single post being displayed is either the post_name “beef-stew”, post_name “pea-soup” or post_name “chilli”.</p>
+<p><strong>is_single( array( ‘Beef Stew’, ‘Pea Soup’, ‘Chilli’ ) )</strong></p>
+<p>Returns true when the single post being displayed is either the post_title is “Beef Stew”, post_title is “Pea Soup” or post_title is “Chilli”.</p>
+<p>Note: This function does not distinguish between the post ID, post title, or post name. A post named “17” would be displayed if a post ID of 17 was requested. Presumably the same holds for a post with the slug “17”.</p>
+<h3 id="A-Single-Post-Page-or-Attachment"><a href="#A-Single-Post-Page-or-Attachment" class="headerlink" title="A Single Post, Page, or Attachment"></a>A Single Post, Page, or Attachment</h3><p><strong>is_singular()</strong></p>
+<p>Returns true for any is_single, is_page, and is_attachment. It does allow testing for post types.</p>
+<h3 id="A-Sticky-Post"><a href="#A-Sticky-Post" class="headerlink" title="A Sticky Post"></a>A Sticky Post</h3><p><a href="https://developer.wordpress.org/reference/functions/is_sticky/" target="_blank" rel="noopener">is_sticky()</a></p>
+<p>Returns true if the “Stick this post to the front page” check box has been checked for the current post. In this example, no post ID argument is given, so the post ID for the Loop post is used.</p>
+<p><strong>is_sticky( ’17’ )</strong><br>Returns true when Post 17 is considered a sticky post.</p>
+<h3 id="A-Post-Type"><a href="#A-Post-Type" class="headerlink" title="A Post Type"></a>A Post Type</h3><p><a href="https://developer.wordpress.org/reference/functions/get_post_type/" target="_blank" rel="noopener">get_post_type()</a></p>
+<p>You can test to see if the current post is of a certain type by including <a href="https://developer.wordpress.org/reference/functions/get_post_type/" target="_blank" rel="noopener">get_post_type()</a> in your conditional. It’s not really a conditional tag, but it returns the <a href="https://developer.wordpress.org/reference/functions/register_post_type/" target="_blank" rel="noopener">registered post type</a> of the current post.</p>
+<p><strong>if ( ‘book’ == get_post_type() ) …</strong></p>
+<p><a href="https://developer.wordpress.org/reference/functions/post_type_exists/" target="_blank" rel="noopener">post_type_exists()</a></p>
+<p>Returns true if a given post type is a registered post type. This does not test if a post is a certain post_type. Note: This function replaces a function called is_post_type which existed briefly in 3.0 development.</p>
+<h3 id="A-Post-Type-is-Hierarchical"><a href="#A-Post-Type-is-Hierarchical" class="headerlink" title="A Post Type is Hierarchical"></a>A Post Type is Hierarchical</h3><p><a href="https://developer.wordpress.org/reference/functions/is_post_type_hierarchical/" target="_blank" rel="noopener">is_post_type_hierarchical( $post_type )</a></p>
+<p>Returns true if this $post_type has been set with hierarchical support when registered.</p>
+<p><strong>is_post_type_hierarchical( ‘book’ )</strong></p>
+<p>Returns true if the book post type was registered as having support for hierarchical.</p>
+<p><a href="https://developer.wordpress.org/themes/basics/conditional-tags/#top" target="_blank" rel="noopener">Top ↑</a></p>
+<h3 id="A-Post-Type-Archive"><a href="#A-Post-Type-Archive" class="headerlink" title="A Post Type Archive"></a>A Post Type Archive</h3><p><a href="https://developer.wordpress.org/reference/functions/is_post_type_archive/" target="_blank" rel="noopener">is_post_type_archive()</a></p>
+<p>Returns true on any post type archive.</p>
+<p><strong>is_post_type_archive( $post_type )</strong></p>
+<p>Returns true if on a post type archive page that matches $post_type (can be a single post type or an array of post types).</p>
+<p>To turn on post type archives, use ‘has_archive’ =&gt; true, when <a href="https://make.wordpress.org/docs/plugin-developer-handbook/9-custom-post-types-and-taxonomies/registering-custom-post-types/" target="_blank" rel="noopener">registering the post type</a>.</p>
+<h3 id="A-Comments-Popup"><a href="#A-Comments-Popup" class="headerlink" title="A Comments Popup"></a>A Comments Popup</h3><p><a href="https://developer.wordpress.org/reference/functions/is_comments_popup/" target="_blank" rel="noopener">is_comments_popup()</a></p>
+<p>When in Comments Popup window.</p>
+<h3 id="Any-Page-Containing-Posts"><a href="#Any-Page-Containing-Posts" class="headerlink" title="Any Page Containing Posts"></a>Any Page Containing Posts</h3><p><a href="https://developer.wordpress.org/reference/functions/comments_open/" target="_blank" rel="noopener">comments_open()</a></p>
+<p>When comments are allowed for the current Post being processed in the <a href="https://make.wordpress.org/docs/theme-developer-handbook/part-one-theme-basics/the-loop/" target="_blank" rel="noopener">WordPress Loop</a>.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/pings_open/" target="_blank" rel="noopener">pings_open()</a></p>
+<p>When pings are allowed for the current Post being processed in the WordPress Loop.</p>
+<h3 id="A-“PAGE”-Page"><a href="#A-“PAGE”-Page" class="headerlink" title="A “PAGE” Page"></a>A “PAGE” Page</h3><p>This section refers to WordPress <a href="https://make.wordpress.org/docs/theme-developer-handbook/part-one-theme-basics/page-templates/" target="_blank" rel="noopener">Pages</a>, not any generic webpage from your blog, or in other words to the built in <em>post_type</em> ‘page’.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_page/" target="_blank" rel="noopener">is_page()</a></p>
+<p>When any Page is being displayed.</p>
+<p><strong>is_page( ’42’ )</strong></p>
+<p>When Page 42 (ID) is being displayed.</p>
+<p><strong>is_page( ‘About Me And Joe’ )</strong></p>
+<p>When the Page with a <em>post_title</em> of “About Me And Joe” is being displayed.</p>
+<p><strong>is_page( ‘about-me’ )</strong></p>
+<p>When the Page with a <em>post_name</em> (slug) of “about-me” is being displayed.</p>
+<p><strong>is_page( array( 42, ‘about-me’, ‘About Me And Joe’ ) )</strong></p>
+<p>Returns true when the Pages displayed is either <em>post ID</em>= 42, or <em>post_name</em> is “about-me”, or <em>post_title</em> is “About Me And Joe”.</p>
+<p><strong>is_page( array( 42, 54, 6 ) )</strong></p>
+<p>Returns true when the Pages displayed is either <em>post ID</em>= 42, or <em>post ID</em> = 54, or <em>post ID</em> = 6.</p>
+<h4 id="Testing-for-Paginated-Pages"><a href="#Testing-for-Paginated-Pages" class="headerlink" title="Testing for Paginated Pages"></a>Testing for Paginated Pages</h4><p>You can use this code to check whether you’re on the nth page in a Post or Page that has been divided into pages using the <code>&lt;!--nextpage--&gt;</code> QuickTag. This can be useful, for example, if you wish to display meta-data only on the first page of a post divided into several pages.</p>
+<h5 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h5><pre><code class="php">&lt;?php
+  $paged = $wp_query-&gt;get( &#39;page&#39; );
+  if ( ! $paged || $paged &lt; 2 ) {
+    // This is not a paginated page (or it&#39;s simply the first page of a paginated page/post)    } else {
+    // This is a paginated page.
+} ?&gt;
+</code></pre>
+<h5 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2"></a>Example 2</h5><pre><code class="php">&lt;?php $paged = get_query_var( &#39;page&#39; ) ? get_query_var( &#39;page&#39; ) : false;
+    if ( $paged == false )  {
+    // This is not a paginated page (or it&#39;s simply the first page of a paginated page/post) }  else  {
+    // This is a paginated page.
+    }
+?&gt;
+</code></pre>
+<h4 id="Testing-for-Sub-Pages"><a href="#Testing-for-Sub-Pages" class="headerlink" title="Testing for Sub-Pages"></a>Testing for Sub-Pages</h4><p>There is <strong>no</strong> <code>is_subpage()</code> function, but you can test this with a little code:</p>
+<h5 id="Snippet-1"><a href="#Snippet-1" class="headerlink" title="Snippet 1"></a>Snippet 1</h5><pre><code class="php">&lt;?php  global $post; // if outside the loop
+   if ( is_page() &amp;&amp; $post-&gt;post_parent ) {
+    // This is a subpage
+          } else {
+    // This is not a subpage
+    }
+?&gt;
+</code></pre>
+<p>You can create your own is_subpage() function using the code in Snippet 2. Add it to your functions.php file. It tests for a parent page in the same way as Snippet 1, but will return the ID of the page parent if there is one, or false if there isn’t.</p>
+<h5 id="Snippet-2"><a href="#Snippet-2" class="headerlink" title="Snippet 2"></a>Snippet 2</h5><pre><code class="php">function is_subpage() {
+    global $post;                              // load details about this page
+
+    if ( is_page() &amp;&amp; $post-&gt;post_parent ) {   // test to see if the page has a parent
+        return $post-&gt;post_parent;             // return the ID of the parent post
+
+    } else {                                   // there is no parent so ...
+        return false;                          // ... the answer to the question is false
+    }
+}
+</code></pre>
+<p>It is advisable to use a function like that in Snippet 2, rather than using the simple test like Snippet 1, if you plan to test for sub-pages frequently.</p>
+<p>To test if the parent of a page is a specific page, for instance “About” (page id pid 2 by default), we can use the tests in Snippet 3. These tests check to see if we are looking at the page in question, as well as if we are looking at any child pages. This is useful for setting variables specific to different sections of a web site, so a different banner image, or a different heading.</p>
+<h5 id="Snippet-3"><a href="#Snippet-3" class="headerlink" title="Snippet 3"></a>Snippet 3</h5><pre><code class="php">&lt;?php if ( is_page( &#39;about&#39; ) || &#39;2&#39; == $post-&gt;post_parent ) {
+    // the page is &quot;About&quot;, or the parent of the page is &quot;About&quot;
+    $bannerimg = &#39;about.jpg&#39;;
+} elseif ( is_page( &#39;learning&#39; ) || &#39;56&#39; == $post-&gt;post_parent ) {
+    $bannerimg = &#39;teaching.jpg&#39;;
+} elseif ( is_page( &#39;admissions&#39; ) || &#39;15&#39; == $post-&gt;post_parent ) {
+    $bannerimg = &#39;admissions.jpg&#39;;
+} else {
+    $bannerimg = &#39;home.jpg&#39;; // just in case we are at an unclassified page, perhaps the home page
+}
+?&gt;
+</code></pre>
+<p>Snippet 4 is a function that allows you to carry out the tests above more easily. This function will return true if we are looking at the page in question (so “About”) or one of its sub pages (so a page with a parent with ID “2”).</p>
+<h5 id="Snippet-4"><a href="#Snippet-4" class="headerlink" title="Snippet 4"></a>Snippet 4</h5><pre><code class="php">function is_tree( $pid ) {      // $pid = The ID of the page we&#39;re looking for pages underneath
+    global $post;               // load details about this page
+
+    if ( is_page($pid) )
+        return true;            // we&#39;re at the page or at a sub page
+
+    $anc = get_post_ancestors( $post-&gt;ID );
+    foreach ( $anc as $ancestor ) {
+        if( is_page() &amp;&amp; $ancestor == $pid ) {
+            return true;
+        }
+    }
+
+    return false;  // we aren&#39;t at the page, and the page is not an ancestor
+}
+</code></pre>
+<p>Add Snippet 4 to your functions.php file, and call is_tree( ‘id’ ) to see if the current page is the page, or is a sub page of the page. In Snippet 3, is_tree( ‘2’ ) would replace “is_page( ‘about’ ) || ‘2’ == $post-&gt;post_parent” inside the first if tag.</p>
+<p>Note that if you have more than one level of pages the parent page is the one directly above and not the one at the very top of the hierarchy.</p>
+<h3 id="Is-a-Page-Template"><a href="#Is-a-Page-Template" class="headerlink" title="Is a Page Template"></a>Is a Page Template</h3><p>Allows you to determine whether or not you are in a page template or if a specific page template is being used.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_page_template/" target="_blank" rel="noopener">is_page_template()</a></p>
+<p>Is a Page Template being used?</p>
+<p><strong>is_page_template( ‘about.php’ )</strong></p>
+<p>Is Page Template ‘about’ being used? Note that unlike other conditionals, if you want to specify a particular Page Template, you need to use the filename, such as about.php or my_page_template.php.</p>
+<p>Note: if the file is in a subdirectory you must include this as well. Meaning that this should be the filepath in relation to your theme as well as the filename, for example ‘page-templates/about.php’.</p>
+<h3 id="A-Category-Page"><a href="#A-Category-Page" class="headerlink" title="A Category Page"></a>A Category Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_category/" target="_blank" rel="noopener">is_category()</a></p>
+<p>When a Category archive page is being displayed.</p>
+<p><strong>is_category( ‘9’ )</strong></p>
+<p>When the archive page for Category 9 is being displayed.</p>
+<p><strong>is_category( ‘Stinky Cheeses’ )</strong></p>
+<p>When the archive page for the Category with Name “Stinky Cheeses” is being displayed.</p>
+<p><strong>is_category( ‘blue-cheese’ )</strong></p>
+<p>When the archive page for the Category with Category Slug “blue-cheese” is being displayed.</p>
+<p><strong>is_category( array( 9, ‘blue-cheese’, ‘Stinky Cheeses’ ) )</strong></p>
+<p>Returns true when the category of posts being displayed is either term_ID 9, or slug “blue-cheese”, or name “Stinky Cheeses”.</p>
+<p><strong>in_category( ‘5’ )</strong></p>
+<p>Returns true if the current post is in the specified category id.</p>
+<p><strong>in_category( array( 1, 2, 3 ) )</strong></p>
+<p>Returns true if the current post is in either category 1, 2, or 3.</p>
+<p><strong>! in_category( array( 4, 5, 6 ) )</strong></p>
+<p>Returns true if the current post is NOT in either category 4, 5, or 6. Note the ! at the beginning.</p>
+<p>Note: Be sure to check your spelling when testing. There’s a big difference between “is” or “in”.</p>
+<p>See also <a href="https://developer.wordpress.org/reference/functions/is_archive/" target="_blank" rel="noopener">is_archive()</a> and <a href="https://make.wordpress.org/docs/theme-developer-handbook/part-one-theme-basics/template-hierarchy/#category" target="_blank" rel="noopener">Category Templates</a>.</p>
+<h3 id="A-Tag-Page"><a href="#A-Tag-Page" class="headerlink" title="A Tag Page"></a>A Tag Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_tag/" target="_blank" rel="noopener">is_tag()</a></p>
+<p>When any Tag archive page is being displayed.</p>
+<p><strong>is_tag( ‘mild’ )</strong></p>
+<p>When the archive page for tag with the slug of ‘mild’ is being displayed.</p>
+<p><strong>is_tag( array( ‘sharp’, ‘mild’, ‘extreme’ ) )</strong></p>
+<p>Returns true when the tag archive being displayed has a slug of either “sharp”, “mild”, or “extreme”.</p>
+<p><strong>has_tag()</strong></p>
+<p>When the current post has a tag. Must be used inside The Loop.</p>
+<p><strong>has_tag( ‘mild’ )</strong></p>
+<p>When the current post has the tag ‘mild’.</p>
+<p><strong>has_tag( array( ‘sharp’, ‘mild’, ‘extreme’ ) )</strong></p>
+<p>When the current post has any of the tags in the array.</p>
+<p>See also <a href="https://developer.wordpress.org/reference/functions/is_archive/" target="_blank" rel="noopener">is_archive()</a> and <a href="https://make.wordpress.org/docs/theme-developer-handbook/part-one-theme-basics/template-hierarchy/#tag" target="_blank" rel="noopener">Tag Templates</a>.</p>
+<h3 id="A-Taxonomy-Page"><a href="#A-Taxonomy-Page" class="headerlink" title="A Taxonomy Page"></a>A Taxonomy Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_tax/" target="_blank" rel="noopener">is_tax()</a></p>
+<p>When any Taxonomy archive page is being displayed.</p>
+<p><strong>is_tax( ‘flavor’ )</strong></p>
+<p>When a Taxonomy archive page for the flavor taxonomy is being displayed.</p>
+<p><strong>is_tax( ‘flavor’, ‘mild’)</strong></p>
+<p>When the archive page for the flavor taxonomy with the slug of ‘mild’ is being displayed.</p>
+<p><strong>is_tax( ‘flavor’, array( ‘sharp’, ‘mild’, ‘extreme’ ) )</strong></p>
+<p>Returns true when the flavor taxonomy archive being displayed has a slug of either “sharp”, “mild”, or “extreme”.</p>
+<p><strong>has_term()</strong></p>
+<p>Check if the current post has any of given terms. The first parameter should be an empty string. It expects a taxonomy slug/name as a second parameter.</p>
+<p><strong>has_term( ‘green’, ‘color’ )</strong></p>
+<p>When the current post has the term ‘green’ from taxonomy ‘color’.</p>
+<p><strong>has_term( array( ‘green’, ‘orange’, ‘blue’ ), ‘color’ )</strong></p>
+<p>When the current post has any of the terms in the array.</p>
+<p>See also <a href="https://developer.wordpress.org/reference/functions/is_archive/" target="_blank" rel="noopener">is_archive()</a>.</p>
+<h3 id="A-Registered-Taxonomy"><a href="#A-Registered-Taxonomy" class="headerlink" title="A Registered Taxonomy"></a>A Registered Taxonomy</h3><p><a href="https://developer.wordpress.org/reference/functions/taxonomy_exists/" target="_blank" rel="noopener">taxonomy_exists()</a></p>
+<p>When a particular taxonomy is registered via <a href="https://developer.wordpress.org/reference/functions/register_taxonomy/" target="_blank" rel="noopener">register_taxonomy()</a>. Formerly <a href="https://developer.wordpress.org/reference/functions/is_taxonomy/" target="_blank" rel="noopener">is_taxonomy()</a>, which was deprecated in Version 3.0</p>
+<h3 id="An-Author-Page"><a href="#An-Author-Page" class="headerlink" title="An Author Page"></a>An Author Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_author/" target="_blank" rel="noopener">is_author()</a></p>
+<p>When any Author page is being displayed.</p>
+<p><strong>is_author( ‘4’ )</strong></p>
+<p>When the archive page for Author number (ID) 4 is being displayed.</p>
+<p><strong>is_author( ‘Vivian’ )</strong></p>
+<p>When the archive page for the Author with Nickname “Vivian” is being displayed.</p>
+<p><strong>is_author( ‘john-jones’ )</strong></p>
+<p>When the archive page for the Author with Nicename “john-jones” is being displayed.</p>
+<p><strong>is_author( array( 4, ‘john-jones’, ‘Vivian’ ) )</strong></p>
+<p>When the archive page for the author is either user ID 4, or user_nicename “john-jones”, or nickname “Vivian”.</p>
+<p>See also <a href="https://developer.wordpress.org/reference/functions/is_archive/" target="_blank" rel="noopener">is_archive()</a> and <a href="https://make.wordpress.org/docs/theme-developer-handbook/part-one-theme-basics/template-hierarchy/#author-display" target="_blank" rel="noopener">Author Templates</a>.</p>
+<h3 id="A-Multi-author-Site"><a href="#A-Multi-author-Site" class="headerlink" title="A Multi-author Site"></a>A Multi-author Site</h3><p><a href="https://developer.wordpress.org/reference/functions/is_multi_author/" target="_blank" rel="noopener">is_multi_author()</a></p>
+<p>When more than one author has published posts for a site. Available with Version 3.2.</p>
+<h3 id="A-Date-Page"><a href="#A-Date-Page" class="headerlink" title="A Date Page"></a>A Date Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_date/" target="_blank" rel="noopener">is_date()</a></p>
+<p>When any date-based archive page is being displayed (i.e. a monthly, yearly, daily or time-based archive).</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_year/" target="_blank" rel="noopener">is_year()</a></p>
+<p>When a yearly archive is being displayed.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_month/" target="_blank" rel="noopener">is_month()</a></p>
+<p>When a monthly archive is being displayed.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_day/" target="_blank" rel="noopener">is_day()</a></p>
+<p>When a daily archive is being displayed.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_time/" target="_blank" rel="noopener">is_time()</a></p>
+<p>When an hourly, “minutely”, or “secondly” archive is being displayed.</p>
+<p><a href="https://developer.wordpress.org/reference/functions/is_new_day/" target="_blank" rel="noopener">is_new_day()</a></p>
+<p>If today is a new day according to post date. Should be used inside the loop.</p>
+<h3 id="Any-Archive-Page"><a href="#Any-Archive-Page" class="headerlink" title="Any Archive Page"></a>Any Archive Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_archive/" target="_blank" rel="noopener">is_archive()</a></p>
+<p>When any type of Archive page is being displayed. Category, Tag, Author and Date based pages are all types of Archives.</p>
+<h3 id="A-Search-Result-Page"><a href="#A-Search-Result-Page" class="headerlink" title="A Search Result Page"></a>A Search Result Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_search/" target="_blank" rel="noopener">is_search()</a></p>
+<p>When a search result page archive is being displayed.</p>
+<h3 id="A-404-Not-Found-Page"><a href="#A-404-Not-Found-Page" class="headerlink" title="A 404 Not Found Page"></a>A 404 Not Found Page</h3><p><a href="https://developer.wordpress.org/reference/functions/is_404/" target="_blank" rel="noopener">is_404()</a></p>
+<p>When a page displays after an “HTTP 404: Not Found” error occurs.</p>
+<h3 id="An-Attachment"><a href="#An-Attachment" class="headerlink" title="An Attachment"></a>An Attachment</h3><p><a href="https://developer.wordpress.org/reference/functions/is_attachment/" target="_blank" rel="noopener">is_attachment()</a></p>
+<p>When an attachment document to a post or Page is being displayed. An attachment is an image or other file uploaded through the post editor’s upload utility. Attachments can be displayed on their own ‘page’ or template.</p>
+<h3 id="A-Single-Page-Single-Post-or-Attachment"><a href="#A-Single-Page-Single-Post-or-Attachment" class="headerlink" title="A Single Page, Single Post or Attachment"></a>A Single Page, Single Post or Attachment</h3><p><a href="https://developer.wordpress.org/reference/functions/is_singular/" target="_blank" rel="noopener">is_singular()</a></p>
+<p>When any of the following return true: <code>is_single()</code>, <code>is_page()</code> or <code>is_attachment()</code>.</p>
+<p><strong>is_singular( ‘book’ )</strong></p>
+<p>True when viewing a post of the Custom Post Types book.</p>
+<p><strong>is_singular( array( ‘newspaper’, ‘book’ ) )</strong></p>
+<p>True when viewing a post of the Custom Post Types newspaper or book.</p>
+<h3 id="A-Syndication"><a href="#A-Syndication" class="headerlink" title="A Syndication"></a>A Syndication</h3><p><a href="https://developer.wordpress.org/reference/functions/is_feed/" target="_blank" rel="noopener">is_feed()</a></p>
+<p>When the site requested is a Syndication. This tag is not typically used by users; it is used internally by WordPress and is available for Plugin Developers.</p>
+<h3 id="A-Trackback"><a href="#A-Trackback" class="headerlink" title="A Trackback"></a>A Trackback</h3><p><a href="https://developer.wordpress.org/reference/functions/is_trackback/" target="_blank" rel="noopener">is_trackback()</a></p>
+<p>When the site requested is WordPress’ hook into its Trackback engine. This tag is not typically used by users; it is used internally by WordPress and is available for Plugin Developers.</p>
+<h3 id="A-Preview"><a href="#A-Preview" class="headerlink" title="A Preview"></a>A Preview</h3><p><a href="https://developer.wordpress.org/reference/functions/is_preview/" target="_blank" rel="noopener">is_preview()</a></p>
+<p>When a single post being displayed is viewed in Draft mode.</p>
+<h3 id="Has-An-Excerpt"><a href="#Has-An-Excerpt" class="headerlink" title="Has An Excerpt"></a>Has An Excerpt</h3><p><a href="https://developer.wordpress.org/reference/functions/has_excerpt/" target="_blank" rel="noopener">has_excerpt()</a></p>
+<p>When the current post has an excerpt</p>
+<p><strong>has_excerpt( 42 )</strong></p>
+<p>When the post 42 (ID) has an excerpt.</p>
+<pre><code class="php">&lt;?php // Get $post if you&#39;re inside a function global $post;
+   if ( empty( $post-&gt;post_excerpt ) ) {
+    // This post has no excerpt
+   } else {
+    // This post has excerpt
+  }
+?&gt;
+</code></pre>
+<p><strong>Other use</strong><br>When you need to hide the auto displayed excerpt and only display your post’s excerpts.</p>
+<pre><code class="php">&lt;?php
+  if ( ! has_excerpt() ) {
+      echo &#39;&#39;;
+  } else {
+      the_excerpt();
+  }
+?&gt;
+</code></pre>
+<p>Replace auto excerpt for a text or code.</p>
+<pre><code class="php">&lt;?php if ( ! has_excerpt() ) {
+    // you text or code
+} ?&gt;
+</code></pre>
+<h3 id="Has-A-Nav-Menu-Assigned"><a href="#Has-A-Nav-Menu-Assigned" class="headerlink" title="Has A Nav Menu Assigned"></a>Has A Nav Menu Assigned</h3><p><a href="https://developer.wordpress.org/reference/functions/has_nav_menu/" target="_blank" rel="noopener">has_nav_menu()</a></p>
+<p>Whether a registered nav menu location has a menu assigned</p>
+<p>Returns: assigned(true) or not(false)</p>
+<h3 id="Inside-The-Loop"><a href="#Inside-The-Loop" class="headerlink" title="Inside The Loop"></a>Inside The Loop</h3><p><a href="https://developer.wordpress.org/reference/functions/in_the_loop/" target="_blank" rel="noopener">in_the_loop()</a></p>
+<p>Check to see if you are “inside the loop”. Useful for plugin authors, this conditional returns as true when you are inside the loop.</p>
+<h3 id="Is-Sidebar-Active"><a href="#Is-Sidebar-Active" class="headerlink" title="Is Sidebar Active"></a>Is Sidebar Active</h3><p><a href="https://developer.wordpress.org/reference/functions/is_active_sidebar/" target="_blank" rel="noopener">is_active_sidebar()</a></p>
+<p>Check to see if a given sidebar is active (in use). Returns true if the sidebar (identified by name, id, or number) is in use, otherwise the function returns false.</p>
+<h3 id="Part-of-a-Network-Multisite"><a href="#Part-of-a-Network-Multisite" class="headerlink" title="Part of a Network (Multisite)"></a>Part of a Network (Multisite)</h3><p><a href="https://developer.wordpress.org/reference/functions/is_multisite/" target="_blank" rel="noopener">is_multisite()</a></p>
+<p>Check to see whether the current site is in a WordPress MultiSite install.</p>
+<h3 id="Main-Site-Multisite"><a href="#Main-Site-Multisite" class="headerlink" title="Main Site (Multisite)"></a>Main Site (Multisite)</h3><p><a href="https://developer.wordpress.org/reference/functions/is_main_site/" target="_blank" rel="noopener">is_main_site()</a></p>
+<p>Determines if a site is the main site in a network.</p>
+<h3 id="Admin-of-a-Network-Multisite"><a href="#Admin-of-a-Network-Multisite" class="headerlink" title="Admin of a Network (Multisite)"></a>Admin of a Network (Multisite)</h3><p><a href="https://developer.wordpress.org/reference/functions/is_super_admin/" target="_blank" rel="noopener">is_super_admin()</a></p>
+<p>Determines if a user is a network (super) admin.</p>
+<h3 id="An-Active-Plugin"><a href="#An-Active-Plugin" class="headerlink" title="An Active Plugin"></a>An Active Plugin</h3><p><a href="https://developer.wordpress.org/reference/functions/is_plugin_active/" target="_blank" rel="noopener">is_plugin_active()</a></p>
+<p>Checks if a plugin is activated.</p>
+<h3 id="A-Child-Theme"><a href="#A-Child-Theme" class="headerlink" title="A Child Theme"></a>A Child Theme</h3><p><a href="https://developer.wordpress.org/reference/functions/is_child_theme/" target="_blank" rel="noopener">is_child_theme()</a></p>
+<p>Checks whether a child theme is in use.</p>
+<h3 id="Theme-supports-a-feature"><a href="#Theme-supports-a-feature" class="headerlink" title="Theme supports a feature"></a>Theme supports a feature</h3><p><a href="https://developer.wordpress.org/reference/functions/current_theme_supports/" target="_blank" rel="noopener">current_theme_supports()</a></p>
+<p>Checks if various theme features exist.</p>
+<h2 id="Working-Examples"><a href="#Working-Examples" class="headerlink" title="Working Examples"></a>Working Examples</h2><h3 id="Single-Post"><a href="#Single-Post" class="headerlink" title="Single Post"></a>Single Post</h3><p>use <code>is_single()</code> to display something specific only when viewing a single post page.</p>
+<pre><code class="php">if ( is_single() ) {
+
+   echo &#39;This is just one of many fabulous entries in the &#39; . single_cat_title() . &#39; category!&#39;;
+
+}
+</code></pre>
+<p>use Conditional Tags in the Loop. Choose to display content or excerpt in index.php when this is a display single post or the home page.</p>
+<pre><code class="php">if ( is_home() || is_single() ) {
+
+   the_content();
+
+}
+else {
+
+   the_excerpt();
+
+}
+</code></pre>
+<p>When you need display a code or element, in a place that is NOT the home page.</p>
+<pre><code class="php+HTML">&lt;?php if ( ! is_home() ) {
+
+ //Insert your markup ...
+
+}?&gt;
+</code></pre>
+<h3 id="Check-for-Multiple-Conditionals"><a href="#Check-for-Multiple-Conditionals" class="headerlink" title="Check for Multiple Conditionals"></a>Check for Multiple Conditionals</h3><pre><code class="php">// Check to see if 2 conditionals are met
+if ( is_single() || is_page() ) ) {
+    // If it&#39;s a single post or a single page, do something special
+}
+
+if ( is_archive() &amp;&amp; ! is_category( &#39;nachos&#39; ) ) {
+    // If it&#39;s an archive page for any category EXCEPT nachos, do something special
+}
+</code></pre>
+<pre><code class="php+HTML">// Check to see if 3 conditionals are met
+if ( $query-&gt;is_main_query() &amp;&amp; is_post_type_archive( &#39;products&#39; ) &amp;&amp; ! is_admin() ) {
+
+    // If it&#39;s the main query on a custom post type archive for Products
+    // And if we&#39;re not in the WordPress admin, then do something special
+
+}
+if ( is_post_type_archive( &#39;movies&#39; ) || is_tax( &#39;genre&#39; ) || is_tax( &#39;actor&#39; )  ) {
+    // If it&#39;s a custom post type archive for Movies
+    // Or it&#39;s a taxonomy archive for Genre
+    // Or it&#39;s a taxonomy archive for Actor, do something special
+
+}
+
+&lt;h3&gt;Date Based Differences&lt;/h3&gt;
+
+If someone browses our site by date, let&#39;s distinguish posts in different years by using different colors:
+
+&lt;?php // this starts The Loop
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+&lt;h2 id=&quot;post-&lt;?php the_ID(); ?&gt;&quot;&gt;
+&lt;a title=&quot;Permanent Link to &lt;?php the_title(); ?&gt;&quot; href=&quot;&lt;?php the_permalink() ?&gt;&quot; rel=&quot;bookmark&quot;&gt;&lt;?php the_title(); ?&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;small&gt;&lt;?php the_time(&#39;F jS, Y&#39;) ?&gt; by &lt;?php the_author() ?&gt;&lt;/small&gt;
+
+&lt;?php
+// are we showing a date-based archive?
+if ( is_date() ) {
+ if ( date( &#39;Y&#39; ) != get_the_date( &#39;Y&#39; ) ) {
+ // this post was written in a previous year
+ // so let&#39;s style the content using the &quot;oldentry&quot; class
+ echo &#39;&lt;div class=&quot;oldentry&quot;&gt;&#39;;
+ } else {
+ echo &#39;&lt;div class=&quot;entry&quot;&gt;&#39;;
+ }
+} else {
+ echo &#39;&lt;div class=&quot;entry&quot;&gt;&#39;;
+}
+
+the_content( &#39;Read the rest of this entry »&#39; );
+?&gt;&lt;/div&gt;
+</code></pre>
+<h3 id="Variable-Sidebar-Content"><a href="#Variable-Sidebar-Content" class="headerlink" title="Variable Sidebar Content"></a>Variable Sidebar Content</h3><p>This example will display different content in your sidebar based on what page the reader is currently viewing.</p>
+<pre><code class="php+HTML">&lt;div id=&quot;sidebar&quot;&gt;
+&lt;?php // let&#39;s generate info appropriate to the page being displayed
+if ( is_home() ) {
+ // we&#39;re on the home page, so let&#39;s show a list of all top-level categories
+    wp_list_categories( &#39;optionall=0&amp;sort_column=name&amp;list=1&amp;children=0&#39; );
+} elseif ( is_category() ) {
+ // we&#39;re looking at a single category view, so let&#39;s show _all_ the categories
+    wp_list_categories( &#39;optionall=1&amp;sort_column=name&amp;list=1&amp;children=1&amp;hierarchical=1&#39; )
+} elseif ( is_single() ) {
+ // we&#39;re looking at a single page, so let&#39;s not show anything in the sidebar
+} elseif ( is_page() ) {
+ // we&#39;re looking at a static page. Which one?
+ if ( is_page( &#39;About&#39; ) ) {
+ // our about page.
+ echo &quot;This is my about page!&quot;;
+ } elseif ( is_page( &#39;Colophon&#39; ) ) {
+ echo &quot;This is my colophon page, running on WordPress &quot; . bloginfo( &#39;version&#39; ) . &quot;&quot;;
+ } else {
+ // catch-all for other pages
+ echo &quot;Vote for Pedro!&quot;;
+ }
+} else {
+ // catch-all for everything else (archives, searches, 404s, etc)
+ echo &quot;Pedro offers you his protection.&quot;;
+} // That&#39;s all, folks!
+?&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="Helpful-404-Page"><a href="#Helpful-404-Page" class="headerlink" title="Helpful 404 Page"></a>Helpful 404 Page</h3><p>The Creating an Error 404 Page article [TODO NEED Link to this?] has an example of using the PHP conditional function <code>isset()</code> in the Writing Friendly Messages section.</p>
+<h3 id="In-the-theme’s-footer-php-file"><a href="#In-the-theme’s-footer-php-file" class="headerlink" title="In the theme’s footer.php file"></a>In the theme’s footer.php file</h3><p>At times queries performed in other templates such as sidebar.php may corrupt certain conditional tags. For instance, in header.php a conditional tag works properly but doesn’t work in a theme’s footer.php. The trick is to put <code>wp_reset_query</code> before the conditional test in the footer. For example:</p>
+<pre><code class="php">&lt;?php wp_reset_query();
+ if ( is_page( &#39;2&#39; ) ) {
+  echo &#39;This is page 2!&#39;;
+ }
+?&gt;
+</code></pre>
+<h2 id="Conditional-Tags-Index"><a href="#Conditional-Tags-Index" class="headerlink" title="Conditional Tags Index"></a>Conditional Tags Index</h2><blockquote>
+<p>The latest version is <a href="https://developer.wordpress.org/themes/basics/conditional-tags/#conditional-tags-index" target="_blank" rel="noopener">here</a>. </p>
+</blockquote>
+<ul>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Any_Page_Containing_Posts" target="_blank" rel="noopener">comments_open</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Tag_Page" target="_blank" rel="noopener">has_tag</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Taxonomy_Page" target="_blank" rel="noopener">has_term</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Category_Page" target="_blank" rel="noopener">in_category</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_404_Not_Found_Page" target="_blank" rel="noopener">is_404</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#The_Administration_Panels" target="_blank" rel="noopener">is_admin</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Any_Archive_Page" target="_blank" rel="noopener">is_archive</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#An_Attachment" target="_blank" rel="noopener">is_attachment</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#An_Author_Page" target="_blank" rel="noopener">is_author</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Category_Page" target="_blank" rel="noopener">is_category</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Child_Theme" target="_blank" rel="noopener">is_child_theme</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Comments_Popup" target="_blank" rel="noopener">is_comments_popup</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Date_Page" target="_blank" rel="noopener">is_date</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Date_Page" target="_blank" rel="noopener">is_day</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Syndication" target="_blank" rel="noopener">is_feed</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#The_Front_Page" target="_blank" rel="noopener">is_front_page</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#The_Main_Page" target="_blank" rel="noopener">is_home</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Date_Page" target="_blank" rel="noopener">is_month</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Multi-author_Site" target="_blank" rel="noopener">is_multi_author</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Part_of_a_network" target="_blank" rel="noopener">is_multisite</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Main_Site_.28Multisite.29" target="_blank" rel="noopener">is_main_site</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_PAGE_Page" target="_blank" rel="noopener">is_page</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Is_a_Page_Template" target="_blank" rel="noopener">is_page_template</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Paged_Page" target="_blank" rel="noopener">is_paged</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Preview" target="_blank" rel="noopener">is_preview</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#An_RTL_Language" target="_blank" rel="noopener">is_rtl</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Search_Result_Page" target="_blank" rel="noopener">is_search</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Single_Post_Page" target="_blank" rel="noopener">is_single</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Single_Page.2C_Single_Post_or_Attachment" target="_blank" rel="noopener">is_singular</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Sticky_Post" target="_blank" rel="noopener">is_sticky</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Admin_of_a_network" target="_blank" rel="noopener">is_super_admin</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Tag_Page" target="_blank" rel="noopener">is_tag</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Taxonomy_Page" target="_blank" rel="noopener">is_tax</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Date_Page" target="_blank" rel="noopener">is_time</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Trackback" target="_blank" rel="noopener">is_trackback</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#A_Date_Page" target="_blank" rel="noopener">is_year</a></li>
+<li><a href="https://codex.wordpress.org/Conditional_Tags#Any_Page_Containing_Posts" target="_blank" rel="noopener">pings_open</a></li>
+</ul>
+<h3 id="Function-Reference"><a href="#Function-Reference" class="headerlink" title="Function Reference"></a>Function Reference</h3><ul>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/comments_open/" target="_blank" rel="noopener">comments_open()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_404/" target="_blank" rel="noopener">is_404()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_admin/" target="_blank" rel="noopener">is_admin()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_admin_bar_showing/" target="_blank" rel="noopener">is_admin_bar_showing()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_archive/" target="_blank" rel="noopener">is_archive()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_attachment/" target="_blank" rel="noopener">is_attachment()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_author/" target="_blank" rel="noopener">is_author()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_category/" target="_blank" rel="noopener">is_category()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_comments_popup/" target="_blank" rel="noopener">is_comments_popup()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_date/" target="_blank" rel="noopener">is_date()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_day/" target="_blank" rel="noopener">is_day()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_feed/" target="_blank" rel="noopener">is_feed()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_front_page/" target="_blank" rel="noopener">is_front_page()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_home/" target="_blank" rel="noopener">is_home()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_local_attachment/" target="_blank" rel="noopener">is_local_attachment()</a></li>
+<li>Function: <a href="https://codex.wordpress.org/Function_Reference/is_main_query" target="_blank" rel="noopener">is_main_query</a></li>
+<li>Function: <a href="https://codex.wordpress.org/Function_Reference/is_multi_author" target="_blank" rel="noopener">is_multi_author</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_month/" target="_blank" rel="noopener">is_month()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_new_day/" target="_blank" rel="noopener">is_new_day()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_page/" target="_blank" rel="noopener">is_page()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_page_template/" target="_blank" rel="noopener">is_page_template()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_paged/" target="_blank" rel="noopener">is_paged()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_plugin_active/" target="_blank" rel="noopener">is_plugin_active()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_plugin_active_for_network/" target="_blank" rel="noopener">is_plugin_active_for_network()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_plugin_inactive/" target="_blank" rel="noopener">is_plugin_inactive()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_plugin_page/" target="_blank" rel="noopener">is_plugin_page()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_post_type_archive/" target="_blank" rel="noopener">is_post_type_archive()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_preview/" target="_blank" rel="noopener">is_preview()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_search/" target="_blank" rel="noopener">is_search()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_single/" target="_blank" rel="noopener">is_single()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_singular/" target="_blank" rel="noopener">is_singular()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_sticky/" target="_blank" rel="noopener">is_sticky()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_tag/" target="_blank" rel="noopener">is_tag()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_tax/" target="_blank" rel="noopener">is_tax()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_taxonomy_hierarchical/" target="_blank" rel="noopener">is_taxonomy_hierarchical()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_time/" target="_blank" rel="noopener">is_time()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_trackback/" target="_blank" rel="noopener">is_trackback()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_year/" target="_blank" rel="noopener">is_year()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/in_category/" target="_blank" rel="noopener">in_category()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/in_the_loop/" target="_blank" rel="noopener">in_the_loop()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_active_sidebar/" target="_blank" rel="noopener">is_active_sidebar()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_active_widget/" target="_blank" rel="noopener">is_active_widget()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_blog_installed/" target="_blank" rel="noopener">is_blog_installed()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_rtl/" target="_blank" rel="noopener">is_rtl()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_dynamic_sidebar/" target="_blank" rel="noopener">is_dynamic_sidebar()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/is_user_logged_in/" target="_blank" rel="noopener">is_user_logged_in()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/has_excerpt/" target="_blank" rel="noopener">has_excerpt()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/has_post_thumbnail/" target="_blank" rel="noopener">has_post_thumbnail()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/has_tag/" target="_blank" rel="noopener">has_tag()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/pings_open/" target="_blank" rel="noopener">pings_open()</a></li>
+<li>Function: <a href="https://codex.wordpress.org/Function_Reference/email_exists" target="_blank" rel="noopener">email exists()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/post_type_exists/" target="_blank" rel="noopener">post_type_exists()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/taxonomy_exists/" target="_blank" rel="noopener">taxonomy_exists()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/term_exists/" target="_blank" rel="noopener">term_exists()</a></li>
+<li>Function: <a href="https://codex.wordpress.org/Function_Reference/username_exists" target="_blank" rel="noopener">username exists()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/wp_attachment_is_image/" target="_blank" rel="noopener">wp_attachment_is_image()</a></li>
+<li>Function: <a href="https://developer.wordpress.org/reference/functions/wp_script_is/" target="_blank" rel="noopener">wp_script_is()</a></li>
+</ul>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <span>转载请注明 👇 Please reproduce with</span> <br/> <br/> <span>原文作者：<a href="equalma@outlook.com">Equal Ma</a></span><br/> <span>文章来源：<a href="https://equalma.github.io">equalma.github.io</a></span> <span> ( First published in <a href="https://equalma.github.io">equalma.github.io</a> ) </span>
+
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/">https://equalma.github.io/wordpress-develop-theme-Basics-10-Conditional-Tags/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/wordpress-develop-theme-Basics-11-Categories-Tags-Custom-Taxonomies/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/wordpress-develop-theme-Basics-09-Including-CSS-JavaScript/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Equal Ma's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        equalma@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="equalma@outlook.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">33</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                
+                
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/apache2/">
+                            <span>apache2</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/Node-js/">
+                            <span>Node.js</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/">
+                            <span>css</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/stylus/">
+                            <span>stylus</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/">
+                            <span>c</span>
+                            <span class="sidebar_archives-count">2</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/profiling/">
+                            <span>profiling</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/">
+                            <span>js</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/jquery/">
+                            <span>jquery</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/mdl/">
+                            <span>mdl</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/vue/">
+                            <span>vue</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/database/">
+                            <span>database</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/">
+                            <span>minecraft</span>
+                            <span class="sidebar_archives-count">7</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/pixelmon/">
+                            <span>pixelmon</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/mysql/">
+                            <span>mysql</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/powershell/">
+                            <span>powershell</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/php/">
+                            <span>php</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/python/">
+                            <span>python</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/vscode/">
+                            <span>vscode</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/web/">
+                            <span>web</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/">
+                            <span>wordpress</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/">
+                            <span>develop</span>
+                            <span class="sidebar_archives-count">12</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/theme/">
+                            <span>theme</span>
+                            <span class="sidebar_archives-count">11</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/typescript/">
+                            <span>typescript</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/">
+                            <span>unix</span>
+                            <span class="sidebar_archives-count">10</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/ubuntu-help/">
+                            <span>ubuntu help</span>
+                            <span class="sidebar_archives-count">9</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/gnome-help/">
+                            <span>gnome help</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="tag">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                tag
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">64</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/EqualMa" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Equal's
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        if(textContent)
+            textContent.textContent = copyrightNow
+    } else {
+        if(textContent)
+            textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534508120976')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
+    
+</html>

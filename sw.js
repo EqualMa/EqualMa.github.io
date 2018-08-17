@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/wordpress/develop/');
+  precacheUrls.push('/typescript-string-literal-types/');
 
-  precacheUrls.push('/Node.js/config/');
+  precacheUrls.push('/apache2-https/');
 
-  precacheUrls.push('/web/lavas/init/');
+  precacheUrls.push('/web-lavas-init/');
 
-  precacheUrls.push('/Node.js/arguments/');
+  precacheUrls.push('/java-concurrent/');
 
-  precacheUrls.push('/apache2/https/');
+  precacheUrls.push('/js-var-in-for/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};

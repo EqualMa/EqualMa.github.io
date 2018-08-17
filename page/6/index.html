@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><link rel=manifest href=/manifest.json>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
 
@@ -8,2373 +31,1395 @@
 
 
 
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
 
 
 
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+        Equal&#39;s
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?TDH8hnXY3mvlnRKJrjsd+Q==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
   
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
 
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
-<head><link rel=manifest href=/manifest.json>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222">
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
 
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
 
+  .toTop {
+    background: #757575 !important;
+  }
 
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
 
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
 
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
 
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
 
+</style>
 
 
+<!-- Theme Background Related-->
 
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
 
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
+<!-- Fade Effect -->
 
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
 
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
 
 
+<!-- Import Font -->
+<!-- Import Roboto -->
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
 
+<!-- Import Material Icons -->
 
 
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
 
 
 
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
 
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Equal&#39;s">
+    <meta name="msapplication-starturl" content="https://equalma.github.io/page/6/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Equal&#39;s">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
 
+    <!-- Site Verification -->
+    
+    
 
+    <!-- RSS -->
+    
 
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://equalma.github.io/page/6/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Equal&#39;s">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
 
+    
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
 
-<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://equalma.github.io/page/6/index.html" />
+    
 
+    <!-- Structured-data for SEO -->
+    
+        
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
+    
 
+    <!-- Analytics -->
+    
+    
+    
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '6.4.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Equal&#39;s">
-<meta property="og:url" content="https://equalma.github.io/page/6/index.html">
-<meta property="og:site_name" content="Equal&#39;s">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Equal&#39;s">
-
-
-
-
-
-
-  <link rel="canonical" href="https://equalma.github.io/page/6/"/>
-
-
-
-<script type="text/javascript" id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>Equal's</title>
-  
-
-
-
-
-
-
-
-
-
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
-
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
-
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
+    <!-- Custom Head -->
+    
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  
-  
     
-  
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
 
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Index Module -->
+<div class="material-index mdl-grid">
+    
+    <div class="locate-thumbnail-symbol"></div>
+
+    <!-- Pin on top -->
     
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Equal's</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <!-- Normal Post -->
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/unix-ubuntu-help-jetbrain-toolbox/"></a></p>
     </div>
-    
-      
-        <p class="site-subtitle">Coding Blog</p>
-      
-    
-  </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            I...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/unix-ubuntu-help-jetbrain-toolbox/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/unix/">unix</a>, <a class="post_category-link" href="/categories/unix/ubuntu-help/">ubuntu help</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/unix-ubuntu-help-java/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/unix-ubuntu-help-java/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/unix/">unix</a>, <a class="post_category-link" href="/categories/unix/ubuntu-help/">ubuntu help</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/unix-ubuntu-help-install/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            sudo dpkg --install *.deb
+
+
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/unix-ubuntu-help-install/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/unix/">unix</a>, <a class="post_category-link" href="/categories/unix/ubuntu-help/">ubuntu help</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/unix-ubuntu-help-inputChinese/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/unix-ubuntu-help-inputChinese/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/unix/">unix</a>, <a class="post_category-link" href="/categories/unix/ubuntu-help/">ubuntu help</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/unix-ubuntu-help-hotspot/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            创建无线热...
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/unix-ubuntu-help-hotspot/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/unix/">unix</a>, <a class="post_category-link" href="/categories/unix/ubuntu-help/">ubuntu help</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/minecraft-pixelmon-Types/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            Types
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/minecraft-pixelmon-Types/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/minecraft/">minecraft</a>, <a class="post_category-link" href="/categories/minecraft/pixelmon/">pixelmon</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/minecraft-pixelmon-PokeDollars/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/minecraft-pixelmon-PokeDollars/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/minecraft/">minecraft</a>, <a class="post_category-link" href="/categories/minecraft/pixelmon/">pixelmon</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/minecraft-pixelmon-Controls/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/minecraft-pixelmon-Controls/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/minecraft/">minecraft</a>, <a class="post_category-link" href="/categories/minecraft/pixelmon/">pixelmon</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/minecraft-Minecraft-Download-Mods/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/minecraft-Minecraft-Download-Mods/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/minecraft/">minecraft</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+        
+            
+                <!-- Paradox Thumbnail -->
+                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
+    
+    <!-- Post Thumbnail -->
+    
+        
+            
+            <div class="mdl-card__media mdl-color-text--grey-30" style="background-color: #00000003 !important">
+        
+    
+
+        <!-- Post Title -->
+        <p class="article-headline-p" style="text-shadow: unset"><a href="/minecraft-How-to-use-BuildCraft-mod/"></a></p>
+    </div>
+
+    <!-- Post Excerpt -->
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
+        
+            
+        
+        &nbsp;&nbsp;&nbsp;
+        <span>
+            <a href="/minecraft-How-to-use-BuildCraft-mod/" target="_self">阅读全文</a>
+        </span>
+    </div>
+    <!-- Post_entry Info-->
+    <div id="post_entry-info">
+        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
+            <!-- Author Avatar -->
+            <div id="author-avatar">
+                <img src="/img/avatar.png" width="44px" height="44px" alt="Equal Ma's avatar">
+            </div>
+            <div>
+                <strong>Equal Ma</strong>
+                <span>12月 14, 2017</span>
+            </div>
+        </div>
+        <div id="post_entry-right-info">
+          
+              <!-- Category -->
+              <span class="post_entry-category">
+                  <a class="post_category-link" href="/categories/minecraft/">minecraft</a>
+              </span>
+            
+
+            
+
+            
+
+            <!-- Post Views -->
+            <span class="post_entry-views">
+            </span>
+        </div>
+    </div>
+</div>
+
+            
+            
+        
+    
+
+    
+    <!-- Index nav -->
+        <nav class="material-nav mdl-cell mdl-cell--12-col">
+            <a class="extend prev" rel="prev" href="/page/5/"><button aria-label="Last page" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_back</i></button></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/7/"><button aria-label="Next page" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons" role="presentation">arrow_forward</i></button></a>
+        </nav>
+    
+
+    
+        <script type="text/ls-javascript" id="thumbnail-script">
+    var randomNum;
+
+    var locatePost = $('.locate-thumbnail-symbol').next();
+    for(var i = 0; i < 10; i++) {
+        randomNum = Math.floor(Math.random() * 1 + 1);
+
+        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
+        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+
+        locatePost = locatePost.next();
+    }
+</script>
+
+    
+</div>
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
     </button>
-  </div>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Equal Ma's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        equalma@outlook.com
+        <b class="caret"></b>
+    </a>
 </div>
 
 
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="equalma@outlook.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
 
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
         
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">33</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
         
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                
+                
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/apache2/">
+                            <span>apache2</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/Node-js/">
+                            <span>Node.js</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/">
+                            <span>css</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/css/stylus/">
+                            <span>stylus</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/">
+                            <span>c</span>
+                            <span class="sidebar_archives-count">2</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/c/profiling/">
+                            <span>profiling</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/">
+                            <span>js</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/jquery/">
+                            <span>jquery</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/mdl/">
+                            <span>mdl</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/js/vue/">
+                            <span>vue</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/database/">
+                            <span>database</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/">
+                            <span>minecraft</span>
+                            <span class="sidebar_archives-count">7</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/minecraft/pixelmon/">
+                            <span>pixelmon</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/mysql/">
+                            <span>mysql</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/powershell/">
+                            <span>powershell</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/php/">
+                            <span>php</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/python/">
+                            <span>python</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/vscode/">
+                            <span>vscode</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/web/">
+                            <span>web</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/">
+                            <span>wordpress</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/">
+                            <span>develop</span>
+                            <span class="sidebar_archives-count">12</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/wordpress/develop/theme/">
+                            <span>theme</span>
+                            <span class="sidebar_archives-count">11</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/typescript/">
+                            <span>typescript</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/">
+                            <span>unix</span>
+                            <span class="sidebar_archives-count">10</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/ubuntu-help/">
+                            <span>ubuntu help</span>
+                            <span class="sidebar_archives-count">9</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="categories/unix/gnome-help/">
+                            <span>gnome help</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                
+            </ul>
+        </li>
         
-          
-          <li class="menu-item menu-item-home">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
-  </li>
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="tag">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                tag
+            </a>
+        </li>
         
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">64</span>
+            </a>
+        </li>
         
-        
-          
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
-</nav>
+    
+</ul>
 
 
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
 
-  
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
 
 
+<!-- Theme Material -->
 
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
 </div>
-    </header>
 
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-            
-
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/unix/ubuntu help/jetbrain_toolbox/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/unix/ubuntu help/jetbrain_toolbox/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:34" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:34+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/" itemprop="url" rel="index"><span itemprop="name">unix</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/ubuntu-help/" itemprop="url" rel="index"><span itemprop="name">ubuntu help</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Install"><a href="#Install" class="headerlink" title="Install:"></a>Install:</h3><p><a href="https://www.jetbrains.com/toolbox/" target="_blank" rel="noopener">Jetbrain Toolbox</a></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./jetbrain-toolbox</span><br></pre></td></tr></table></figure>
-<h3 id="errors"><a href="#errors" class="headerlink" title="errors:"></a>errors:</h3><p>Failed to prepare Directory. Unable to create version folder</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod -R 777 /home/[username]/.local/share/JetBrains</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/unix/ubuntu help/java/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/unix/ubuntu help/java/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:34" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:34+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/" itemprop="url" rel="index"><span itemprop="name">unix</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/ubuntu-help/" itemprop="url" rel="index"><span itemprop="name">ubuntu help</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html" target="_blank" rel="noopener">install java 8 in ubuntu</a></p>
-<p><a href="http://www.webupd8.org/2015/02/install-oracle-java-9-in-ubuntu-linux.html" target="_blank" rel="noopener">install java 9 in ubuntu</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/unix/ubuntu help/install/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/unix/ubuntu help/install/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:34" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:34+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/" itemprop="url" rel="index"><span itemprop="name">unix</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/ubuntu-help/" itemprop="url" rel="index"><span itemprop="name">ubuntu help</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg --install *.deb</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/unix/ubuntu help/inputChinese/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/unix/ubuntu help/inputChinese/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:34" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:34+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/" itemprop="url" rel="index"><span itemprop="name">unix</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/ubuntu-help/" itemprop="url" rel="index"><span itemprop="name">ubuntu help</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="修复卸载sogoupinyin后ibus失效"><a href="#修复卸载sogoupinyin后ibus失效" class="headerlink" title="修复卸载sogoupinyin后ibus失效"></a>修复卸载sogoupinyin后ibus失效</h3><p>ubuntu12.04 LTS，英文环境，原支持ibus</p>
-<p>看到sogou官方有支持ubuntu的deb包，下载后按照官方推荐的方法安装失败。按网上推荐的卸载ibus，安装fcitx，虽然可以看到fcitx，但是不能选择语言。</p>
-<p>之后在恢复过程中卸载fcitx安装ibus，出现过log out后登录失败，需要重启重新登录；ibus不能选择语言等情况。虽然最后解决了，但是不知到是哪个包影响的。</p>
-<p>之后看到sogou包，手贱又安装了。这次各种安装卸载中，最后出现的情况是，各种情况都排除了，但还剩两个异常处：</p>
-<p>1，打开ibus，右上角出现ibus的标志，是个小键盘。设置语言后，ctrl+空格键【space】无法更换中文。首选项“no input window“。</p>
-<p>2，system setting–language support–language–keyboard input method system，原本此处是可以选择fcitx、ibus等的选项，但是现在选项不见了</p>
-<p>解决：</p>
-<p>1，启动后系统提示软件更新，我更新了。不知到有没有影响，但还是记下来</p>
-<p>2，查看文章：<a href="http://blog.163.com/likai_mao/blog/static/134346932201181511311500/" target="_blank" rel="noopener">http://blog.163.com/likai_mao/blog/static/134346932201181511311500/</a></p>
-<p>“也千万不要装im-config，装了就卸不干净，我到现在还需要在/usr/share/里面保留一个/usr/share/im-config/xinputrc.common （内容见后），否则不能正常登录（还没找到在哪里需要这个东东）。而且装了im-config，im-switch就自然被卸载，而ubuntu现在主要支持im-switch。两个功能其实差不多”</p>
-<p>很无语的是，我之前卸载了im-switch，保留了im-config。现在知道了，于是：</p>
-<p>sudo apt-get remove im-config</p>
-<p>卸载过程中，提示同时卸载ubuntu-desktop，language-selector-gnome。简直无语，于是继续：</p>
-<p>sudo apt-get install ubuntu-desktop<br>sudo apt-get install language-selector-gnome</p>
-<p>然后：<br>sudo apt-get install im-switch</p>
-<p>提示最新版本了。</p>
-<p>然后打开一个文档，ctrl+空格键，可以切换中文了（之前已经在ibus中添加Pinyin）。</p>
-<p>重启，依然正常。ok了（下次不乱玩了，还是用虚拟机去玩吧）。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/unix/ubuntu help/hotspot/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/unix/ubuntu help/hotspot/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:34" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:34+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:31:21" itemprop="dateModified" datetime="2018-06-19T23:31:21+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/" itemprop="url" rel="index"><span itemprop="name">unix</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/unix/ubuntu-help/" itemprop="url" rel="index"><span itemprop="name">ubuntu help</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="创建无线热点"><a href="#创建无线热点" class="headerlink" title="创建无线热点"></a>创建无线热点</h1><p>You can use your computer as a wireless hotspot. This allows other devices to connect to your computer without a separate network. If your computer has a connection to the internet other than wireless, you can use the wireless hotspot to share your internet connection with other devices.</p>
-<ol>
-<li>Click the system menu <img src="https://help.ubuntu.com/stable/ubuntu-help/figures/system-devices-panel.svg" alt="Power cog icon"> and select System Settings.</li>
-<li>打开网络并选中左侧的无线。</li>
-<li>Click the Use as Hotspot… button.</li>
-<li>If you are already connected to a wireless network, you will be asked if you want to disconnect from that network. A single wireless adapter can only connect to or create one network at a time. Click Turn On to confirm.</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/minecraft/pixelmon/Types/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/minecraft/pixelmon/Types/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:28" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:28+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:35:28" itemprop="dateModified" datetime="2018-06-19T23:35:28+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/" itemprop="url" rel="index"><span itemprop="name">minecraft</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/pixelmon/" itemprop="url" rel="index"><span itemprop="name">pixelmon</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Types"><a href="#Types" class="headerlink" title="Types"></a>Types</h2><p>The different types of Poké Balls each have different effects, usually related to <a href="http://pixelmonmod.com/wiki/index.php?title=Catch_rate" target="_blank" rel="noopener">catch rate</a>. </p>
-<ul>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Cherish_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/7/7b/Grid_Cherish_Ball.png/24px-Grid_Cherish_Ball.png" alt="Grid Cherish Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Cherish_Ball" target="_blank" rel="noopener">Cherish Ball</a>: 1× catch rate. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Dive_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/c/c8/Grid_Dive_Ball.png/24px-Grid_Dive_Ball.png" alt="Grid Dive Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Dive_Ball" target="_blank" rel="noopener">Dive Ball</a>: 3.5× catch rate if the Pokémon is in water. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Dusk_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/e/ec/Grid_Dusk_Ball.png/24px-Grid_Dusk_Ball.png" alt="Grid Dusk Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Dusk_Ball" target="_blank" rel="noopener">Dusk Ball</a>: 3.5× catch rate in dark places. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Fast_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/4/4d/Grid_Fast_Ball.png/24px-Grid_Fast_Ball.png" alt="Grid Fast Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Fast_Ball" target="_blank" rel="noopener">Fast Ball</a>: 4× catch rate on Pokémon with <a href="http://pixelmonmod.com/wiki/index.php?title=Fast_Ball/Catch_Rate" target="_blank" rel="noopener">100 base speed or more</a>. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Friend_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/7/7c/Grid_Friend_Ball.png/24px-Grid_Friend_Ball.png" alt="Grid Friend Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Friend_Ball" target="_blank" rel="noopener">Friend Ball</a>: Sets a captured Pokémon’s <a href="http://pixelmonmod.com/wiki/index.php?title=Happiness" target="_blank" rel="noopener">happiness</a> to 200. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Great_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/5/52/Grid_Great_Ball.png/24px-Grid_Great_Ball.png" alt="Grid Great Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Great_Ball" target="_blank" rel="noopener">Great Ball</a>: 1.5× catch rate. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=GS_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/c/cf/Grid_GS_Ball.png/24px-Grid_GS_Ball.png" alt="Grid GS Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=GS_Ball" target="_blank" rel="noopener">GS Ball</a>: 1× catch rate. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Heal_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/6/62/Grid_Heal_Ball.png/24px-Grid_Heal_Ball.png" alt="Grid Heal Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Heal_Ball" target="_blank" rel="noopener">Heal Ball</a>: Fully heals HP and status of captured Pokémon. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Heavy_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/b/b2/Grid_Heavy_Ball.png/24px-Grid_Heavy_Ball.png" alt="Grid Heavy Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Heavy_Ball" target="_blank" rel="noopener">Heavy Ball</a>: Increased catch rate on <a href="http://pixelmonmod.com/wiki/index.php?title=Heavy_Ball/Catch_Rate" target="_blank" rel="noopener">heavy Pokémon</a>. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Level_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/8/8f/Grid_Level_Ball.png/24px-Grid_Level_Ball.png" alt="Grid Level Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Level_Ball" target="_blank" rel="noopener">Level Ball</a>: Increased catch rate the lower the wild Pokémon’s level is compared to the player’s active Pokémon. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Love_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/e/e7/Grid_Love_Ball.png/24px-Grid_Love_Ball.png" alt="Grid Love Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Love_Ball" target="_blank" rel="noopener">Love Ball</a>: 8× catch rate if the wild Pokémon is the same species and opposite gender as the player’s active Pokémon. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Lure_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/2/2b/Grid_Lure_Ball.png/24px-Grid_Lure_Ball.png" alt="Grid Lure Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Lure_Ball" target="_blank" rel="noopener">Lure Ball</a>: 3× on Pokémon found via fishing. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Luxury_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/4/47/Grid_Luxury_Ball.png/24px-Grid_Luxury_Ball.png" alt="Grid Luxury Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Luxury_Ball" target="_blank" rel="noopener">Luxury Ball</a>: Causes the captured Pokémon to gain more happiness from happiness gains. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Master_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/8/8d/Grid_Master_Ball.png/24px-Grid_Master_Ball.png" alt="Grid Master Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Master_Ball" target="_blank" rel="noopener">Master Ball</a>: Catches Pokémon without fail. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Moon_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/f/fb/Grid_Moon_Ball.png/24px-Grid_Moon_Ball.png" alt="Grid Moon Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Moon_Ball" target="_blank" rel="noopener">Moon Ball</a>: 4× catch rate if Pokémon is in an <a href="http://pixelmonmod.com/wiki/index.php?title=Evolutionary" target="_blank" rel="noopener">evolutionary</a> family involving a <a href="http://pixelmonmod.com/wiki/index.php?title=Moon_Stone" target="_blank" rel="noopener">Moon Stone</a>. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Nest_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/6/6c/Grid_Nest_Ball.png/24px-Grid_Nest_Ball.png" alt="Grid Nest Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Nest_Ball" target="_blank" rel="noopener">Nest Ball</a>: Increased catch rate on lower-leveled Pokémon. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Net_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/3/32/Grid_Net_Ball.png/24px-Grid_Net_Ball.png" alt="Grid Net Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Net_Ball" target="_blank" rel="noopener">Net Ball</a>: 3× catch rate on <a href="http://pixelmonmod.com/wiki/index.php?title=Bug" target="_blank" rel="noopener">Bug</a> and <a href="http://pixelmonmod.com/wiki/index.php?title=Water" target="_blank" rel="noopener">Water</a>-type Pokémon. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Park_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/7/78/Grid_Park_Ball.png/24px-Grid_Park_Ball.png" alt="Grid Park Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Park_Ball" target="_blank" rel="noopener">Park Ball</a>: Catches Pokémon without fail. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Pok%C3%A9_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/4/40/Grid_Pok%C3%A9_Ball.png/24px-Grid_Pok%C3%A9_Ball.png" alt="Grid Poké Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Pok%C3%A9_Ball" target="_blank" rel="noopener">Poké Ball</a>: 1× catch rate, most basic Poké Ball. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Premier_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/4/42/Grid_Premier_Ball.png/24px-Grid_Premier_Ball.png" alt="Grid Premier Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Premier_Ball" target="_blank" rel="noopener">Premier Ball</a>: Causes the captured Pokémon to emit a red particle effect when sent out. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Quick_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/7/70/Grid_Quick_Ball.png/24px-Grid_Quick_Ball.png" alt="Grid Quick Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Quick_Ball" target="_blank" rel="noopener">Quick Ball</a>: 5× catch rate if used on the first turn of a battle. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Repeat_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/f/fc/Grid_Repeat_Ball.png/24px-Grid_Repeat_Ball.png" alt="Grid Repeat Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Repeat_Ball" target="_blank" rel="noopener">Repeat Ball</a>: 3× catch rate on species of Pokémon that the player already owns. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Safari_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/e/e2/Grid_Safari_Ball.png/24px-Grid_Safari_Ball.png" alt="Grid Safari Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Safari_Ball" target="_blank" rel="noopener">Safari Ball</a>: 1.5× catch rate in <a href="http://pixelmonmod.com/wiki/index.php?title=Plains" target="_blank" rel="noopener">Plains</a> <a href="http://pixelmonmod.com/wiki/index.php?title=Biomes" target="_blank" rel="noopener">biomes</a>. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Sport_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/5/5f/Grid_Sport_Ball.png/24px-Grid_Sport_Ball.png" alt="Grid Sport Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Sport_Ball" target="_blank" rel="noopener">Sport Ball</a>: 1.5× catch rate on <a href="http://pixelmonmod.com/wiki/index.php?title=Bug" target="_blank" rel="noopener">Bug</a>-type Pokémon. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Timer_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/b/bc/Grid_Timer_Ball.png/24px-Grid_Timer_Ball.png" alt="Grid Timer Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Timer_Ball" target="_blank" rel="noopener">Timer Ball</a>: Increased catch rate the longer the battle is. </li>
-<li><a href="http://pixelmonmod.com/wiki/index.php?title=Ultra_Ball" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/thumb/7/72/Grid_Ultra_Ball.png/24px-Grid_Ultra_Ball.png" alt="Grid Ultra Ball.png"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Ultra_Ball" target="_blank" rel="noopener">Ultra Ball</a>: 2× catch rate. </li>
-</ul>
-<p>Note: Lure Balls and Repeat Balls do not have their benefits implemented in the mod yet and are functionally equivalent to normal Poké Balls. </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/minecraft/pixelmon/PokéDollars/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/minecraft/pixelmon/PokéDollars/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:28" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:28+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:35:28" itemprop="dateModified" datetime="2018-06-19T23:35:28+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/" itemprop="url" rel="index"><span itemprop="name">minecraft</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/pixelmon/" itemprop="url" rel="index"><span itemprop="name">pixelmon</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="PokeDollars"><a href="#PokeDollars" class="headerlink" title="PokéDollars"></a>PokéDollars</h1><p>PokéDollars are a form of currency within Pixelmon. They are not <a href="http://pixelmonmod.com/wiki/index.php?title=Items" target="_blank" rel="noopener">items</a>; the amount of PokéDollars that a player has can be viewed on the inventory screen. </p>
-<p>The maximum amount of PokéDollars a player can have is 999,999<a href="http://pixelmonmod.com/wiki/index.php?title=File:PokeDollar.png" target="_blank" rel="noopener"><img src="http://pixelmonmod.com/wiki/images/d/d6/PokeDollar.png" alt="PokeDollar.png"></a>. If the player attempts to gain any more PokéDollars, the extra PokéDollars will be lost. </p>
-<h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><p>The primary use for PokéDollars is to buy <a href="http://pixelmonmod.com/wiki/index.php?title=Items" target="_blank" rel="noopener">items</a> from <a href="http://pixelmonmod.com/wiki/index.php?title=Shopkeepers" target="_blank" rel="noopener">shopkeepers</a> inside <a href="http://pixelmonmod.com/wiki/index.php?title=Pok%C3%A9_Marts" target="_blank" rel="noopener">Poké Marts</a>. Prices for items that shopkeepers offer are listed <a href="http://pixelmonmod.com/wiki/index.php?title=Shopkeeper/Stock" target="_blank" rel="noopener">here</a>. </p>
-<p>PokéDollars can also be given to other players by using the /transfer <a href="http://pixelmonmod.com/wiki/index.php?title=Command" target="_blank" rel="noopener">command</a>. </p>
-<h2 id="Obtaining-PokeDollars"><a href="#Obtaining-PokeDollars" class="headerlink" title="Obtaining PokéDollars"></a>Obtaining PokéDollars</h2><p>PokéDollars can be obtained by defeating <a href="http://pixelmonmod.com/wiki/index.php?title=NPC_Trainers" target="_blank" rel="noopener">NPC Trainers</a> in battle. For naturally spawning NPC Trainers, this amount is the product of a base amount for the NPC Trainer type (defined in the NPC Trainer’s <a href="http://pixelmonmod.com/wiki/index.php?title=External_JSON_file" target="_blank" rel="noopener">external JSON file</a> and the average level of the NPC Trainer’s party Pokémon (rounded down). If the NPC Trainer is edited using an <a href="http://pixelmonmod.com/wiki/index.php?title=NPC_editor" target="_blank" rel="noopener">NPC editor</a>, this amount will become fixed, awarding exactly the amount of PokéDollars specified in the “Win Money” field in the “Trainer Editor - More Info” section. If a player’s Pokémon is <a href="http://pixelmonmod.com/wiki/index.php?title=Holding" target="_blank" rel="noopener">holding</a> an <a href="http://pixelmonmod.com/wiki/index.php?title=Amulet_Coin" target="_blank" rel="noopener">Amulet Coin</a> or a <a href="http://pixelmonmod.com/wiki/index.php?title=Luck_Incense" target="_blank" rel="noopener">Luck Incense</a> and participates in the battle, the PokéDollar award will be doubled, while if a player’s Pokémon uses <a href="http://pixelmonmod.com/wiki/index.php?title=Happy_Hour" target="_blank" rel="noopener">Happy Hour</a>, the award will also be doubled. These two methods of doubling the award stack together, allowing the award to be multiplied by four if both methods are used in a battle. </p>
-<p>Using the <a href="http://pixelmonmod.com/wiki/index.php?title=Pay_Day" target="_blank" rel="noopener">Pay Day</a> move will award PokéDollars to the player at the end of the battle, equal to five times the level of the Pokémon using Pay Day. This amount will accumulate if Pay Day is used multiple times. </p>
-<p>PokéDollars can also be earned by selling Pixelmon <a href="http://pixelmonmod.com/wiki/index.php?title=Items" target="_blank" rel="noopener">items</a> to <a href="http://pixelmonmod.com/wiki/index.php?title=Shopkeepers" target="_blank" rel="noopener">shopkeepers</a>. Items eligible for being sold and the sell prices for these items are listed <a href="http://pixelmonmod.com/wiki/index.php?title=Shopkeeper/Sell_prices" target="_blank" rel="noopener">here</a>. </p>
-<p>The /givemoney <a href="http://pixelmonmod.com/wiki/index.php?title=Command" target="_blank" rel="noopener">command</a> can give an amount of PokéDollars to a player. A player can give another player PokéDollars with the /transfer command. </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/minecraft/pixelmon/Controls/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/minecraft/pixelmon/Controls/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:28" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:28+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:35:28" itemprop="dateModified" datetime="2018-06-19T23:35:28+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/" itemprop="url" rel="index"><span itemprop="name">minecraft</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/pixelmon/" itemprop="url" rel="index"><span itemprop="name">pixelmon</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://pixelmonmod.com/wiki/index.php?title=Guides" target="_blank" rel="noopener">All Guides</a></p>
-<h1 id="Controls"><a href="#Controls" class="headerlink" title="Controls"></a>Controls</h1><p>This is a list of controls added by Pixelmon. The keybindings for these controls can be changed in-game at Options→Controls menu. </p>
-<h2 id="Default-Pixelmon-keys"><a href="#Default-Pixelmon-keys" class="headerlink" title="Default Pixelmon keys"></a>Default Pixelmon keys</h2><ul>
-<li><em>R</em>: Send out/retrieve Pokémon. </li>
-<li><em>↑</em> &amp; <em>↓</em>: Change selected Pokémon in GUI. </li>
-<li><em>O</em>: Show/hide party GUI. </li>
-<li><em>Right-click</em>: <a href="http://pixelmonmod.com/wiki/index.php?title=Mount" target="_blank" rel="noopener">Mount</a> Pokémon/Use item on Pokémon. </li>
-<li><em>F</em>: If an owned Pokémon is sent out, pressing this key while the cursor is over a wild Pokémon will cause the currently sent out Pokémon to chase down the wild Pokémon and engage in battle with it. </li>
-<li><em>G</em>: Use currently selected <a href="http://pixelmonmod.com/wiki/index.php?title=External_move" target="_blank" rel="noopener">external move</a>. </li>
-<li><em>B</em>: Cycles through external moves if a Pokémon has more than one. </li>
-<li><em>I</em>: Opens the <a href="http://pixelmonmod.com/wiki/index.php?title=Pok%C3%A9dex" target="_blank" rel="noopener">Pokédex</a>. If the player is looking at a Pokémon, the Pokédex will navigate directly to that Pokémon’s entry, and will be registered as “seen” if it hasn’t been seen or caught before. </li>
-<li><em>K</em>: If the player is holding an <a href="http://pixelmonmod.com/wiki/index.php?title=Item" target="_blank" rel="noopener">item</a>, this key opens up the item’s page on this wiki or the <a href="http://minecraft.gamepedia.com/Minecraft_Wiki" target="_blank" rel="noopener"><em>Minecraft</em> Wiki</a> in the player’s internet browser, depending on the item. If the player is looking at a block and not holding an item, this key opens the respective wiki page for that block. </li>
-<li><em>L</em>: If the player is looking at another player who is in a battle, this key causes the player to begin spectating the other player’s battle. </li>
-<li><em>P</em>: Open the Pixelmon <a href="http://pixelmonmod.com/wiki/index.php?title=Config" target="_blank" rel="noopener">config</a> GUI. </li>
-</ul>
-<h2 id="Riding-controls"><a href="#Riding-controls" class="headerlink" title="Riding controls"></a>Riding controls</h2><p>There are two different sets of <a href="http://pixelmonmod.com/wiki/index.php?title=Riding" target="_blank" rel="noopener">riding</a> controls depending on the “enablePointToSteer” <a href="http://pixelmonmod.com/wiki/index.php?title=Config" target="_blank" rel="noopener">config</a> option (enabled by default). Riding controls are tied to standard moving controls, and therefore are changed by changing the respective <em>Minecraft</em> controls. </p>
-<h3 id="Enable-point-to-steer-enabled"><a href="#Enable-point-to-steer-enabled" class="headerlink" title="Enable point to steer enabled"></a>Enable point to steer enabled</h3><ul>
-<li><em>W</em>: Move forward. </li>
-<li><em>S</em>: Move backwards. </li>
-<li><em>Move mouse</em>: Turn left/right. </li>
-<li><em>Space bar</em>: Jump/Ascend. </li>
-<li><em>Left shift/Right-click Pokémon</em>: Dismount. </li>
-</ul>
-<h3 id="Enable-point-to-steer-disabled"><a href="#Enable-point-to-steer-disabled" class="headerlink" title="Enable point to steer disabled"></a>Enable point to steer disabled</h3><ul>
-<li><em>W</em>: Move forward. </li>
-<li><em>S</em>: Move backwards. </li>
-<li><em>A</em>: Turn left. </li>
-<li><em>D</em>: Turn right. </li>
-<li><em>Space bar</em>: Jump/Ascend. </li>
-<li><em>C</em>: Descend (if flying). </li>
-<li><em>Left shift/Right-click Pokémon</em>: Dismount. </li>
-</ul>
-<h2 id="Battle-camera-controls"><a href="#Battle-camera-controls" class="headerlink" title="Battle camera controls"></a>Battle camera controls</h2><p>If the “playerControlCamera” <a href="http://pixelmonmod.com/wiki/index.php?title=Config" target="_blank" rel="noopener">config</a> setting is enabled, it is possible to move the camera while in a Pokémon battle. These controls are not affected if <em>Minecraft</em> controls are changed. </p>
-<ul>
-<li><em>W</em>: Move camera up. </li>
-<li><em>S</em>: Move camera down. </li>
-<li><em>A</em>: Move camera left. </li>
-<li><em>D</em>: Move camera right. </li>
-<li><em>Q</em>: Zoom in. </li>
-<li><em>E</em>: Zoom out. </li>
-<li>Right-click + drag: Move camera. </li>
-<li>Mouse scroll: Zoom camera. </li>
-</ul>
-<h1 id="Pixelmon-tutorial"><a href="#Pixelmon-tutorial" class="headerlink" title="Pixelmon_tutorial"></a><a href="http://pixelmonmod.com/wiki/index.php?title=Pixelmon_tutorial" target="_blank" rel="noopener">Pixelmon_tutorial</a></h1>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/minecraft/Minecraft Download  Mods/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/minecraft/Minecraft Download  Mods/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:28" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:28+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:35:28" itemprop="dateModified" datetime="2018-06-19T23:35:28+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/" itemprop="url" rel="index"><span itemprop="name">minecraft</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Minecraft-Download-amp-Mods"><a href="#Minecraft-Download-amp-Mods" class="headerlink" title="Minecraft::Download &amp; Mods"></a>Minecraft::Download &amp; Mods</h1><h2 id="1-Install"><a href="#1-Install" class="headerlink" title="1 Install"></a>1 Install</h2><h3 id="HMCL"><a href="#HMCL" class="headerlink" title="HMCL"></a>HMCL</h3><p><a href="http://www.mcbbs.net/thread-142335-1-1.html" target="_blank" rel="noopener">发布帖</a></p>
-<p><a href="https://github.com/huanghongxun/HMCL" target="_blank" rel="noopener">下载地址</a></p>
-<h2 id="2-Mods"><a href="#2-Mods" class="headerlink" title="2 Mods"></a>2 Mods</h2><h3 id="Forge"><a href="#Forge" class="headerlink" title="Forge"></a><a href="https://files.minecraftforge.net/" target="_blank" rel="noopener">Forge</a></h3><h3 id="Optifine"><a href="#Optifine" class="headerlink" title="Optifine"></a><a href="http://www.optifine.net" target="_blank" rel="noopener">Optifine</a></h3><h3 id="CurseForge"><a href="#CurseForge" class="headerlink" title="CurseForge"></a><a href="https://minecraft.curseforge.com/mc-mods" target="_blank" rel="noopener">CurseForge</a></h3><h3 id="Curse"><a href="#Curse" class="headerlink" title="Curse"></a><a href="https://mods.curse.com/mc-mods/minecraft" target="_blank" rel="noopener">Curse</a></h3><h3 id="JourneyMap"><a href="#JourneyMap" class="headerlink" title="JourneyMap"></a><a href="https://minecraft.curseforge.com/projects/journeymap-32274" target="_blank" rel="noopener">JourneyMap</a></h3><h3 id="SuperMiner"><a href="#SuperMiner" class="headerlink" title="SuperMiner"></a><a href="https://minecraft.curseforge.com/projects/superminer-unified?gameCategorySlug=mc-mods&amp;projectID=246404" target="_blank" rel="noopener">SuperMiner</a></h3><h3 id="BetterBuildersWand"><a href="#BetterBuildersWand" class="headerlink" title="BetterBuildersWand"></a><a href="https://minecraft.curseforge.com/projects/better-builders-wands?gameCategorySlug=mc-mods&amp;projectID=238403" target="_blank" rel="noopener">BetterBuildersWand</a></h3><h3 id="CustomNPCs"><a href="#CustomNPCs" class="headerlink" title="CustomNPCs"></a>CustomNPCs</h3><p>​    <a href="https://minecraft.curseforge.com/projects/custom-npcs?gameCategorySlug=mc-mods&amp;projectID=221826" target="_blank" rel="noopener">官网</a></p>
-<p>​    <a href="http://www.kodevelopment.nl/minecraft/customnpcs" target="_blank" rel="noopener">Info</a></p>
-<h3 id="Mr-CrayFish"><a href="#Mr-CrayFish" class="headerlink" title="Mr.CrayFish"></a><a href="https://mrcrayfish.com/mods" target="_blank" rel="noopener">Mr.CrayFish</a></h3><p>​    <a href="https://minecraft.curseforge.com/projects/mrcrayfish-furniture-mod?gameCategorySlug=mc-mods&amp;projectID=55438" target="_blank" rel="noopener">FurnitureMod</a></p>
-<h3 id="OpenBlocks-Elevator"><a href="#OpenBlocks-Elevator" class="headerlink" title="OpenBlocks Elevator"></a><a href="https://minecraft.curseforge.com/projects/openblocks-elevator?gameCategorySlug=mc-mods&amp;projectID=250832" target="_blank" rel="noopener">OpenBlocks Elevator</a></h3><h3 id="BuildCraft"><a href="#BuildCraft" class="headerlink" title="BuildCraft"></a>BuildCraft</h3><p>​    <a href="https://minecraft.curseforge.com/projects/buildcraft" target="_blank" rel="noopener">CurseForge</a></p>
-<p>​    <a href="http://www.mod-buildcraft.com/" target="_blank" rel="noopener">Official Site</a></p>
-<p>​    <a href="http://www.mcmod.cn/post/180.html" target="_blank" rel="noopener">How to use it.</a></p>
-<h3 id="Literal-Ascension"><a href="#Literal-Ascension" class="headerlink" title="Literal Ascension"></a><a href="https://mods.curse.com/mc-mods/minecraft/253021-literal-ascension#t1:other-downloads" target="_blank" rel="noopener">Literal Ascension</a></h3><h3 id="Ender-Cloud"><a href="#Ender-Cloud" class="headerlink" title="Ender Cloud"></a><a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1287430-roxas-mods-tall-doors-experience-storage-gems" target="_blank" rel="noopener">Ender Cloud</a></h3><h3 id="Instant-Structures-Mod"><a href="#Instant-Structures-Mod" class="headerlink" title="Instant Structures Mod"></a><a href="http://instant-structures-mod.com/" target="_blank" rel="noopener">Instant Structures Mod</a></h3><h2 id="3-Shader-Packs"><a href="#3-Shader-Packs" class="headerlink" title="3 Shader Packs"></a>3 Shader Packs</h2><h3 id="CONTINUUM-GRAPHICS"><a href="#CONTINUUM-GRAPHICS" class="headerlink" title="CONTINUUM GRAPHICS"></a><a href="https://continuum.graphics/" target="_blank" rel="noopener">CONTINUUM GRAPHICS</a></h3><h2 id="4-Resourses-Packs"><a href="#4-Resourses-Packs" class="headerlink" title="4 Resourses Packs"></a>4 Resourses Packs</h2><h3 id="Vanilla"><a href="#Vanilla" class="headerlink" title="Vanilla"></a>Vanilla</h3><p>​    <a href="https://soartex.net/downloads/" target="_blank" rel="noopener">Soartex</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://equalma.github.io/minecraft/How to use BuildCraft mod./">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Equal Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Equal's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/minecraft/How to use BuildCraft mod./" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2017-12-14 19:09:28" itemprop="dateCreated datePublished" datetime="2017-12-14T19:09:28+08:00">2017-12-14</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-19 23:35:28" itemprop="dateModified" datetime="2018-06-19T23:35:28+08:00">2018-06-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/minecraft/" itemprop="url" rel="index"><span itemprop="name">minecraft</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="How-to-use-BuildCraft-mod"><a href="#How-to-use-BuildCraft-mod" class="headerlink" title="How to use BuildCraft mod."></a>How to use BuildCraft mod.</h1><p>BuildCraft中的四大部件（<strong>容器、管道、能量、机器</strong>）</p>
-<h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><h3 id="1-传输类"><a href="#1-传输类" class="headerlink" title="1 传输类"></a>1 传输类</h3><p>​    ：圆石管道、石制管道、沙石管道、石英管道、金制管道</p>
-<h5 id="1-1-功能：传输物品的主力"><a href="#1-1-功能：传输物品的主力" class="headerlink" title="1.1 功能：传输物品的主力"></a>1.1 功能：传输物品的主力</h5><h5 id="1-2-要点："><a href="#1-2-要点：" class="headerlink" title="1.2 要点："></a>1.2 要点：</h5><ul>
-<li>圆石管道、石制管道和石英管道之间两两不能互连。当需要并排铺两排管道时候这个特性十分好用。</li>
-<li>沙石管道只能和管道相连，不能和容器或者机器相连。当管道需要从容器或者机器边擦过但又不想和容器或者机器相连时候，沙石管道十分好用。</li>
-<li>金制管道可以加速通过其中的物品。将多个金制管道串联可以把物品瞬间加速到飞。</li>
-<li>被金制管道加速过的物品通过其它管道时会受阻减速，阻力大小为：圆石管道 &gt; 沙石管道 &gt; 石制管道 &gt; 石英管道。如果想要在一条很长的管道内保持加速，就得隔几步放一个金制管道。</li>
-</ul>
-<h5 id="1-3-多条通路"><a href="#1-3-多条通路" class="headerlink" title="1.3 多条通路"></a>1.3 多条通路</h5><p>​    a) 通路被一分为二，物品通过岔路的时候会等概率随机地进入其中一条。图中分成了两条通路，则进入任何一条通路的概率都是50%。如果分成三条通路就是33.3%，以此类推。</p>
-<p><img src="http://www.mcmod.cn/pages/center/0/album/20150815/14396456894877.png" alt="alt"></p>
-<p>​    如果想控制物品的路由行为，比如说让石头走上路，泥土走下路，则需要用到路由类的钻石管道，详见下文。</p>
-<p>​    b) 另一种情况是多条通路合成为一条，如下图：</p>
-<p><img src="http://www.mcmod.cn/pages/center/0/album/20150815/14396458182861.png" alt="alt"></p>
-<p>​    这种情况有点反直觉。从A、B路出来的物品并非合并入C路，而是如图中箭头所示，A路的物品会随机等概率进入B或C路；B路的物品会随机等概率进入A或C路。</p>
-<p>​    关键之处在于传输类管道是双行道，没有特定传输方向。如果确实要实现AB并入C路的效果，则需要用到路由类的<a href="http://www.mcmod.cn/item/482.html" target="_blank" rel="noopener">铁制管道</a>，详见下文。</p>
-<p>​    c) 这里再介绍一个我们实战中常常会碰到的头疼问题——满箱溢出。</p>
-<p>看下面这个简单的例子：</p>
-<p><img src="http://www.mcmod.cn/pages/center/0/album/20150817/14398210162920.png" alt="点击查看原图"></p>
-<p>​    从输入箱子把煤炭输送到熔炉里作为燃料，需要烧东西的时候就把材料手动扔进炉子里烧。只要保证箱子里有足够的燃料，就很长时间不需要关心燃料的事情。</p>
-<p>​    这是一个简单有效的半自动熔炉结构，但有个致命问题，如果熔炉里没有材料或者是种燃烧很慢的材料，熔炉的煤炭很快就满了（64个），但此时输入端不会自动停下，会继续把煤炭往炉子里送，但熔炉此时是满的，所以煤炭会掉在地上。如果不及时发现这个问题，掉在地上的煤炭就会过5分钟消失，损失巨大。</p>
-<p>​    为了解决这个问题，我推荐这样的一种设计：</p>
-<p><img src="http://www.mcmod.cn/pages/center/0/album/20150817/14398218805417.png" alt="点击查看原图"></p>
-<p>​    这里利用了传输类管道的一个特性：<strong>如果相连的容器或者机器已满，那么物品会随机挑选当前格的其它岔路继续传输</strong>。</p>
-<p>​    在前一张图里，由于连接熔炉的最后一格管道上没有任何其它岔路，所以熔炉燃料满时，煤炭就被挤出管道了。而这个改进的设计里，煤炭在同样情况下就会往上走，进入环形通路循环。一旦熔炉里的燃料有空位出来，循环中的煤炭就会立刻被送入熔炉。由于环形通路的存在，造成部分煤炭会被送回箱子。这其实也是一个我们希望的结果，因为如果积攒在一个管道里的物品过多的话，会造成管道爆炸。</p>
-<p>​    比这个简单粗暴更好的方法是使用粘土管道，下文会提到，另外还有一些更复杂的方案，例如使用BuildCraft门（以后的教程会介绍用法），或者红石比较器的满箱检测功能，也有各自的应用场景，有机会的话会在以后的教程里介绍。</p>
-<h3 id="2-路由类"><a href="#2-路由类" class="headerlink" title="2 路由类"></a>2 路由类</h3><p>​    :铁制管道、钻石管道、青金石管道、靛金刚管道、粘土管道</p>
-<h5 id="2-1-功能：对固体物品在管道岔路的传输方向进行控制。"><a href="#2-1-功能：对固体物品在管道岔路的传输方向进行控制。" class="headerlink" title="2.1 功能：对固体物品在管道岔路的传输方向进行控制。"></a>2.1 功能：对固体物品在管道岔路的传输方向进行控制。</h5><p>扳手用于改变通道方向</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Equal Ma</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">64</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
                     
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">26</span>
-                    <span class="site-state-item-name">分类</span>
-                  
-                </div>
-              
 
-              
-            </nav>
-          
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
 
-          
+    <!-- Facebook -->
+    
 
-          
+    <!-- Google + -->
+    
 
-          
-          
+    <!-- Weibo -->
+    
 
-          
-          
+    <!-- Instagram -->
+    
 
-          
-            
-          
-          
+    <!-- Tumblr -->
+    
 
-        </div>
-      </section>
+    <!-- Github -->
+    
+        <a href="https://github.com/EqualMa" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
 
-      
+    <!-- LinkedIn -->
+    
 
-      
+    <!-- Zhihu -->
+    
 
-    </div>
-  </aside>
+    <!-- Bilibili -->
+    
 
+    <!-- Telegram -->
+    
 
-        
-      </div>
-    </main>
+    <!-- V2EX -->
+    
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Equal Ma</span>
-
-  
-
-  
+    <!-- Segmentfault -->
+    
 </div>
 
 
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Equal's
+            
+        </div>
 
+        <!-- Paradox Footer Right Section -->
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
 
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.0</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+</footer>
 
-    
-	
-    
 
-    
-  </div>
+                    <!-- Import JS File -->
 
-  
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
 </script>
 
 
@@ -2389,109 +1434,92 @@
 
 
 
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
 
 
 
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
 
 
 
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
 
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        if(textContent)
+            textContent.textContent = copyrightNow
+    } else {
+        if(textContent)
+            textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
 
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
 
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
 
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-<script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1534419394105')
+                </main>
+            </div>
+        <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534508120976')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
 </script></body>
+    
 </html>
