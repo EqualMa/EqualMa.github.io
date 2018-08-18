@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head><link rel=manifest href=/manifest.json>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            Simple implementation for MVVM | 
+        
+        Equal&#39;s
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?ccGBeMDWYoggANlBkt/rKQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/atelier-heath-light.min.css?DZmcUCyCHxt2Gtdy1zAQZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Equal&#39;s">
+    <meta name="msapplication-starturl" content="https://equalma.github.io/post/js/simple-mvvm/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Equal&#39;s">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://equalma.github.io/post/js/simple-mvvm/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Simple implementation for MVVM | Equal&#39;s">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Tue Jan 30 2018 20:15:23 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jun 19 2018 23:31:21 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://equalma.github.io/post/js/simple-mvvm/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://equalma.github.io/post/js/simple-mvvm/index.html",
+    "headline": "Simple implementation for MVVM",
+    "datePublished": "Tue Jan 30 2018 20:15:23 GMT+0800",
+    "dateModified": "Tue Jun 19 2018 23:31:21 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Equal Ma",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Equal's"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Equal&#39;s",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#什么是MVVM？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是MVVM？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Model"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Model</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#View"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">View</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ViewModel"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">ViewModel</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MVVM的原理"><span class="post-toc-number">2.</span> <span class="post-toc-text">MVVM的原理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#差异"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">差异</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据劫持"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">数据劫持</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#脏检查机制"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">脏检查机制</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#发布订阅模式"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">发布订阅模式</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#相同点"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">相同点</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解析模版"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">解析模版</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解析数据"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">解析数据</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#绑定模版与数据"><span class="post-toc-number">2.2.3.</span> <span class="post-toc-text">绑定模版与数据</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#动手实现MVVM"><span class="post-toc-number">3.</span> <span class="post-toc-text">动手实现MVVM</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#期望效果"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">期望效果</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析模版-1"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">解析模版</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#遍历"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">遍历</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#遍历不同结构"><span class="post-toc-number">3.2.2.</span> <span class="post-toc-text">遍历不同结构</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#不同结构的处理方法"><span class="post-toc-number">3.2.3.</span> <span class="post-toc-text">不同结构的处理方法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解析数据-1"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">解析数据</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#普通对象的劫持"><span class="post-toc-number">3.3.1.</span> <span class="post-toc-text">普通对象的劫持</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#嵌套对象的劫持"><span class="post-toc-number">3.3.2.</span> <span class="post-toc-text">嵌套对象的劫持</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对象中数组的劫持"><span class="post-toc-number">3.3.3.</span> <span class="post-toc-text">对象中数组的劫持</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#处理路径参数"><span class="post-toc-number">3.3.4.</span> <span class="post-toc-text">处理路径参数</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多对一监视的实现"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">多对一监视的实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#监视者的实现"><span class="post-toc-number">3.4.1.</span> <span class="post-toc-text">监视者的实现</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#observer模块的修改"><span class="post-toc-number">3.4.2.</span> <span class="post-toc-text">observer模块的修改</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#绑定模版与数据-1"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">绑定模版与数据</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 1 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Simple implementation for MVVM
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Equal Ma</strong>
+        <span>1月 30, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Simple implementation for MVVM&url=https://equalma.github.io/post/js/simple-mvvm/index.html&pic=https://equalma.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Simple implementation for MVVM&url=https://equalma.github.io/post/js/simple-mvvm/index.html&via=Equal Ma" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://equalma.github.io/post/js/simple-mvvm/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://equalma.github.io/post/js/simple-mvvm/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://equalma.github.io/post/js/simple-mvvm/index.html&title=Simple implementation for MVVM" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Equal&#39;s&title=Simple implementation for MVVM&summary=&pics=https://equalma.github.io/img/favicon.png&url=https://equalma.github.io/post/js/simple-mvvm/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://equalma.github.io/post/js/simple-mvvm/index.html&text=Simple implementation for MVVM" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>转载于<a href="https://zhuanlan.zhihu.com/p/24475845" target="_blank" rel="noopener">250行实现一个简单的MVVM</a></p>
+</blockquote>
+<p>MVVM这两年在前端届掀起了一股热潮，火热的Vue和Angular带给了开发者无数的便利，本文将实现一个简单的MVVM，用200多行代码探索MVVM的秘密。您可以<a href="https://link.zhihu.com/?target=https%3A//jsbin.com/juqeduf/edit%3Fconsole%2Coutput" target="_blank" rel="noopener">先点击本文的JS Bin查看效果</a>，代码使用ES6，所以你可能需要转码。</p>
+<h1 id="什么是MVVM？"><a href="#什么是MVVM？" class="headerlink" title="什么是MVVM？"></a>什么是MVVM？</h1><p>MVVM是一种程序架构设计。把它拆开来看应该是Model-View-ViewModel。</p>
+<h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><p>Model指的是数据层，是纯净的数据。对于前端来说，它往往是一个简单的对象。例如：</p>
+<pre><code class="js">{
+  name: &#39;mirone&#39;,
+  age: 20,
+  friends: [&#39;singleDogA&#39;, &#39;singleDogB&#39;],
+  details: {
+    type: &#39;notSingleDog&#39;,
+    tags: [&#39;fff&#39;, &#39;sox&#39;]
+  }
+}
+
+</code></pre>
+<p>数据层是我们需要渲染后呈现给用户的数据，数据层本身是可变的。数据层不应该承担逻辑操作和计算的功能。</p>
+<h2 id="View"><a href="#View" class="headerlink" title="View"></a>View</h2><p>View指视图层，是直接呈现给用户的部分，简单的来说，对于前端就是HTML。例如上面的数据层，它对应的视图层可能是：</p>
+<pre><code>&lt;div&gt;
+  &lt;p&gt;
+    &lt;b&gt;name: &lt;/b&gt;
+    &lt;span&gt;mirone&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;b&gt;age: &lt;/b&gt;
+    &lt;span&gt;20&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;singleDogA&lt;/li&gt;
+    &lt;li&gt;singleDogB&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div&gt;
+    &lt;p&gt;notSingleDog&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;fff&lt;/li&gt;
+      &lt;li&gt;sox&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre><p>当然视图层是可变的，你完全可以在其中随意添加元素。这不会改变数据层，只会改变视图层呈现数据的方式。视图层应该和数据层完全分离。</p>
+<h2 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h2><p>既然视图层应该和数据层分离，那么我们就需要设计一种结构，让它们建立起某种联系。当我们对Model进行修改的时候，ViewModel就会把修改自动同步到View层去。同样当我们修改View，Model同样被ViewModel自动修改。</p>
+<p>可以看出，如何设计能够高效自动同步View与Model的ViewModel是整个MVVM框架的核心和难点。</p>
+<h1 id="MVVM的原理"><a href="#MVVM的原理" class="headerlink" title="MVVM的原理"></a>MVVM的原理</h1><h2 id="差异"><a href="#差异" class="headerlink" title="差异"></a>差异</h2><p>不同的框架对于MVVM的实现是不同的。</p>
+<h3 id="数据劫持"><a href="#数据劫持" class="headerlink" title="数据劫持"></a>数据劫持</h3><p>Vue的实现方式，对数据（Model）进行劫持，当数据发生变动时，数据会触发劫持时绑定的方法，对视图进行更新。</p>
+<h3 id="脏检查机制"><a href="#脏检查机制" class="headerlink" title="脏检查机制"></a>脏检查机制</h3><p>Angular的实现方式，当发生了某种事件（例如输入），Angular会检查新的数据结构和之前的数据结构是否发生了变动，来决定是否更新视图。</p>
+<h3 id="发布订阅模式"><a href="#发布订阅模式" class="headerlink" title="发布订阅模式"></a>发布订阅模式</h3><p>Knockout的实现方式，实现了一个发布订阅器，解析时会在对应视图节点绑定订阅器，而在数据上绑定发布器，当修改数据时，就出发了发布器，视图收到后进行对应更新。</p>
+<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><p>但是还是有很多相同点的，它们都有三个步骤：</p>
+<ul>
+<li>解析模版</li>
+<li>解析数据</li>
+<li>绑定模版与数据</li>
+</ul>
+<h3 id="解析模版"><a href="#解析模版" class="headerlink" title="解析模版"></a>解析模版</h3><p>何谓模版？我们可以看一下主流MVVM的模版：</p>
+<pre><code>&lt;!-- Vue --&gt;
+&lt;div id=&quot;mobile-list&quot;&gt;
+  &lt;h1 v-text=&quot;title&quot;&gt;&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li v-for=&quot;item in brands&quot;&gt;
+      &lt;b v-text=&quot;item.name&quot;&gt;&lt;/b&gt;
+      &lt;span v-show=&quot;showRank&quot;&gt;Rank: {{item.rank}}&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- Angular --&gt;
+&lt;ul&gt;
+  &lt;li ng-repeat=&quot;phone in phones&quot;&gt;
+    {{phone.name}}
+    &lt;p&gt;{{phone.snippet}}&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- Knockout --&gt;
+&lt;tbody data-bind=&quot;foreach: seats&quot;&gt;
+  &lt;tr&gt;
+    &lt;td data-bind=&quot;text: name&quot;&gt;&lt;/td&gt;
+    &lt;td data-bind=&quot;text: meal().mealName&quot;&gt;&lt;/td&gt;
+    &lt;td data-bind=&quot;text: meal().price&quot;&gt;&lt;/td&gt;
+  &lt;/tr&gt;    
+&lt;/tbody&gt;
+
+</code></pre><p>可以看到它们都定义了自己的模版关键字，这一模块的作用就是根据这些关键字解析模版，将模版对应到期望的数据结构。</p>
+<h3 id="解析数据"><a href="#解析数据" class="headerlink" title="解析数据"></a>解析数据</h3><p>Model中的数据经过劫持或绑定发布器来解析。数据解析器的编写要考虑VM的实现方式，但是无论如何解析数据只要做好一件事：定义数据变动时要通知的对象。解析数据时应保证数据解析后的一致性，对于每种数据解析后暴露的接口应该保持一致。</p>
+<h3 id="绑定模版与数据"><a href="#绑定模版与数据" class="headerlink" title="绑定模版与数据"></a>绑定模版与数据</h3><p>这一部分定义了数据结构以何种方式和模版进行绑定，就是传说中的“双向绑定”。绑定之后我们直接对数据进行操作时，应用就能自动更新视图了。数据和模版往往是多对多的关系，而且不同的模版更新数据的方式往往不同。例如有的是改变标签的文本节点，有的是改变标签的className。</p>
+<h1 id="动手实现MVVM"><a href="#动手实现MVVM" class="headerlink" title="动手实现MVVM"></a>动手实现MVVM</h1><p>经过一番分析，来动手实现MVVM吧。</p>
+<h2 id="期望效果"><a href="#期望效果" class="headerlink" title="期望效果"></a>期望效果</h2><p>对于我的MVVM，我希望对应一个数据结构：</p>
+<pre><code>let data = {
+  title: &#39;todo list&#39;,
+  user: &#39;mirone&#39;,
+  todos: [
+    {
+      creator: &#39;mirone&#39;,
+      content: &#39;write mvvm&#39;
+      done: &#39;undone&#39;,
+      date: &#39;2016-11-17&#39;,
+      members: [
+        {
+          name: &#39;kaito&#39;
+        }
+      ]
+    }
+  ]
+}
+
+</code></pre><p>我可以对应的编写模版：</p>
+<pre><code>&lt;div id=&quot;root&quot;&gt;
+  &lt;h1 data-model=&quot;title&quot;&gt;&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;div data-model=&quot;user&quot;&gt;&lt;/div&gt;
+    &lt;ul data-list=&quot;todos&quot;&gt;
+      &lt;li data-list-item=&quot;todos&quot;&gt;
+        &lt;p data-class=&quot;todos:done&quot; data-model=&quot;todos:creator&quot;&gt;&lt;/p&gt;
+        &lt;p data-model=&quot;todos:date&quot;&gt;&lt;/p&gt;
+        &lt;p data-model=&quot;todos:content&quot;&gt;&lt;/p&gt;
+        &lt;ul data-list=&quot;todos:members&quot;&gt;
+          &lt;li data-list-item=&quot;todos:members&quot;&gt;
+            &lt;span data-model=&quot;todos:members:name&quot;&gt;&lt;/span&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre><p>然后通过调用：</p>
+<pre><code>new Parser(&#39;#root&#39;, data)
+
+</code></pre><p>就可以完成mvvm的绑定，之后可以直接操作data对象来对View进行更改。</p>
+<h2 id="解析模版-1"><a href="#解析模版-1" class="headerlink" title="解析模版"></a>解析模版</h2><p>模版的解析其实是一个树的遍历过程。</p>
+<h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><p>众所周知，DOM是一个树状结构，这也是为什么它被称为“DOM树”。对于树的遍历，只要递归，便能很轻松的完成一个深度优先遍历，请看代码：</p>
+<pre><code>function scan(node) {
+  console.log(node)
+  for(let i = 0; i &lt; node.children.length; i++) {
+    const _thisNode  = node.children[i]
+    console.log(_thisNode)
+    if(_thisNode.children.length) {
+      scan(_thisNode)
+    }
+  }
+}
+
+</code></pre><p>这个函数遍历了一个DOM节点，依次打印遍历得到的节点。</p>
+<h3 id="遍历不同结构"><a href="#遍历不同结构" class="headerlink" title="遍历不同结构"></a>遍历不同结构</h3><p>知道了如何遍历一个DOM树，那么我们如何获取需要分析的DOM树？根据之前的构想，我们需要这么几种标识：</p>
+<ul>
+<li>data-model——用于将DOM的文本节点替换为制定内容</li>
+<li>data-class——用于将 DOM的className替换为制定内容</li>
+<li>data-list——用于标识接下来将出现一个列表，列表为制定结构</li>
+<li>data-list-item——用于标识列表项的内部结构</li>
+<li>data-event——用于为DOM节点绑定指定事件</li>
+</ul>
+<p>简单的归类一下：data-model、data-class和data-event应该是一类，它们都只影响当前节点；而data-list和data-item作为列表应该要单独考虑。那么我们可以这样遍历：</p>
+<pre><code> function scan(node) {
+  if(!node.getAttribute(&#39;data-list&#39;)) {
+    for(let i = 0; i &lt; node.children.length; i++) {
+      const _thisNode = node.children[i]
+      parseModel(_thisNode)
+      parseClass(_thisNode)
+      parseEvent(_thisNode)
+      if(_thisNode.children.length) {
+        scan(_thisNode)
+      }
+    }
+  } else {
+    parseList(node)
+  }
+}
+function parseModel(node) {
+  //TODO:解析Model节点
+}
+function parseClass(node) {
+  //TODO:解析className
+}
+function parseEvent(node) {
+  //TODO:解析事件
+}
+function parseList(node) {
+  //TODO: 解析列表
+}
+
+</code></pre><p>这样我们就搭好了遍历器的大概框架</p>
+<h3 id="不同结构的处理方法"><a href="#不同结构的处理方法" class="headerlink" title="不同结构的处理方法"></a>不同结构的处理方法</h3><p>parseModel，parseClass和parseEvent的处理方式比较相似，唯一值得注意的就是对于嵌套元素的处理，回忆一下我们的模版设计：</p>
+<pre><code>&lt;!--遇到嵌套部分--&gt;
+&lt;div data-model=&quot;todos:date&quot;&gt;&lt;/div&gt;
+
+</code></pre><p>这里的todos:date其实大大方便了我们解析模版，因为它展示了当前数据在Model结构中的位置。</p>
+<pre><code>//event要有一个eventList,大概结构为：
+const eventList = {
+  typeWriter: {
+    type: &#39;input&#39;, //事件的种类
+    fn: function() {
+      //事件的处理函数，函数的this代表函数绑定的DOM节点
+    }
+  }
+}
+function parseEvent(node) {
+  if(node.getAttribute(&#39;data-event&#39;)) {
+    const eventName = node.getAttribute(&#39;data-event&#39;)
+    node.addEventListener(eventList[eventName].type, eventList[eventName].fn.bind(node))
+  }
+}
+//根据在模版中的位置解析模版，这里的Path是一个数组，代表了当前数据在Model中的位置
+function parseData(str, node) {
+  const _list = str.split(&#39;:&#39;)
+  let _data,
+    _path
+  let p = []
+  _list.forEach((key, index) =&gt; {
+    if(index === 0) {
+      _data = data[key]
+      p.push(key)
+    } else {
+      _path = node.path[index-1]
+      p.push(_path)
+      _data = _data[_path][key]
+      p.push(key)
+    }
+  })
+  return {
+    path: p,
+    data: _data
+  }
+}
+function parseModel(node) {
+  if(node.getAttribute(&#39;data-model&#39;)) {
+    const modelName = node.getAttribute(&#39;data-model&#39;)
+    const _data = parseData(modelName, node)
+    if(node.tagName === &#39;INPUT&#39;) {
+      node.value = _data.data
+    } else {
+      node.innerText = _data.data
+    }
+  }
+}
+function parseClass(node) {
+  if(node.getAttribute(&#39;data-class&#39;)) {
+    const className = node.getAttribute(&#39;data-class&#39;)
+    const _data = parseData(className, node)
+    if(!node.classList.contains(_data.data)) {
+      node.classList.add(_data.data)
+    }
+  }
+}
+
+</code></pre><p>接下来解析列表，我们遇到列表时，应该先递归找出列表项的结构</p>
+<pre><code> parseListItem(node) {
+  let target
+  !function getItem(node) {
+    for(let i = 0; i &lt; node.children.length; i++) {
+      const _thisNode = node.children[i]
+      if(node.path) {
+        _thisNode.path = node.path.slice()
+      }
+      parseEvent(_thisNode)
+      parseClass(_thisNode)
+      parseModel(_thisNode)
+      if(_thisNode.getAttribute(&#39;data-list-item&#39;)) {
+        target = _thisNode
+      } else {
+        getItem(_thisNode)
+      } 
+    }
+  }(node)
+  return target
+}
+
+</code></pre><p>之后在用这个列表项来按需拷贝出一定数量的列表项，并填充数据</p>
+<pre><code>function parseList(node) {
+  const _item = parseListItem(node)
+  const _list = node.getAttribute(&#39;data-list&#39;)
+  const _listData = parseData(_list, node)
+  _listData.data.forEach((_dataItem, index) =&gt; {
+    const _copyItem = _item.cloneNode(true)
+    if(node.path) {
+      _copyItem.path = node.path.slice()
+    }
+    if(!_copyItem.path) {
+      _copyItem.path = []
+    }
+    _copyItem.path.push(index)
+    scan(_copyItem)
+    node.insertBefore(_copyItem, _item)
+  })
+  node.removeChild(_item)
+}
+
+</code></pre><p>这样我们就完成了模版的渲染，scan函数会扫描模版对模版进行渲染</p>
+<h2 id="解析数据-1"><a href="#解析数据-1" class="headerlink" title="解析数据"></a>解析数据</h2><p>解析了模版之后，我们就要研究如何进行数据解析了，这里我采用劫持数据的方法来进行。</p>
+<h3 id="普通对象的劫持"><a href="#普通对象的劫持" class="headerlink" title="普通对象的劫持"></a>普通对象的劫持</h3><p>如何劫持数据？一般对数据的劫持都是通过Object.defineProperty方法进行的，先看一个小例子：</p>
+<pre><code> var obj = {
+  name: &#39;mi&#39;
+}
+function observe(obj, key) {
+  let old = obj[key]
+  Object.defineProperty(obj, key, {
+    enumerable: true,
+    configurable: true,
+    get: function() {
+      return old
+    },
+    set: function(now) {
+      if(now !== old) {
+        console.log(`${old} ---&gt; ${now}`)
+        old = now
+      }
+    }
+  })
+}
+observe(obj, &#39;name&#39;)
+obj.name = &#39;mirone&#39;
+//输出结果：
+//&quot;mi ---&gt; mirone&quot;
+
+</code></pre><p>这样我们就通过object.defineProperty进行了数据劫持，如果我们想自定义劫持数据时发生的操作，只要添加一个回调函数参数即可：</p>
+<pre><code>function observer(obj, k, callback) {
+  let old = obj[k]  
+  Object.defineProperty(obj, k, {
+    enumerable: true,
+    configurable: true,
+    get: function() {
+      return old
+    },
+    set: function(now) {
+      if(now !== old) {
+        callback(old, now)
+      }
+      old = now
+    }
+  })
+}
+
+</code></pre><h3 id="嵌套对象的劫持"><a href="#嵌套对象的劫持" class="headerlink" title="嵌套对象的劫持"></a>嵌套对象的劫持</h3><p>对于对象中的对象，我么还需要多进行一个步骤，使用递归来劫持对象中的对象：</p>
+<pre><code>//实现一个observeAllKey函数，劫持该对象的所有属性
+function observeAllKey(obj, callback) {
+  Object.keys(obj).forEach(function(key){
+    observer(obj, key, callback)
+  })
+}
+function observer(obj, k, callback) {
+  let old = obj[k]
+  if (old.toString() === &#39;[object Object]&#39;) {
+    observeAllKey(old, callback)
+  } else {
+    //...同前文，省略
+  }
+}
+
+</code></pre><h3 id="对象中数组的劫持"><a href="#对象中数组的劫持" class="headerlink" title="对象中数组的劫持"></a>对象中数组的劫持</h3><p>对于对象中的数组，我们使用重写数组的prototype的方法来劫持它</p>
+<pre><code>function observeArray(arr, callback) {
+  const oam = [&#39;push&#39;, &#39;pop&#39;, &#39;shift&#39;, &#39;unshift&#39;, &#39;splice&#39;, &#39;sort&#39;, &#39;reverse&#39;]
+  const arrayProto = Array.prototype
+  const hackProto = Object.create(Array.prototype)
+  oam.forEach(function(method){
+    Object.defineProperty(hackProto, method, {
+      writable: true,
+      enumerable: true,
+      configurable: true,
+      value: function(...arg) {
+        let me = this
+        let old = arr.slice()
+        let now = arrayProto[method].call(me, ...arg)
+        callback(old, me, ...arg)
+        return now
+      },
+    })
+  })
+  arr.__proto__ = hackProto
+}
+
+</code></pre><p>写完劫持数组的函数后，将它添加进主函数：</p>
+<pre><code>function observer(obj, k, callback) {
+  let old = obj[k]
+  if(Object.prototype.toString.call(old) === &#39;[object Array]&#39;) {
+    observeArray(old, callback)
+  } else if (old.toString() === &#39;[object Object]&#39;) {
+    observeAllKey(old, callback)
+  } else {
+    //...
+  }
+}
+
+</code></pre><h3 id="处理路径参数"><a href="#处理路径参数" class="headerlink" title="处理路径参数"></a>处理路径参数</h3><p>之前我们所有的方法都是面对单个key值的，回想一下我们的模版，有很多例如todos:todo:member这样的路径，我们应该允许传入一个路径数组，根据路径数组来监听指定的对象数据</p>
+<pre><code>function observePath(obj, path, callback) {
+  let _path = obj
+  let _key
+  path.forEach((p, index) =&gt; {
+    if(parseInt(p) === p) {
+      p = parseInt(p)
+    }
+    if(index &lt; path.length - 1) {
+      _path = _path[p]
+    } else {
+      _key = p
+    }
+  })
+  observer(_path, _key, callback)
+}
+
+</code></pre><p>之后再将它添加进主函数：</p>
+<pre><code>function observer(obj, k, callback) {
+  if(Object.prototype.toString.call(k) === &#39;[object Array]&#39;) {
+    observePath(obj, k, callback)
+  } else {
+    let old = obj[k]
+    if(Object.prototype.toString.call(old) === &#39;[object Array]&#39;) {
+      observeArray(old, callback)
+    } else if (old.toString() === &#39;[object Object]&#39;) {
+      observeAllKey(old, callback)
+    } else {
+      //...
+    }
+  }
+}
+
+</code></pre><p>这样，我们就完成了监听函数。</p>
+<h2 id="多对一监视的实现"><a href="#多对一监视的实现" class="headerlink" title="多对一监视的实现"></a>多对一监视的实现</h2><p>有可能绑定某个数据结构的节点不止一个，有时我们需要修改完成时同时通知所有节点，那么我们还需要一个单独的模块负责通知所有节点，我们称之为Register模块，负责针对不同模块注册不同的一个或多个回调函数。</p>
+<h3 id="监视者的实现"><a href="#监视者的实现" class="headerlink" title="监视者的实现"></a>监视者的实现</h3><pre><code>class Register {
+  constructor() {
+    //存放所有回调对象，回调对象由三个key组成：obj, key, fn，其中fn应该是一个数组，放着所有发生变化时要执行的回调函数
+    this.routes = []
+  }
+  //添加一个回调
+  regist(obj, k, fn) {
+    const _i = this.routes.find(function(el) {
+      if((el.key === k || el.key.toString() === k.toString()) 
+        &amp;&amp; Object.is(el.obj, obj)) {
+        return el
+      }
+    })
+    if(_i) {
+      //如果已经存在该obj和key组成的对象
+      _i.fn.push(fn)
+    } else {
+      //如果尚不存在
+      this.routes.push({
+        obj: obj,
+        key: k,
+        fn: [fn]
+      })
+    }
+  }
+  //解析结束时调用，绑定所有回调
+  build() {
+    this.routes.forEach((route) =&gt; {
+      observer(route.obj, route.key, route.fn)
+    })
+  }
+}
+
+</code></pre><h3 id="observer模块的修改"><a href="#observer模块的修改" class="headerlink" title="observer模块的修改"></a>observer模块的修改</h3><p>由于现在一个key可能对应多个回调操作了，需要对observer进行修改：</p>
+<pre><code>function observer(obj, k, callback) {
+  //...与前文相同
+  if(now !== old) {
+    callback.forEach((fn) =&gt; {
+      fn(old, now)
+    })
+  }
+}
+function observerArray(arr, callback) {
+  //...与前文相同
+  //将原来的callback(old, this, ...arg)替换为
+  callback.forEach((fn) =&gt; {
+    fn(old, this, ...arg)
+  })
+}
+
+</code></pre><h2 id="绑定模版与数据-1"><a href="#绑定模版与数据-1" class="headerlink" title="绑定模版与数据"></a>绑定模版与数据</h2><p>现在，我们要在解析过程中添加对数据的监视了，还记得之前的parse系列函数吗？</p>
+<pre><code>const register = new Register()
+function parseModel(node) {
+  if(node.getAttribute(&#39;data-model&#39;)) {
+    //...之前逻辑不变
+    register.regist(data, _data.path, function(old, now) {
+      if(node.tagName === &#39;INPUT&#39;) {
+        node.value = now
+      } else {
+        node.innerText = now
+      }
+      //添加console便于调试
+      console.log(`${old} ---&gt; ${now}`)
+    })
+  }
+}
+function parseClass(node) {
+  if(node.getAttribute(&#39;data-class&#39;)) {
+    //...
+    register.regist(data, _data.path, function(old, now) {
+      node.classList.remove(old)
+      node.classList.add(now)
+      console.log(`${old} ---&gt; ${now}`)
+    })
+  }
+}
+//当列表发生变化时，为了简单直接重新渲染了当前列表
+function parseList(node) {
+  //...
+  register.regist(data, _listData.path, () =&gt; {
+    while(node.firstChild) {
+      node.removeChild(node.firstChild)
+    }
+    const _listData = parseData(_list, node)
+    node.appendChild(_item)
+    _listData.data.forEach((_dataItem, index) =&gt; {
+      const _copyItem = _item.cloneNode(true)
+      if(node.path) {
+        _copyItem.path = node.path.slice()
+      }
+      if(!_copyItem.path) {
+        _copyItem.path = []
+      }
+      _copyItem.path.push(index)
+      scan(_copyItem)
+      node.insertBefore(_copyItem, _item)
+    })
+    node.removeChild(_item)
+  })
+}
+//当模版解析结束后绑定所有事件
+register.build()
+
+</code></pre><p>至此我们就基本完成了一个简单的MVVM，之后我进行了一点细微的细节优化，源码放在<a href="https://gist.github.com/Saul-Mirone/c356e18f0199482f7671c3442fe5c153" target="_blank" rel="noopener">我的Gist上</a>。各位也可以去<a href="https://link.zhihu.com/?target=https%3A//jsbin.com/juqeduf/edit%3Fconsole%2Coutput" target="_blank" rel="noopener">本教程的JSBin</a>查看效果。水平有限，欢迎吐槽。</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <span>转载请注明 👇 Please reproduce with</span> <br/> <br/> <span>原文作者：<a href="equalma@outlook.com">Equal Ma</a></span><br/> <span>文章来源：<a href="https://equalma.github.io">equalma.github.io</a></span> <span> ( First published in <a href="https://equalma.github.io">equalma.github.io</a> ) </span>
+
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://equalma.github.io/post/js/simple-mvvm/">https://equalma.github.io/post/js/simple-mvvm/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/post/js/js-dev-tools/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/post/js/this-in-js/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Equal Ma's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        equalma@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="equalma@outlook.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/07/">七月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/04/">四月 2018<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">三月 2018<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/02/">二月 2018<span class="sidebar_archives-count">12</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/01/">一月 2018<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/12/">十二月 2017<span class="sidebar_archives-count">33</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                
+                
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/Node-js/">
+                            <span>Node.js</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/c/">
+                            <span>c</span>
+                            <span class="sidebar_archives-count">2</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/c/profiling/">
+                            <span>profiling</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/css/">
+                            <span>css</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/css/stylus/">
+                            <span>stylus</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/apache2/">
+                            <span>apache2</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/database/">
+                            <span>database</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/java/">
+                            <span>java</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/js/">
+                            <span>js</span>
+                            <span class="sidebar_archives-count">14</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/js/jquery/">
+                            <span>jquery</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/js/mdl/">
+                            <span>mdl</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/js/vue/">
+                            <span>vue</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/minecraft/">
+                            <span>minecraft</span>
+                            <span class="sidebar_archives-count">7</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/minecraft/pixelmon/">
+                            <span>pixelmon</span>
+                            <span class="sidebar_archives-count">3</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/mysql/">
+                            <span>mysql</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/php/">
+                            <span>php</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/python/">
+                            <span>python</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/powershell/">
+                            <span>powershell</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/typescript/">
+                            <span>typescript</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/vscode/">
+                            <span>vscode</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/web/">
+                            <span>web</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/wordpress/">
+                            <span>wordpress</span>
+                            <span class="sidebar_archives-count">13</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/wordpress/develop/">
+                            <span>develop</span>
+                            <span class="sidebar_archives-count">12</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/wordpress/develop/theme/">
+                            <span>theme</span>
+                            <span class="sidebar_archives-count">11</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li></ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/unix/">
+                            <span>unix</span>
+                            <span class="sidebar_archives-count">10</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/unix/gnome-help/">
+                            <span>gnome help</span>
+                            <span class="sidebar_archives-count">1</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li>
+                    <li>
+                        <a class="sidebar_archives-link" href="https://equalma.github.io/categories/unix/ubuntu-help/">
+                            <span>ubuntu help</span>
+                            <span class="sidebar_archives-count">9</span>
+                        </a>
+                        <ul style="color: inherit;">
+                        </ul></li></ul></li>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/tags" title="tag">
+                
+                    <i class="material-icons sidebar-material-icons">loyalty</i>
+                
+                tag
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">64</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/EqualMa" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Equal's
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?Bn9UzEm8RrBSxqyZB0zPjA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        if(textContent)
+            textContent.textContent = copyrightNow
+    } else {
+        if(textContent)
+            textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js?t=1534626977524')
+    .then(function () {console.log('ServiceWorker Register Successfully.')})
+    .catch(function (e) {console.error(e)});
+}
+</script></body>
+    
+</html>
