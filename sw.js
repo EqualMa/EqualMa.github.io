@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/post/vscode/customize/');
+  precacheUrls.push('/post/web/progressive-web-apps/');
+
+  precacheUrls.push('/post/Node-js/arguments/');
+
+  precacheUrls.push('/post/apache2/https/');
 
   precacheUrls.push('/post/Node-js/using-typescript/');
 
-  precacheUrls.push('/post/web/lavas/init/');
-
-  precacheUrls.push('/post/js/jquery/useful/');
-
-  precacheUrls.push('/post/css/stylus/basic-syntax/');
+  precacheUrls.push('/post/css/responsive-layout/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
