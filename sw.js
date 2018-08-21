@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/post/minecraft/How-to-use-BuildCraft-mod/');
+  precacheUrls.push('/post/vscode/customize/');
 
-  precacheUrls.push('/post/Node-js/arguments/');
+  precacheUrls.push('/post/Node-js/using-typescript/');
 
   precacheUrls.push('/post/web/lavas/init/');
 
-  precacheUrls.push('/post/wordpress/develop/using-phpstorm/');
+  precacheUrls.push('/post/js/jquery/useful/');
 
-  precacheUrls.push('/post/apache2/https/');
+  precacheUrls.push('/post/css/stylus/basic-syntax/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://equalma.github.io/"/>
-  <updated>2018-08-17T16:42:35.053Z</updated>
+  <updated>2018-08-20T10:14:13.726Z</updated>
   <id>https://equalma.github.io/</id>
   
   <author>
@@ -17,11 +17,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>develop plugins for hexo</title>
+    <link href="https://equalma.github.io/post/hexo/develop-plugin/"/>
+    <id>https://equalma.github.io/post/hexo/develop-plugin/</id>
+    <published>2018-08-19T18:16:00.000Z</published>
+    <updated>2018-08-20T10:14:13.726Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Develop-plugins-for-hexo"><a href="#Develop-plugins-for-hexo" class="headerlink" title="Develop plugins for hexo"></a>Develop plugins for hexo</h1><blockquote><p><a href="https://github.com/hexojs/awesome-hexo#plugins" target="_blank" rel="noopener">https://github.com/hexojs/awesome-hexo#plugins</a></p></blockquote><h2 id="Creating-Plugins"><a href="#Creating-Plugins" class="headerlink" title="Creating Plugins"></a>Creating Plugins</h2><ul><li><a href="https://blog.gisonrg.me/2016/04/develop-hexo-github-card/" target="_blank" rel="noopener">Develop a plugin for Hexo - Github Card</a></li><li><a href="https://github.com/sebs/generator-hexo-plugin" target="_blank" rel="noopener">Yeoman based plugin generator</a></li></ul><h4 id="Yeoman-based-plugin-generator"><a href="#Yeoman-based-plugin-generator" class="headerlink" title="Yeoman based plugin generator"></a>Yeoman based plugin generator</h4><pre><code class="shell">npm install -g yonpm install -g generator-hexo-plugin</code></pre><p>Then generate your new project:</p><pre><code class="shell">yo hexo-plugin</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Develop-plugins-for-hexo&quot;&gt;&lt;a href=&quot;#Develop-plugins-for-hexo&quot; class=&quot;headerlink&quot; title=&quot;Develop plugins for hexo&quot;&gt;&lt;/a&gt;Develop
+        
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://equalma.github.io/categories/hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git submodule</title>
+    <link href="https://equalma.github.io/post/git/submodule/"/>
+    <id>https://equalma.github.io/post/git/submodule/</id>
+    <published>2018-08-19T18:09:00.000Z</published>
+    <updated>2018-08-20T10:14:13.726Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p><a href="https://www.cnblogs.com/lsgxeva/p/8540758.html" target="_blank" rel="noopener">https://www.cnblogs.com/lsgxeva/p/8540758.html</a></p><p><a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="noopener">https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97</a></p><p><a href="https://blog.csdn.net/xuanwolanxue/article/details/80609986" target="_blank" rel="noopener">https://blog.csdn.net/xuanwolanxue/article/details/80609986</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/lsgxeva/p/8540758.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="git" scheme="https://equalma.github.io/categories/git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo extensions</title>
+    <link href="https://equalma.github.io/post/hexo/extend/"/>
+    <id>https://equalma.github.io/post/hexo/extend/</id>
+    <published>2018-08-08T17:00:34.000Z</published>
+    <updated>2018-08-20T10:14:13.726Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-Extensions"><a href="#Hexo-Extensions" class="headerlink" title="Hexo Extensions"></a>Hexo Extensions</h1><blockquote><p><a href="https://hexo.io/api/" target="_blank" rel="noopener">official docs</a></p></blockquote><h2 id="extend-filter"><a href="#extend-filter" class="headerlink" title="extend.filter"></a>extend.filter</h2><h3 id="Filter-List"><a href="#Filter-List" class="headerlink" title="Filter List"></a>Filter List</h3><ol><li><a href="https://hexo.io/api/filter#before-post-render" target="_blank" rel="noopener">before_post_render</a></li><li><a href="https://hexo.io/api/filter#after-post-render" target="_blank" rel="noopener">after_post_render</a></li><li><a href="https://hexo.io/api/filter#before-exit" target="_blank" rel="noopener">before_exit</a></li><li><a href="https://hexo.io/api/filter#before-generate" target="_blank" rel="noopener">before_generate</a></li><li><a href="https://hexo.io/api/filter#after-generate" target="_blank" rel="noopener">after_generate</a></li><li><a href="https://hexo.io/api/filter#template-locals" target="_blank" rel="noopener">template_locals</a></li><li><a href="https://hexo.io/api/filter#after-init" target="_blank" rel="noopener">after_init</a></li><li><a href="https://hexo.io/api/filter#new-post-path" target="_blank" rel="noopener">new_post_path</a></li><li><a href="https://hexo.io/api/filter#post-permalink" target="_blank" rel="noopener">post_permalink</a></li><li><a href="https://hexo.io/api/filter#after-render" target="_blank" rel="noopener">after_render</a></li><li><a href="https://hexo.io/api/filter#after-clean" target="_blank" rel="noopener">after_clean</a></li><li><a href="https://hexo.io/api/filter#server-middleware" target="_blank" rel="noopener">server_middleware</a></li></ol><h3 id="Orders-of-calling-filters-filter-执行的顺序"><a href="#Orders-of-calling-filters-filter-执行的顺序" class="headerlink" title="Orders of calling filters | filter 执行的顺序"></a>Orders of calling filters | filter 执行的顺序</h3><h4 id="Orders"><a href="#Orders" class="headerlink" title="Orders"></a>Orders</h4><p>after executing <code>hexo s</code> , filters are called in the following order:</p><blockquote><p>after_init</p><p>server_middleware</p><p>before_generate</p><p>post_permalink</p><p>template_locals</p><p>after_generate</p><p>before_exit</p><p>before_post_render</p><p>after_post_render</p></blockquote><h4 id="How-to-find-orders"><a href="#How-to-find-orders" class="headerlink" title="How to find orders:"></a>How to find orders:</h4><pre><code class="js">const register = (type, func) =&gt; {  hexo.extend.filter.register(type, func);};const logOnce = (() =&gt; {  const logged = {};  return str =&gt;    logged[str] === true || ((logged[str] = true) &amp;&amp; console.log(str));})();register(&quot;before_post_render&quot;, function(data) {  logOnce(&quot;before_post_render&quot;);  return data;});register(&quot;before_post_render&quot;, function(data) {  logOnce(&quot;before_post_render&quot;);});register(&quot;after_post_render&quot;, function(data) {  logOnce(&quot;after_post_render&quot;);});register(&quot;before_exit&quot;, function(data) {  logOnce(&quot;before_exit&quot;);});register(&quot;before_generate&quot;, function(data) {  logOnce(&quot;before_generate&quot;);});register(&quot;after_generate&quot;, function(data) {  logOnce(&quot;after_generate&quot;);});register(&quot;template_locals&quot;, function(data) {  logOnce(&quot;template_locals&quot;);});register(&quot;after_init&quot;, function(data) {  logOnce(&quot;after_init&quot;);});register(&quot;new_post_path&quot;, function(data) {  logOnce(&quot;new_post_path&quot;);});register(&quot;post_permalink&quot;, function(data) {  logOnce(&quot;post_permalink&quot;);});register(&quot;after_render&quot;, function(data) {  logOnce(&quot;after_render&quot;);});register(&quot;after_clean&quot;, function(data) {  logOnce(&quot;after_clean&quot;);});register(&quot;server_middleware&quot;, function(data) {  logOnce(&quot;server_middleware&quot;);});</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hexo-Extensions&quot;&gt;&lt;a href=&quot;#Hexo-Extensions&quot; class=&quot;headerlink&quot; title=&quot;Hexo Extensions&quot;&gt;&lt;/a&gt;Hexo Extensions&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://equalma.github.io/categories/hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>for循环中声明变量及该变量在异步调用的使用</title>
     <link href="https://equalma.github.io/post/js/var-in-for/"/>
     <id>https://equalma.github.io/post/js/var-in-for/</id>
     <published>2018-07-05T09:17:33.000Z</published>
-    <updated>2018-08-17T16:42:35.053Z</updated>
+    <updated>2018-08-20T10:14:13.742Z</updated>
     
     <content type="html"><![CDATA[<pre><code class="js">for (var i=1; i&lt;=3; i++) {    var obj = {name: &#39;obj&#39; + i};    console.log(`[${i}]: ${obj.name}`);}// output:[1]: obj1[2]: obj2[3]: obj3</code></pre><p>in async callback</p><pre><code class="js">for (var i=1; i&lt;=3; i++) {    var obj = {name: &#39;obj&#39; + i};    setTimeout(()=&gt;{        console.log(`[${i}]: ${obj.name}`);      }, 1000);}// output:[4]: obj3[4]: obj3[4]: obj3</code></pre><p>WHY</p><p>因为变量只声明了一次，因此每次操作相当于为同一个变量赋值（使变量指向新建的对象），从而在异步操作执行前，该变量被赋值多次，该变量</p><p>HOW TO FIX</p><p>在for中执行一个闭包，从而使每次循环中的obj都是一个新的变量，指向新建的对象。</p><pre><code class="js">for (var i=1; i&lt;=3; i++) {    (function() {        var obj = {name: &#39;obj&#39; + i};        setTimeout(()=&gt;{            console.log(`[${i}]: ${obj.name}`);          }, 1000);    })();}// output:[4]: obj3[4]: obj3[4]: obj3</code></pre>]]></content>
     
@@ -53,7 +133,7 @@
     <link href="https://equalma.github.io/post/java/concurrent/"/>
     <id>https://equalma.github.io/post/java/concurrent/</id>
     <published>2018-07-05T08:08:47.000Z</published>
-    <updated>2018-08-18T17:04:16.121Z</updated>
+    <updated>2018-08-20T10:14:13.726Z</updated>
     
     <content type="html"><![CDATA[<h2 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h2><blockquote><p><a href="https://www.cnblogs.com/richaaaard/p/6599184.html" target="_blank" rel="noopener">原文</a></p></blockquote><h3 id="CachedThreadPool"><a href="#CachedThreadPool" class="headerlink" title="CachedThreadPool"></a>CachedThreadPool</h3><blockquote><p>这个线程池在执行 <strong>大量短生命周期的异步任务时（many short-lived asynchronous task）</strong>，可以显著提高程序性能。调用 <strong>execute</strong> 时，可以重用之前已构造的可用线程，如果不存在可用线程，那么会重新创建一个新的线程并将其加入到线程池中。如果线程超过 60 秒还未被使用，就会被中止并从缓存中移除。因此，线程池在长时间空闲后不会消耗任何资源。 </p></blockquote><h3 id="FixedThreadPool"><a href="#FixedThreadPool" class="headerlink" title="FixedThreadPool"></a>FixedThreadPool</h3><blockquote><p>FixedThreadPool 是通过 java.util.concurrent.Executors 创建的 ThreadPoolExecutor 实例。这个实例会复用 <strong>固定数量的线程</strong> 处理一个 <strong>共享的无边界队列</strong> 。任何时间点，最多有 nThreads 个线程会处于活动状态执行任务。如果当所有线程都是活动时，有多的任务被提交过来，那么它会一致在队列中等待直到有线程可用。如果任何线程在执行过程中因为错误而中止，新的线程会替代它的位置来执行后续的任务。所有线程都会一致存于线程池中，直到显式的执行 ExecutorService.shutdown() 关闭。</p></blockquote><h3 id="SingleThreadPool"><a href="#SingleThreadPool" class="headerlink" title="SingleThreadPool"></a>SingleThreadPool</h3><blockquote><p>SingleThreadPool 是通过 java.util.concurrent.Executors 创建的 ThreadPoolExecutor 实例。这个实例只会使用单个工作线程来执行一个无边界的队列。（注意，如果单个线程在执行过程中因为某些错误中止，新的线程会替代它执行后续线程）。它可以保证认为是按顺序执行的，任何时候都不会有多于一个的任务处于活动状态。和 <strong>newFixedThreadPool(1)</strong> 的区别在于，如果线程遇到错误中止，它是无法使用替代线程的。</p></blockquote><h3 id="FixedThreadPool-与-CachedThreadPool-特性对比"><a href="#FixedThreadPool-与-CachedThreadPool-特性对比" class="headerlink" title="FixedThreadPool 与 CachedThreadPool 特性对比"></a>FixedThreadPool 与 CachedThreadPool 特性对比</h3><table><thead><tr><th>特性</th><th>FixedThreadPool</th><th>CachedThreadPool</th></tr></thead><tbody><tr><td>重用</td><td>FixedThreadPool 与 CacheThreadPool差不多，也是能 reuse 就用，但不能随时建新的线程</td><td>缓存型池子，先查看池中有没有以前建立的线程，如果有，就 reuse ；如果没有，就建一个新的线程加入池中</td></tr><tr><td>池大小</td><td>可指定 nThreads，固定数量</td><td>可增长，最大值 Integer.MAX_VALUE</td></tr><tr><td>队列大小</td><td>无限制</td><td>无限制</td></tr><tr><td>超时</td><td>无 IDLE</td><td>默认 60 秒 IDLE</td></tr><tr><td>使用场景</td><td>所以 FixedThreadPool 多数针对一些很稳定很固定的正规并发线程，多用于服务器</td><td>大量短生命周期的异步任务</td></tr><tr><td>结束</td><td>不会自动销毁</td><td>注意，放入 CachedThreadPool 的线程不必担心其结束，超过 TIMEOUT 不活动，其会自动被终止。</td></tr></tbody></table><h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><p>FixedThreadPool 和 CachedThreadPool 两者对高负载的应用都不是特别友好。</p><p>CachedThreadPool 要比 FixedThreadPool 危险很多。</p><p>如果应用要求高负载、低延迟，最好不要选择以上两种线程池：</p><ol><li>任务队列的无边界：会导致内存溢出以及高延迟</li><li>长时间运行会导致 <code>CachedThreadPool</code> 在线程创建上失控</li></ol><p>因为两者都不是特别友好，所以推荐使用 <code>ThreadPoolExecutor</code> ，它提供了很多参数可以进行细粒度的控制。</p><ol><li><p>将任务队列设置成有边界的队列</p></li><li><p>使用合适的 <code>RejectionHandler</code> - 自定义的 <code>RejectionHandler</code> 或 JDK 提供的默认 handler 。</p></li><li><p>如果在任务完成前后需要执行某些操作，可以重载</p><pre><code>beforeExecute(Thread, Runnable)afterExecute(Runnable, Throwable)</code></pre></li><li><p>重载 ThreadFactory ，如果有线程定制化的需求</p></li><li><p>在运行时动态控制线程池的大小（<a href="http://stackoverflow.com/questions/32527078/dynamic-thread-pool/32527532#32527532" target="_blank" rel="noopener">Dynamic Thread Pool</a>）</p></li></ol>]]></content>
     
@@ -80,7 +160,7 @@
     <link href="https://equalma.github.io/post/web/lavas/init/"/>
     <id>https://equalma.github.io/post/web/lavas/init/</id>
     <published>2018-06-29T01:15:17.000Z</published>
-    <updated>2018-08-17T15:29:40.571Z</updated>
+    <updated>2018-08-20T10:14:13.774Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Initialize-Dev-Env"><a href="#Initialize-Dev-Env" class="headerlink" title="Initialize Dev Env"></a>Initialize Dev Env</h2><pre><code class="shell">lavas init# choose App-Shell# enter project name, ...cd project-folder</code></pre><pre><code class="shell">npm install --save-dev eslint eslint-loader babel-eslint eslint-plugin-vuenpm install prettier-eslint --save-dev</code></pre><p>.vscode/settings.json</p><pre><code class="json">{    &quot;prettier.eslintIntegration&quot;: true}</code></pre><p>.eslintrc.json</p><pre><code class="json">{    &quot;env&quot;: {        &quot;browser&quot;: true,        &quot;es6&quot;: true    },    &quot;parser&quot;: &quot;babel-eslint&quot;,    &quot;extends&quot;: &quot;eslint:recommended&quot;,    &quot;parserOptions&quot;: {        &quot;sourceType&quot;: &quot;module&quot;,        &quot;ecmaVersion&quot;: 2017    },    &quot;rules&quot;: {        &quot;indent&quot;: [&quot;error&quot;, 4],        &quot;linebreak-style&quot;: [&quot;error&quot;, &quot;unix&quot;],        &quot;quotes&quot;: [&quot;error&quot;, &quot;single&quot;],        &quot;semi&quot;: [&quot;error&quot;, &quot;always&quot;],        &quot;no-trailing-spaces&quot;: &quot;error&quot;    }}</code></pre><p>Or create your own config using <code>eslint init</code></p><blockquote><p><a href="https://lavas.baidu.com/codelab/eslint/" target="_blank" rel="noopener">lavas &gt; eslint</a></p></blockquote>]]></content>
     
@@ -468,87 +548,6 @@
         
           &lt;p&gt;Using &lt;meta&gt; tag&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="css" scheme="https://equalma.github.io/categories/css/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>references for material design lite</title>
-    <link href="https://equalma.github.io/post/js/mdl/references/"/>
-    <id>https://equalma.github.io/post/js/mdl/references/</id>
-    <published>2018-02-19T16:13:21.000Z</published>
-    <updated>2018-06-19T15:31:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Colors"><a href="#Colors" class="headerlink" title="Colors"></a>Colors</h1><p><a href="http://blog.jonathanargentiero.com/material-design-lite-color-classes-list/" target="_blank" rel="noopener">http://blog.jonathanargentiero.com/material-design-lite-color-classes-list/</a></p><h1 id="Material-Design-Guidelines"><a href="#Material-Design-Guidelines" class="headerlink" title="Material Design Guidelines"></a>Material Design Guidelines</h1><p><a href="https://material.io/guidelines/material-design/#" target="_blank" rel="noopener">https://material.io/guidelines/material-design/#</a></p><h1 id="Icons"><a href="#Icons" class="headerlink" title="Icons"></a>Icons</h1><p><a href="https://material.io/icons/" target="_blank" rel="noopener">https://material.io/icons/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Colors&quot;&gt;&lt;a href=&quot;#Colors&quot; class=&quot;headerlink&quot; title=&quot;Colors&quot;&gt;&lt;/a&gt;Colors&lt;/h1&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="js" scheme="https://equalma.github.io/categories/js/"/>
-    
-      <category term="mdl" scheme="https://equalma.github.io/categories/js/mdl/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>debug php</title>
-    <link href="https://equalma.github.io/post/php/debug/"/>
-    <id>https://equalma.github.io/post/php/debug/</id>
-    <published>2018-02-19T15:14:52.000Z</published>
-    <updated>2018-06-19T15:31:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://confluence.jetbrains.com/display/PhpStorm/Zero-configuration+Web+Application+Debugging+with+Xdebug+and+PhpStorm#Zero-configurationWebApplicationDebuggingwithXdebugandPhpStorm-1.InstallXdebug" target="_blank" rel="noopener">https://confluence.jetbrains.com/display/PhpStorm/Zero-configuration+Web+Application+Debugging+with+Xdebug+and+PhpStorm#Zero-configurationWebApplicationDebuggingwithXdebugandPhpStorm-1.InstallXdebug</a></p><p><a href="http://blog.csdn.net/zhyh1986/article/details/45172685" target="_blank" rel="noopener">http://blog.csdn.net/zhyh1986/article/details/45172685</a></p><p><a href="http://aboutcoder.com/2016/09/01/integrate-phpstorm-mamp-xdebug/" target="_blank" rel="noopener">http://aboutcoder.com/2016/09/01/integrate-phpstorm-mamp-xdebug/</a></p><pre><code>[Xdebug]zend_extension=&quot;D:\MAMP\bin\php\php7.1.5\ext\php_xdebug.dll&quot;xdebug.remote_enable=1xdebug.remote_host=localhostxdebug.remote_port=9000xdebug.idekey=&quot;PHPSTORM&quot;</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="php" scheme="https://equalma.github.io/categories/php/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Header in Web Page</title>
-    <link href="https://equalma.github.io/post/css/headers/"/>
-    <id>https://equalma.github.io/post/css/headers/</id>
-    <published>2018-02-17T07:57:31.000Z</published>
-    <updated>2018-06-19T15:31:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>A useful library</p><p><a href="http://wicky.nillia.ms/headroom.js/" target="_blank" rel="noopener">http://wicky.nillia.ms/headroom.js/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;A useful library&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://wicky.nillia.ms/headroom.js/&quot; target=&quot;_blank&quot;
         
       
     
