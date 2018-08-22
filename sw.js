@@ -28,9 +28,9 @@ var precacheUrls = [];
 
   precacheUrls.push('/post/Node-js/arguments/');
 
-  precacheUrls.push('/post/apache2/https/');
+  precacheUrls.push('/post/wordpress/develop/using-phpstorm/');
 
-  precacheUrls.push('/post/Node-js/using-typescript/');
+  precacheUrls.push('/post/web/lavas/init/');
 
   precacheUrls.push('/post/css/responsive-layout/');
 
